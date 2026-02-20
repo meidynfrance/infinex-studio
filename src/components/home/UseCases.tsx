@@ -25,18 +25,24 @@ const icons = [
     <path d="M8 21h8M12 17v4" />
     <path d="M7 8h2m4 0h4M7 12h10" />
   </svg>,
-  // Formation - graduation cap / users
+  // Formation - users
   <svg key="training" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-accent-primary">
     <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
     <circle cx="9" cy="7" r="4" />
     <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+  </svg>,
+  // Agents IA - bot/cpu
+  <svg key="agents" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-accent-secondary">
+    <rect x="4" y="4" width="16" height="16" rx="2" />
+    <path d="M9 9h6M9 13h6M9 17h4" />
+    <path d="M12 2v2M12 20v2M2 12h2M20 12h2" />
   </svg>,
 ];
 
 export function UseCases() {
   const t = useTranslations("useCases");
 
-  const cases = [0, 1, 2, 3, 4] as const;
+  const cases = [0, 1, 2, 3, 4, 5] as const;
 
   return (
     <section className="py-24 sm:py-32 bg-background-secondary">

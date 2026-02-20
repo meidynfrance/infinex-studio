@@ -58,6 +58,10 @@
       {
         "title": "Formation IA pour vos équipes",
         "description": "On forme vos collaborateurs à utiliser l'IA au quotidien. Pas de la théorie — des ateliers pratiques avec des outils qu'ils utiliseront dès le lendemain."
+      },
+      {
+        "title": "Agents IA",
+        "description": "On conçoit des agents autonomes qui exécutent des tâches complexes pour vous : recherche, analyse, qualification de leads, support client, et bien plus."
       }
     ]
   },

@@ -58,6 +58,10 @@
       {
         "title": "AI training for your teams",
         "description": "We train your teams to use AI daily. No theory — hands-on workshops with tools they'll use the very next day."
+      },
+      {
+        "title": "AI Agents",
+        "description": "We build autonomous agents that handle complex tasks for you: research, analysis, lead qualification, customer support, and much more."
       }
     ]
   },
