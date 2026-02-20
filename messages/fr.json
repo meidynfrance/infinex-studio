@@ -34,6 +34,32 @@
       "description": "Equipe d'ingénierie augmentée par l'IA. Vous payez pour les fonctionnalités livrées, pas les heures passées."
     }
   },
+  "useCases": {
+    "title": "Ce qu'on fait concrètement",
+    "subtitle": "Des solutions IA qui transforment votre quotidien.",
+    "items": [
+      {
+        "title": "Automatisation de process",
+        "description": "On identifie vos tâches répétitives et on les automatise avec l'IA. Moins d'erreurs, plus de vitesse, vos équipes se concentrent sur ce qui compte."
+      },
+      {
+        "title": "IA générative",
+        "description": "Génération de contenu, synthèse de documents, assistants conversationnels — on déploie l'IA générative là où elle a un vrai impact business."
+      },
+      {
+        "title": "IA prédictive",
+        "description": "Anticipez la demande, détectez les anomalies, optimisez vos décisions. On transforme vos données en avantage concurrentiel."
+      },
+      {
+        "title": "Outils métier sur mesure",
+        "description": "On conçoit et développe des outils internes augmentés par l'IA, parfaitement adaptés à vos processus et à votre métier."
+      },
+      {
+        "title": "Formation IA pour vos équipes",
+        "description": "On forme vos collaborateurs à utiliser l'IA au quotidien. Pas de la théorie — des ateliers pratiques avec des outils qu'ils utiliseront dès le lendemain."
+      }
+    ]
+  },
   "whyNow": {
     "title": "Pourquoi maintenant ?",
     "paragraph1": "Le coût de l'intelligence tend vers zéro.",

@@ -34,6 +34,32 @@
       "description": "AI-augmented engineering team. You pay for features delivered, not hours spent."
     }
   },
+  "useCases": {
+    "title": "What we actually do",
+    "subtitle": "AI solutions that transform your day-to-day.",
+    "items": [
+      {
+        "title": "Process automation",
+        "description": "We identify your repetitive tasks and automate them with AI. Fewer errors, more speed, your teams focus on what matters."
+      },
+      {
+        "title": "Generative AI",
+        "description": "Content generation, document synthesis, conversational assistants — we deploy generative AI where it has real business impact."
+      },
+      {
+        "title": "Predictive AI",
+        "description": "Anticipate demand, detect anomalies, optimize decisions. We turn your data into a competitive advantage."
+      },
+      {
+        "title": "Custom business tools",
+        "description": "We design and build AI-augmented internal tools, perfectly tailored to your processes and your business."
+      },
+      {
+        "title": "AI training for your teams",
+        "description": "We train your teams to use AI daily. No theory — hands-on workshops with tools they'll use the very next day."
+      }
+    ]
+  },
   "whyNow": {
     "title": "Why now?",
     "paragraph1": "The cost of intelligence is trending toward zero.",
