@@ -1,0 +1,287 @@
+{
+  "metadata": {
+    "title": "Infinex — Transformation IA & Ingénierie augmentée",
+    "description": "Infinex est votre partenaire de transformation IA. Stratégie, ingénierie augmentée, résultats mesurables. Passez de AI-absent à AI-native.",
+    "siteName": "Infinex"
+  },
+  "nav": {
+    "home": "Accueil",
+    "transformation": "Transformation IA",
+    "engineering": "Ingénierie IA",
+    "about": "À propos",
+    "getStarted": "Commencer"
+  },
+  "hero": {
+    "title": "Croissance infinie.",
+    "subtitle": "Votre partenaire de transformation IA.",
+    "description": "On aide les entreprises ambitieuses à passer d'un état AI-absent à AI-native. Stratégie claire, exécution rapide, résultats mesurables.",
+    "cta": "Commencer",
+    "learnMore": "En savoir plus"
+  },
+  "approach": {
+    "sectionTitle": "Notre approche",
+    "sectionSubtitle": "Trois piliers pour devenir AI-native.",
+    "strategy": {
+      "title": "Stratégie IA",
+      "description": "Audit de vos processus, identification des bottlenecks, feuille de route IA sur mesure. Pas de slides inutiles — un plan d'action concret."
+    },
+    "transformation": {
+      "title": "Transformation IA",
+      "description": "Implémentation des solutions IA, formation de vos équipes, accompagnement au changement. On exécute, vous mesurez le ROI."
+    },
+    "engineering": {
+      "title": "Ingénierie IA",
+      "description": "Squads d'ingénierie outcome-based augmentées par l'IA. Vous payez pour les features livrées, pas les heures passées."
+    }
+  },
+  "whyNow": {
+    "title": "Pourquoi maintenant ?",
+    "paragraph1": "Le coût de l'intelligence tend vers zéro. Et vous ?",
+    "paragraph2": "Chaque mois qui passe sans stratégie IA, c'est un avantage concurrentiel que vous laissez à vos rivaux. L'IA n'est pas une option. C'est un impératif stratégique.",
+    "paragraph3": "Vous avez le choix. Vous transformer. Ou être transformé par les autres.",
+    "highlight": "L'IA n'est pas effrayante. L'ignorer, si."
+  },
+  "testimonials": {
+    "title": "Ce qu'en disent nos clients",
+    "comingSoon": "Témoignages à venir",
+    "items": [
+      {
+        "quote": "Infinex a transformé notre façon de travailler en 3 mois. ROI x4 sur le premier projet.",
+        "author": "Directeur Technique",
+        "company": "Entreprise Tech"
+      },
+      {
+        "quote": "Pas de jargon, pas de slides interminables. Juste des résultats concrets et mesurables.",
+        "author": "CEO",
+        "company": "Scale-up SaaS"
+      },
+      {
+        "quote": "L'équipe d'ingénierie IA d'Infinex livre en 2 semaines ce qui nous prenait 2 mois.",
+        "author": "VP Engineering",
+        "company": "Groupe Industriel"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "question": "En quoi Infinex est différent d'un cabinet de conseil classique ?",
+        "answer": "On ne fait pas de slides, on exécute. On mesure le ROI, pas les heures. Pas de decks de 200 pages. Pas de diagnostics de 6 mois. On identifie les opportunités, on implémente, on mesure."
+      },
+      {
+        "question": "Que signifie « transformation IA » ?",
+        "answer": "Identifier vos bottlenecks, créer des solutions IA adaptées, former vos équipes, mesurer les résultats. Rinse and repeat. L'objectif : vous rendre AI-native, pas AI-dépendant."
+      },
+      {
+        "question": "Comment fonctionne le pricing ?",
+        "answer": "Ingénierie : abonnement mensuel basé sur les résultats. Transformation : partenariat custom adapté à votre contexte. Contactez-nous pour en discuter."
+      },
+      {
+        "question": "Avec quel type d'entreprises travaillez-vous ?",
+        "answer": "Entreprises matures (>5M€ CA) motivées à devenir AI-native mais qui n'ont pas les ressources ou l'expertise en interne pour le faire seules."
+      },
+      {
+        "question": "Comment fonctionne l'ingénierie IA ?",
+        "answer": "Squads d'ingénierie outcome-based, augmentées par l'IA. Vous payez pour les features livrées, pas les heures. On intègre l'IA dans chaque étape du développement pour livrer plus vite et mieux."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Restez du bon côté de l'histoire.",
+    "subtitle": "On ne se soucie pas d'aujourd'hui. On se soucie de la prochaine décennie.",
+    "cta": "Discutons de votre transformation"
+  },
+  "transformation": {
+    "title": "Transformation IA",
+    "metaTitle": "Transformation IA",
+    "metaDescription": "Passez de AI-absent à AI-native avec Infinex. Stratégie, implémentation, formation — des résultats mesurables, pas des slides.",
+    "hero": {
+      "title": "De AI-absent à AI-native.",
+      "subtitle": "Pas de decks de 200 slides. Pas de diagnostics de 6 mois. On exécute."
+    },
+    "process": {
+      "title": "Notre processus",
+      "steps": [
+        {
+          "title": "Diagnostic rapide",
+          "description": "En 2 semaines, on cartographie vos processus, identifie les bottlenecks et les quick wins IA."
+        },
+        {
+          "title": "Stratégie & roadmap",
+          "description": "Une feuille de route IA claire, priorisée par impact business, avec des KPIs mesurables."
+        },
+        {
+          "title": "Implémentation",
+          "description": "On déploie les solutions IA, on forme vos équipes, on itère rapidement."
+        },
+        {
+          "title": "Mesure & optimisation",
+          "description": "Suivi continu du ROI, ajustements, scaling des solutions qui fonctionnent."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Bénéfices mesurables",
+      "items": [
+        {
+          "metric": "60%",
+          "description": "de réduction des tâches répétitives en moyenne"
+        },
+        {
+          "metric": "3x",
+          "description": "plus rapide sur les cycles de décision"
+        },
+        {
+          "metric": "40%",
+          "description": "de gain de productivité sur les équipes formées"
+        },
+        {
+          "metric": "< 3 mois",
+          "description": "pour voir les premiers résultats tangibles"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Prêt à transformer votre entreprise ?",
+      "button": "Lancer votre transformation"
+    }
+  },
+  "engineering": {
+    "title": "Ingénierie IA",
+    "metaTitle": "Ingénierie IA",
+    "metaDescription": "Squads d'ingénierie outcome-based augmentées par l'IA. Payez pour les features livrées, pas les heures passées.",
+    "hero": {
+      "title": "L'ingénierie du futur, aujourd'hui.",
+      "subtitle": "Squads d'ingénierie outcome-based, augmentées par l'IA."
+    },
+    "model": {
+      "title": "Notre modèle",
+      "subscription": {
+        "title": "Abonnement mensuel",
+        "description": "Un tarif fixe, des résultats concrets. Pas de surprise, pas d'heures supplémentaires facturées."
+      },
+      "outcome": {
+        "title": "Basé sur les résultats",
+        "description": "Vous payez pour les features livrées et les objectifs atteints, pas pour le temps passé."
+      },
+      "ai": {
+        "title": "Augmenté par l'IA",
+        "description": "Nos ingénieurs utilisent l'IA à chaque étape : code, tests, revue, déploiement. Résultat : 3x plus de vélocité."
+      }
+    },
+    "advantages": {
+      "title": "Pourquoi pas une dev shop classique ?",
+      "items": [
+        {
+          "traditional": "Facturation à l'heure",
+          "infinex": "Facturation aux résultats"
+        },
+        {
+          "traditional": "Pas d'incitation à finir vite",
+          "infinex": "Incentives alignés sur vos objectifs"
+        },
+        {
+          "traditional": "Stack technique imposée",
+          "infinex": "Stack optimale pour votre projet"
+        },
+        {
+          "traditional": "Ingénieurs juniors",
+          "infinex": "Ingénieurs seniors augmentés par l'IA"
+        },
+        {
+          "traditional": "Pas d'IA dans le process",
+          "infinex": "IA intégrée à chaque étape"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Prêt à scaler votre engineering ?",
+      "button": "Découvrir nos offres"
+    }
+  },
+  "about": {
+    "title": "À propos",
+    "metaTitle": "À propos d'Infinex",
+    "metaDescription": "Découvrez la vision, la mission et les valeurs d'Infinex — votre partenaire de transformation IA.",
+    "vision": {
+      "title": "Notre vision",
+      "description": "Un monde où chaque entreprise exploite pleinement le potentiel de l'IA. Pas comme un gadget, mais comme un avantage stratégique fondamental."
+    },
+    "mission": {
+      "title": "Notre mission",
+      "description": "Accélérer la transformation IA des entreprises ambitieuses avec une approche orientée résultats, rapide et sans bullshit consulting."
+    },
+    "values": {
+      "title": "Nos valeurs",
+      "items": [
+        {
+          "title": "Exécution > théorie",
+          "description": "On ne fait pas de slides, on livre des résultats. Chaque action doit avoir un impact mesurable."
+        },
+        {
+          "title": "Transparence radicale",
+          "description": "Pas de jargon, pas de promesses vides. On vous dit ce qui marche, ce qui ne marche pas, et pourquoi."
+        },
+        {
+          "title": "Vitesse d'itération",
+          "description": "Le marché n'attend pas. On teste vite, on apprend vite, on adapte vite."
+        },
+        {
+          "title": "Partenariat long terme",
+          "description": "On ne vend pas des projets. On construit des partenariats qui transforment votre entreprise durablement."
+        }
+      ]
+    },
+    "team": {
+      "title": "L'équipe",
+      "description": "Une équipe d'experts en IA, ingénierie et stratégie, unis par une obsession : vous rendre AI-native.",
+      "comingSoon": "Profils à venir"
+    }
+  },
+  "getStarted": {
+    "title": "Commencer",
+    "metaTitle": "Commencer avec Infinex",
+    "metaDescription": "Contactez Infinex pour lancer votre transformation IA. Formulaire de contact rapide, réponse sous 24h.",
+    "heading": "Prêt à passer à l'action ?",
+    "subtitle": "Remplissez le formulaire ci-dessous. On revient vers vous sous 24h.",
+    "form": {
+      "name": "Nom complet",
+      "namePlaceholder": "Jean Dupont",
+      "email": "Email",
+      "emailPlaceholder": "jean@entreprise.com",
+      "company": "Entreprise",
+      "companyPlaceholder": "Nom de votre entreprise",
+      "revenue": "Chiffre d'affaires approximatif",
+      "revenueOptions": {
+        "placeholder": "Sélectionnez une tranche",
+        "lessThan1M": "< 1M€",
+        "from1Mto5M": "1M€ - 5M€",
+        "from5Mto25M": "5M€ - 25M€",
+        "moreThan25M": "25M€+"
+      },
+      "message": "Message / besoin",
+      "messagePlaceholder": "Décrivez brièvement votre besoin ou votre projet...",
+      "submit": "Envoyer",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé ! On revient vers vous très vite.",
+      "error": "Une erreur est survenue. Réessayez ou contactez-nous directement."
+    },
+    "validation": {
+      "nameRequired": "Le nom est requis",
+      "emailRequired": "L'email est requis",
+      "emailInvalid": "Email invalide",
+      "companyRequired": "L'entreprise est requise",
+      "revenueRequired": "Veuillez sélectionner une tranche de CA",
+      "messageRequired": "Le message est requis",
+      "messageMin": "Le message doit contenir au moins 10 caractères"
+    }
+  },
+  "footer": {
+    "tagline": "Votre partenaire de transformation IA.",
+    "services": "Services",
+    "company": "Entreprise",
+    "rights": "Tous droits réservés.",
+    "contact": "Contact"
+  }
+}

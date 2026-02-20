@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Infinex.studio
+
+AI Transformation & Augmented Engineering agency website.
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Animations**: Framer Motion
+- **i18n**: next-intl (FR/EN)
+- **Forms**: React Hook Form + Zod
+- **Notifications**: Telegram Bot API
+- **Deployment**: Vercel
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- pnpm
+
+### Local Development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The site runs at `http://localhost:3000`. You'll be redirected to `/fr` or `/en` based on your browser language.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Copy the example file:
 
-## Learn More
+```bash
+cp .env.example .env
+```
 
-To learn more about Next.js, take a look at the following resources:
+Fill in the values (see Telegram setup below).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Telegram Bot Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The contact form sends notifications via Telegram. Follow these steps:
 
-## Deploy on Vercel
+### 1. Create the bot
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Open Telegram and search for **@BotFather**
+2. Send `/newbot`
+3. Choose a name (e.g., "Infinex Leads Bot")
+4. Choose a username (e.g., `infinex_leads_bot`)
+5. Copy the **API token** you receive
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 2. Get your Chat ID
+
+1. Send any message to your new bot
+2. Open this URL in your browser (replace `<TOKEN>` with your bot token):
+   ```
+   https://api.telegram.org/bot<TOKEN>/getUpdates
+   ```
+3. Find the `chat.id` value in the JSON response
+
+### 3. Configure environment variables
+
+Add these to your `.env` file (local) or Vercel environment variables (production):
+
+| Variable | Description |
+|----------|-------------|
+| `TELEGRAM_BOT_TOKEN` | The bot token from BotFather |
+| `TELEGRAM_CHAT_ID` | Your chat/group ID |
+
+## Deployment
+
+### Vercel
+
+```bash
+# Link to Vercel project
+vercel link
+
+# Add environment variables
+vercel env add TELEGRAM_BOT_TOKEN
+vercel env add TELEGRAM_CHAT_ID
+
+# Deploy preview
+vercel
+
+# Deploy to production
+vercel --prod
+```
+
+### Custom Domain
+
+1. Go to Vercel Dashboard > Settings > Domains
+2. Add `infinex.studio`
+3. Update DNS records at your registrar:
+   - **CNAME**: `cname.vercel-dns.com` (for `infinex.studio`)
+   - Or use the **A record** provided by Vercel
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── [locale]/           # Localized pages
+│   │   ├── layout.tsx      # Locale layout with fonts & metadata
+│   │   ├── page.tsx        # Home page
+│   │   ├── ai-transformation/
+│   │   ├── ai-engineering/
+│   │   ├── about/
+│   │   └── get-started/
+│   ├── api/contact/        # Contact form API route
+│   ├── layout.tsx          # Root layout
+│   ├── sitemap.ts
+│   └── robots.ts
+├── components/
+│   ├── layout/             # Header, Footer, LanguageSwitcher
+│   ├── home/               # Hero, Approach, WhyNow, FAQ, etc.
+│   ├── forms/              # ContactForm
+│   └── ui/                 # Button, Card, Accordion, AnimatedSection
+├── i18n/                   # next-intl config (routing, request, navigation)
+└── lib/                    # Telegram, validations
+messages/
+├── fr.json                 # French translations
+└── en.json                 # English translations
+proxy.ts                    # Locale detection middleware
+```
+
+## Manual Actions Required
+
+- [ ] Create Telegram bot (see instructions above)
+- [ ] Add `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` to Vercel env vars
+- [ ] Configure custom domain `infinex.studio` in Vercel
+- [ ] Replace logo text with actual logo in `/public/images/logo.svg`
+- [ ] Replace placeholder testimonials with real ones in translation files

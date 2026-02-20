@@ -1,0 +1,287 @@
+{
+  "metadata": {
+    "title": "Infinex — AI Transformation & Augmented Engineering",
+    "description": "Infinex is your AI transformation partner. Strategy, augmented engineering, measurable results. Go from AI-absent to AI-native.",
+    "siteName": "Infinex"
+  },
+  "nav": {
+    "home": "Home",
+    "transformation": "AI Transformation",
+    "engineering": "AI Engineering",
+    "about": "About",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "title": "Infinite growth.",
+    "subtitle": "Your AI transformation partner.",
+    "description": "We help ambitious companies go from AI-absent to AI-native. Clear strategy, fast execution, measurable results.",
+    "cta": "Get Started",
+    "learnMore": "Learn more"
+  },
+  "approach": {
+    "sectionTitle": "Our approach",
+    "sectionSubtitle": "Three pillars to become AI-native.",
+    "strategy": {
+      "title": "AI Strategy",
+      "description": "Process audit, bottleneck identification, custom AI roadmap. No useless slides — a concrete action plan."
+    },
+    "transformation": {
+      "title": "AI Transformation",
+      "description": "AI solution implementation, team training, change management. We execute, you measure the ROI."
+    },
+    "engineering": {
+      "title": "AI Engineering",
+      "description": "Outcome-based engineering squads augmented by AI. You pay for features delivered, not hours spent."
+    }
+  },
+  "whyNow": {
+    "title": "Why now?",
+    "paragraph1": "The cost of intelligence is trending toward zero. What about you?",
+    "paragraph2": "Every month without an AI strategy is a competitive advantage you're handing to your rivals. AI is not optional. It's a strategic imperative.",
+    "paragraph3": "You have a choice. Disrupt yourself. Or be disrupted by others.",
+    "highlight": "AI is not scary. Ignoring it is."
+  },
+  "testimonials": {
+    "title": "What our clients say",
+    "comingSoon": "Testimonials coming soon",
+    "items": [
+      {
+        "quote": "Infinex transformed the way we work in 3 months. 4x ROI on the first project.",
+        "author": "CTO",
+        "company": "Tech Company"
+      },
+      {
+        "quote": "No jargon, no endless slides. Just concrete, measurable results.",
+        "author": "CEO",
+        "company": "SaaS Scale-up"
+      },
+      {
+        "quote": "Infinex's AI engineering team delivers in 2 weeks what used to take us 2 months.",
+        "author": "VP Engineering",
+        "company": "Industrial Group"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "question": "How is Infinex different from a traditional consulting firm?",
+        "answer": "We don't make slides, we execute. We measure ROI, not hours. No 200-page decks. No 6-month diagnostics. We identify opportunities, implement, and measure."
+      },
+      {
+        "question": "What does 'AI transformation' mean?",
+        "answer": "Identify your bottlenecks, build tailored AI solutions, train your teams, measure results. Rinse and repeat. The goal: make you AI-native, not AI-dependent."
+      },
+      {
+        "question": "How does pricing work?",
+        "answer": "Engineering: monthly subscription based on results. Transformation: custom partnership adapted to your context. Contact us to discuss."
+      },
+      {
+        "question": "What type of companies do you work with?",
+        "answer": "Mature companies (>$5M revenue) motivated to become AI-native but lacking the internal resources or expertise to do it alone."
+      },
+      {
+        "question": "How does AI engineering work?",
+        "answer": "Outcome-based engineering squads, augmented by AI. You pay for features delivered, not hours. We integrate AI into every stage of development to deliver faster and better."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Stay on the right side of history.",
+    "subtitle": "We don't care about today. We care about the next decade.",
+    "cta": "Let's discuss your transformation"
+  },
+  "transformation": {
+    "title": "AI Transformation",
+    "metaTitle": "AI Transformation",
+    "metaDescription": "Go from AI-absent to AI-native with Infinex. Strategy, implementation, training — measurable results, not slides.",
+    "hero": {
+      "title": "From AI-absent to AI-native.",
+      "subtitle": "No 200-slide decks. No 6-month diagnostics. We execute."
+    },
+    "process": {
+      "title": "Our process",
+      "steps": [
+        {
+          "title": "Rapid diagnostic",
+          "description": "In 2 weeks, we map your processes, identify bottlenecks and AI quick wins."
+        },
+        {
+          "title": "Strategy & roadmap",
+          "description": "A clear AI roadmap, prioritized by business impact, with measurable KPIs."
+        },
+        {
+          "title": "Implementation",
+          "description": "We deploy AI solutions, train your teams, iterate rapidly."
+        },
+        {
+          "title": "Measure & optimize",
+          "description": "Continuous ROI tracking, adjustments, scaling solutions that work."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Measurable benefits",
+      "items": [
+        {
+          "metric": "60%",
+          "description": "reduction in repetitive tasks on average"
+        },
+        {
+          "metric": "3x",
+          "description": "faster decision cycles"
+        },
+        {
+          "metric": "40%",
+          "description": "productivity gain on trained teams"
+        },
+        {
+          "metric": "< 3 months",
+          "description": "to see the first tangible results"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to transform your business?",
+      "button": "Start your transformation"
+    }
+  },
+  "engineering": {
+    "title": "AI Engineering",
+    "metaTitle": "AI Engineering",
+    "metaDescription": "Outcome-based engineering squads augmented by AI. Pay for features delivered, not hours spent.",
+    "hero": {
+      "title": "The engineering of the future, today.",
+      "subtitle": "Outcome-based engineering squads, augmented by AI."
+    },
+    "model": {
+      "title": "Our model",
+      "subscription": {
+        "title": "Monthly subscription",
+        "description": "A fixed rate, concrete results. No surprises, no extra hours billed."
+      },
+      "outcome": {
+        "title": "Outcome-based",
+        "description": "You pay for features delivered and objectives met, not for time spent."
+      },
+      "ai": {
+        "title": "AI-augmented",
+        "description": "Our engineers use AI at every step: code, tests, review, deployment. Result: 3x velocity."
+      }
+    },
+    "advantages": {
+      "title": "Why not a traditional dev shop?",
+      "items": [
+        {
+          "traditional": "Hourly billing",
+          "infinex": "Outcome-based billing"
+        },
+        {
+          "traditional": "No incentive to finish fast",
+          "infinex": "Incentives aligned with your goals"
+        },
+        {
+          "traditional": "Imposed tech stack",
+          "infinex": "Optimal stack for your project"
+        },
+        {
+          "traditional": "Junior engineers",
+          "infinex": "Senior engineers augmented by AI"
+        },
+        {
+          "traditional": "No AI in the process",
+          "infinex": "AI integrated at every step"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to scale your engineering?",
+      "button": "Discover our offerings"
+    }
+  },
+  "about": {
+    "title": "About",
+    "metaTitle": "About Infinex",
+    "metaDescription": "Discover the vision, mission and values of Infinex — your AI transformation partner.",
+    "vision": {
+      "title": "Our vision",
+      "description": "A world where every company fully leverages AI's potential. Not as a gimmick, but as a fundamental strategic advantage."
+    },
+    "mission": {
+      "title": "Our mission",
+      "description": "Accelerate AI transformation for ambitious companies with a results-oriented, fast, no-BS consulting approach."
+    },
+    "values": {
+      "title": "Our values",
+      "items": [
+        {
+          "title": "Execution > theory",
+          "description": "We don't make slides, we deliver results. Every action must have measurable impact."
+        },
+        {
+          "title": "Radical transparency",
+          "description": "No jargon, no empty promises. We tell you what works, what doesn't, and why."
+        },
+        {
+          "title": "Speed of iteration",
+          "description": "The market doesn't wait. We test fast, learn fast, adapt fast."
+        },
+        {
+          "title": "Long-term partnership",
+          "description": "We don't sell projects. We build partnerships that transform your company sustainably."
+        }
+      ]
+    },
+    "team": {
+      "title": "The team",
+      "description": "A team of AI, engineering and strategy experts, united by one obsession: making you AI-native.",
+      "comingSoon": "Profiles coming soon"
+    }
+  },
+  "getStarted": {
+    "title": "Get Started",
+    "metaTitle": "Get Started with Infinex",
+    "metaDescription": "Contact Infinex to start your AI transformation. Quick contact form, response within 24h.",
+    "heading": "Ready to take action?",
+    "subtitle": "Fill out the form below. We'll get back to you within 24 hours.",
+    "form": {
+      "name": "Full name",
+      "namePlaceholder": "John Doe",
+      "email": "Email",
+      "emailPlaceholder": "john@company.com",
+      "company": "Company",
+      "companyPlaceholder": "Your company name",
+      "revenue": "Approximate revenue",
+      "revenueOptions": {
+        "placeholder": "Select a range",
+        "lessThan1M": "< $1M",
+        "from1Mto5M": "$1M - $5M",
+        "from5Mto25M": "$5M - $25M",
+        "moreThan25M": "$25M+"
+      },
+      "message": "Message / need",
+      "messagePlaceholder": "Briefly describe your need or project...",
+      "submit": "Send",
+      "sending": "Sending...",
+      "success": "Message sent! We'll get back to you very soon.",
+      "error": "An error occurred. Please try again or contact us directly."
+    },
+    "validation": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email",
+      "companyRequired": "Company is required",
+      "revenueRequired": "Please select a revenue range",
+      "messageRequired": "Message is required",
+      "messageMin": "Message must contain at least 10 characters"
+    }
+  },
+  "footer": {
+    "tagline": "Your AI transformation partner.",
+    "services": "Services",
+    "company": "Company",
+    "rights": "All rights reserved.",
+    "contact": "Contact"
+  }
+}
