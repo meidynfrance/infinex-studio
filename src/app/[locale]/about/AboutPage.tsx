@@ -81,28 +81,6 @@ export function AboutPage() {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="py-24 sm:py-32">
-        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-          <AnimatedSection>
-            <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl font-bold sm:text-4xl">
-              {t("team.title")}
-            </h2>
-            <p className="mt-4 text-lg text-text-secondary">
-              {t("team.description")}
-            </p>
-            <p className="mt-8 text-text-secondary italic">
-              {t("team.comingSoon")}
-            </p>
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.2} className="mt-12">
-            <Button href="/get-started" size="lg">
-              {t("values.items.0.title")}
-            </Button>
-          </AnimatedSection>
-        </div>
-      </section>
     </>
   );
 }

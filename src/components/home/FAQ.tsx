@@ -7,7 +7,7 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 export function FAQ() {
   const t = useTranslations("faq");
 
-  const items = [0, 1, 2, 3, 4].map((i) => ({
+  const items = [0, 1, 2, 3].map((i) => ({
     question: t(`items.${i}.question`),
     answer: t(`items.${i}.answer`),
   }));

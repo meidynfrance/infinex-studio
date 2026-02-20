@@ -23,7 +23,7 @@
     "sectionSubtitle": "Trois piliers pour devenir AI-native.",
     "strategy": {
       "title": "Stratégie IA",
-      "description": "Audit de vos processus, identification des bottlenecks, feuille de route IA sur mesure. Pas de slides inutiles — un plan d'action concret."
+      "description": "Audit de vos processus, identification des taches automatisables, feuille de route IA sur mesure. Pas de slides inutiles — un plan d'action concret."
     },
     "transformation": {
       "title": "Transformation IA",
@@ -31,12 +31,12 @@
     },
     "engineering": {
       "title": "Ingénierie IA",
-      "description": "Squads d'ingénierie outcome-based augmentées par l'IA. Vous payez pour les features livrées, pas les heures passées."
+      "description": "Equipe d'ingénierie augmentée par l'IA. Vous payez pour les fonctionnalités livrées, pas les heures passées."
     }
   },
   "whyNow": {
     "title": "Pourquoi maintenant ?",
-    "paragraph1": "Le coût de l'intelligence tend vers zéro. Et vous ?",
+    "paragraph1": "Le coût de l'intelligence tend vers zéro.",
     "paragraph2": "Chaque mois qui passe sans stratégie IA, c'est un avantage concurrentiel que vous laissez à vos rivaux. L'IA n'est pas une option. C'est un impératif stratégique.",
     "paragraph3": "Vous avez le choix. Vous transformer. Ou être transformé par les autres.",
     "highlight": "L'IA n'est pas effrayante. L'ignorer, si."
@@ -47,18 +47,18 @@
     "items": [
       {
         "quote": "Infinex a transformé notre façon de travailler en 3 mois. ROI x4 sur le premier projet.",
-        "author": "Directeur Technique",
-        "company": "Entreprise Tech"
+        "author": "Jeremy CTO",
+        "company": "Entreprise Tech FR"
       },
       {
         "quote": "Pas de jargon, pas de slides interminables. Juste des résultats concrets et mesurables.",
-        "author": "CEO",
+        "author": "Xavier CEO",
         "company": "Scale-up SaaS"
       },
       {
-        "quote": "L'équipe d'ingénierie IA d'Infinex livre en 2 semaines ce qui nous prenait 2 mois.",
-        "author": "VP Engineering",
-        "company": "Groupe Industriel"
+        "quote": "L'équipe d'ingénierie IA d'Infinex livre en 2 semaines ce qui nous prenait 6 mois.",
+        "author": "Gabriel, CEO",
+        "company": "Groupe Média"
       }
     ]
   },
@@ -71,19 +71,15 @@
       },
       {
         "question": "Que signifie « transformation IA » ?",
-        "answer": "Identifier vos bottlenecks, créer des solutions IA adaptées, former vos équipes, mesurer les résultats. Rinse and repeat. L'objectif : vous rendre AI-native, pas AI-dépendant."
-      },
-      {
-        "question": "Comment fonctionne le pricing ?",
-        "answer": "Ingénierie : abonnement mensuel basé sur les résultats. Transformation : partenariat custom adapté à votre contexte. Contactez-nous pour en discuter."
+        "answer": "Identifier vos goulots d'étranglement, créer des solutions IA adaptées, former vos équipes, mesurer les résultats. Rinse and repeat. L'objectif : vous rendre AI-native, pas AI-dépendant."
       },
       {
         "question": "Avec quel type d'entreprises travaillez-vous ?",
-        "answer": "Entreprises matures (>5M€ CA) motivées à devenir AI-native mais qui n'ont pas les ressources ou l'expertise en interne pour le faire seules."
+        "answer": "Entreprises matures (>100K€ CA annuel) motivées à devenir AI-native mais qui n'ont pas les ressources ou l'expertise en interne pour le faire seules."
       },
       {
         "question": "Comment fonctionne l'ingénierie IA ?",
-        "answer": "Squads d'ingénierie outcome-based, augmentées par l'IA. Vous payez pour les features livrées, pas les heures. On intègre l'IA dans chaque étape du développement pour livrer plus vite et mieux."
+        "answer": "Nous avons une équipe d'ingénieurs augmentés par l'IA. Vous payez pour les features livrées, pas les heures. On intègre l'IA dans chaque étape du développement pour livrer plus vite et mieux."
       }
     ]
   },
@@ -137,7 +133,7 @@
           "description": "de gain de productivité sur les équipes formées"
         },
         {
-          "metric": "< 3 mois",
+          "metric": "< 2 mois",
           "description": "pour voir les premiers résultats tangibles"
         }
       ]
@@ -232,11 +228,6 @@
           "description": "On ne vend pas des projets. On construit des partenariats qui transforment votre entreprise durablement."
         }
       ]
-    },
-    "team": {
-      "title": "L'équipe",
-      "description": "Une équipe d'experts en IA, ingénierie et stratégie, unis par une obsession : vous rendre AI-native.",
-      "comingSoon": "Profils à venir"
     }
   },
   "getStarted": {
@@ -244,38 +235,8 @@
     "metaTitle": "Commencer avec Infinex",
     "metaDescription": "Contactez Infinex pour lancer votre transformation IA. Formulaire de contact rapide, réponse sous 24h.",
     "heading": "Prêt à passer à l'action ?",
-    "subtitle": "Remplissez le formulaire ci-dessous. On revient vers vous sous 24h.",
-    "form": {
-      "name": "Nom complet",
-      "namePlaceholder": "Jean Dupont",
-      "email": "Email",
-      "emailPlaceholder": "jean@entreprise.com",
-      "company": "Entreprise",
-      "companyPlaceholder": "Nom de votre entreprise",
-      "revenue": "Chiffre d'affaires approximatif",
-      "revenueOptions": {
-        "placeholder": "Sélectionnez une tranche",
-        "lessThan1M": "< 1M€",
-        "from1Mto5M": "1M€ - 5M€",
-        "from5Mto25M": "5M€ - 25M€",
-        "moreThan25M": "25M€+"
-      },
-      "message": "Message / besoin",
-      "messagePlaceholder": "Décrivez brièvement votre besoin ou votre projet...",
-      "submit": "Envoyer",
-      "sending": "Envoi en cours...",
-      "success": "Message envoyé ! On revient vers vous très vite.",
-      "error": "Une erreur est survenue. Réessayez ou contactez-nous directement."
-    },
-    "validation": {
-      "nameRequired": "Le nom est requis",
-      "emailRequired": "L'email est requis",
-      "emailInvalid": "Email invalide",
-      "companyRequired": "L'entreprise est requise",
-      "revenueRequired": "Veuillez sélectionner une tranche de CA",
-      "messageRequired": "Le message est requis",
-      "messageMin": "Le message doit contenir au moins 10 caractères"
-    }
+    "subtitle": "Échangeons directement. On vous répond en quelques minutes.",
+    "whatsapp": "Discuter sur WhatsApp"
   },
   "footer": {
     "tagline": "Votre partenaire de transformation IA.",

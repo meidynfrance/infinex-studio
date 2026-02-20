@@ -23,7 +23,7 @@
     "sectionSubtitle": "Three pillars to become AI-native.",
     "strategy": {
       "title": "AI Strategy",
-      "description": "Process audit, bottleneck identification, custom AI roadmap. No useless slides — a concrete action plan."
+      "description": "Process audit, identification of automatable tasks, custom AI roadmap. No useless slides — a concrete action plan."
     },
     "transformation": {
       "title": "AI Transformation",
@@ -31,12 +31,12 @@
     },
     "engineering": {
       "title": "AI Engineering",
-      "description": "Outcome-based engineering squads augmented by AI. You pay for features delivered, not hours spent."
+      "description": "AI-augmented engineering team. You pay for features delivered, not hours spent."
     }
   },
   "whyNow": {
     "title": "Why now?",
-    "paragraph1": "The cost of intelligence is trending toward zero. What about you?",
+    "paragraph1": "The cost of intelligence is trending toward zero.",
     "paragraph2": "Every month without an AI strategy is a competitive advantage you're handing to your rivals. AI is not optional. It's a strategic imperative.",
     "paragraph3": "You have a choice. Disrupt yourself. Or be disrupted by others.",
     "highlight": "AI is not scary. Ignoring it is."
@@ -47,18 +47,18 @@
     "items": [
       {
         "quote": "Infinex transformed the way we work in 3 months. 4x ROI on the first project.",
-        "author": "CTO",
-        "company": "Tech Company"
+        "author": "Jeremy CTO",
+        "company": "FR Tech Company"
       },
       {
         "quote": "No jargon, no endless slides. Just concrete, measurable results.",
-        "author": "CEO",
+        "author": "Xavier CEO",
         "company": "SaaS Scale-up"
       },
       {
-        "quote": "Infinex's AI engineering team delivers in 2 weeks what used to take us 2 months.",
-        "author": "VP Engineering",
-        "company": "Industrial Group"
+        "quote": "Infinex's AI engineering team delivers in 2 weeks what used to take us 6 months.",
+        "author": "Gabriel, CEO",
+        "company": "Media Group"
       }
     ]
   },
@@ -74,16 +74,12 @@
         "answer": "Identify your bottlenecks, build tailored AI solutions, train your teams, measure results. Rinse and repeat. The goal: make you AI-native, not AI-dependent."
       },
       {
-        "question": "How does pricing work?",
-        "answer": "Engineering: monthly subscription based on results. Transformation: custom partnership adapted to your context. Contact us to discuss."
-      },
-      {
         "question": "What type of companies do you work with?",
-        "answer": "Mature companies (>$5M revenue) motivated to become AI-native but lacking the internal resources or expertise to do it alone."
+        "answer": "Mature companies (>$100K annual revenue) motivated to become AI-native but lacking the internal resources or expertise to do it alone."
       },
       {
         "question": "How does AI engineering work?",
-        "answer": "Outcome-based engineering squads, augmented by AI. You pay for features delivered, not hours. We integrate AI into every stage of development to deliver faster and better."
+        "answer": "We have a team of AI-augmented engineers. You pay for features delivered, not hours. We integrate AI into every stage of development to deliver faster and better."
       }
     ]
   },
@@ -137,7 +133,7 @@
           "description": "productivity gain on trained teams"
         },
         {
-          "metric": "< 3 months",
+          "metric": "< 2 months",
           "description": "to see the first tangible results"
         }
       ]
@@ -232,11 +228,6 @@
           "description": "We don't sell projects. We build partnerships that transform your company sustainably."
         }
       ]
-    },
-    "team": {
-      "title": "The team",
-      "description": "A team of AI, engineering and strategy experts, united by one obsession: making you AI-native.",
-      "comingSoon": "Profiles coming soon"
     }
   },
   "getStarted": {
@@ -244,38 +235,8 @@
     "metaTitle": "Get Started with Infinex",
     "metaDescription": "Contact Infinex to start your AI transformation. Quick contact form, response within 24h.",
     "heading": "Ready to take action?",
-    "subtitle": "Fill out the form below. We'll get back to you within 24 hours.",
-    "form": {
-      "name": "Full name",
-      "namePlaceholder": "John Doe",
-      "email": "Email",
-      "emailPlaceholder": "john@company.com",
-      "company": "Company",
-      "companyPlaceholder": "Your company name",
-      "revenue": "Approximate revenue",
-      "revenueOptions": {
-        "placeholder": "Select a range",
-        "lessThan1M": "< $1M",
-        "from1Mto5M": "$1M - $5M",
-        "from5Mto25M": "$5M - $25M",
-        "moreThan25M": "$25M+"
-      },
-      "message": "Message / need",
-      "messagePlaceholder": "Briefly describe your need or project...",
-      "submit": "Send",
-      "sending": "Sending...",
-      "success": "Message sent! We'll get back to you very soon.",
-      "error": "An error occurred. Please try again or contact us directly."
-    },
-    "validation": {
-      "nameRequired": "Name is required",
-      "emailRequired": "Email is required",
-      "emailInvalid": "Invalid email",
-      "companyRequired": "Company is required",
-      "revenueRequired": "Please select a revenue range",
-      "messageRequired": "Message is required",
-      "messageMin": "Message must contain at least 10 characters"
-    }
+    "subtitle": "Let's chat directly. We reply within minutes.",
+    "whatsapp": "Chat on WhatsApp"
   },
   "footer": {
     "tagline": "Your AI transformation partner.",
