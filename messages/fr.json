@@ -4,6 +4,7 @@
     "description": "Infinex est votre partenaire de transformation IA. Stratégie, ingénierie augmentée, résultats mesurables. Passez de AI-absent à AI-native.",
     "siteName": "Infinex"
   },
+  "whatsappCta": "Discuter sur WhatsApp",
   "nav": {
     "home": "Accueil",
     "transformation": "Transformation IA",
@@ -97,7 +98,7 @@
       },
       {
         "question": "Que signifie « transformation IA » ?",
-        "answer": "Identifier vos goulots d'étranglement, créer des solutions IA adaptées, former vos équipes, mesurer les résultats. Rinse and repeat. L'objectif : vous rendre AI-native, pas AI-dépendant."
+        "answer": "Identifier vos goulots d'étranglement, créer des solutions IA adaptées, former vos équipes, mesurer les résultats. L'objectif : vous rendre AI-native."
       },
       {
         "question": "Avec quel type d'entreprises travaillez-vous ?",

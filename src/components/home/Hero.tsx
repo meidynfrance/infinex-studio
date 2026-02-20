@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/Button";
+import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 
 export function Hero() {
   const t = useTranslations("hero");
@@ -47,14 +47,9 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.45 }}
-          className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
+          className="mt-10"
         >
-          <Button href="/get-started" size="lg">
-            {t("cta")}
-          </Button>
-          <Button href="/ai-transformation" variant="outline" size="lg">
-            {t("learnMore")}
-          </Button>
+          <WhatsAppButton />
         </motion.div>
       </div>
     </section>

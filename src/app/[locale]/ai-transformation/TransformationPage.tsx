@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Card } from "@/components/ui/Card";
-import { Button } from "@/components/ui/Button";
+import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 
 export function TransformationPage() {
   const t = useTranslations("transformation");
@@ -101,9 +101,7 @@ export function TransformationPage() {
             {t("cta.title")}
           </h2>
           <div className="mt-8">
-            <Button href="/get-started" size="lg">
-              {t("cta.button")}
-            </Button>
+            <WhatsAppButton />
           </div>
         </AnimatedSection>
       </section>

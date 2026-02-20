@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
-import { Button } from "@/components/ui/Button";
+import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 
 export function FinalCTA() {
   const t = useTranslations("finalCta");
@@ -23,9 +23,7 @@ export function FinalCTA() {
             {t("subtitle")}
           </p>
           <div className="mt-10">
-            <Button href="/get-started" size="lg">
-              {t("cta")}
-            </Button>
+            <WhatsAppButton />
           </div>
         </AnimatedSection>
       </div>
