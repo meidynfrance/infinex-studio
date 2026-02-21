@@ -1,19 +1,26 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 type Props = {
   labelKey?: string;
   className?: string;
 };
 
+const prefillMessages: Record<string, string> = {
+  fr: "Bonjour, je veux un audit pour savoir comment transformer ma boîte en AI-native.",
+  en: "Hi, I'd like an audit to find out how to transform my company into an AI-native business.",
+};
+
 export function WhatsAppButton({ labelKey, className = "" }: Props) {
   const t = useTranslations();
+  const locale = useLocale();
   const label = labelKey ? t(labelKey) : t("whatsappCta");
+  const message = encodeURIComponent(prefillMessages[locale] || prefillMessages.fr);
 
   return (
     <a
-      href="https://wa.me/33647770475"
+      href={`https://wa.me/33647770475?text=${message}`}
       target="_blank"
       rel="noopener noreferrer"
       className={`inline-flex items-center gap-3 rounded-xl bg-[#25D366] px-8 py-4 text-lg font-semibold text-white transition-opacity hover:opacity-80 ${className}`}
