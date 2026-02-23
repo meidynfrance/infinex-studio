@@ -11,9 +11,9 @@ type Props = {
 export function Card({ children, className = "", hover = true }: Props) {
   return (
     <div
-      className={`rounded-2xl border border-border bg-background-secondary p-6 md:p-8 ${
+      className={`rounded-2xl border border-border bg-surface p-6 md:p-8 ${
         hover
-          ? "transition-all duration-300 hover:border-accent-primary/50 hover:shadow-lg hover:shadow-accent-primary/5 hover:-translate-y-1"
+          ? "transition-all duration-300 hover:border-accent-primary/50 hover:shadow-lg hover:shadow-accent-primary/10 hover:-translate-y-1"
           : ""
       } ${className}`}
     >

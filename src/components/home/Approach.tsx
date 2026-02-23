@@ -5,19 +5,23 @@ import { Card } from "@/components/ui/Card";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 
 const icons = [
-  // Strategy - compass
-  <svg key="strategy" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-accent-primary">
-    <circle cx="12" cy="12" r="10" />
-    <polygon points="16.24,7.76 14.12,14.12 7.76,16.24 9.88,9.88" />
+  // Audit - magnifying glass / search
+  <svg key="audit" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-accent-primary">
+    <circle cx="11" cy="11" r="8" />
+    <path d="M21 21l-4.35-4.35" />
+    <path d="M11 8v6M8 11h6" />
   </svg>,
-  // Transformation - refresh
-  <svg key="transform" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-accent-primary">
-    <path d="M21 2v6h-6M3 22v-6h6M21 13a9 9 0 01-15.36 5.64M3 11a9 9 0 0115.36-5.64" />
+  // Implementation - rocket
+  <svg key="implementation" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-accent-secondary">
+    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z" />
+    <path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z" />
+    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
   </svg>,
-  // Engineering - code
-  <svg key="engineering" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-accent-primary">
-    <polyline points="16 18 22 12 16 6" />
-    <polyline points="8 6 2 12 8 18" />
+  // Training - graduation cap / users with lightbulb
+  <svg key="training" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-accent-tertiary">
+    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+    <circle cx="9" cy="7" r="4" />
+    <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
   </svg>,
 ];
 
@@ -25,9 +29,9 @@ export function Approach() {
   const t = useTranslations("approach");
 
   const cards = [
-    { key: "strategy", icon: icons[0] },
-    { key: "transformation", icon: icons[1] },
-    { key: "engineering", icon: icons[2] },
+    { key: "audit", icon: icons[0] },
+    { key: "implementation", icon: icons[1] },
+    { key: "training", icon: icons[2] },
   ] as const;
 
   return (

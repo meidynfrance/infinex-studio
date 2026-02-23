@@ -4,15 +4,13 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { LanguageSwitcher } from "./LanguageSwitcher";
-import { Button } from "@/components/ui/Button";
 
 export function Header() {
   const t = useTranslations("nav");
+  const tCta = useTranslations();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "/ai-transformation", label: t("transformation") },
-    { href: "/ai-engineering", label: t("engineering") },
     { href: "/about", label: t("about") },
   ];
 
@@ -38,9 +36,14 @@ export function Header() {
 
         <div className="hidden md:flex items-center gap-4">
           <LanguageSwitcher />
-          <Button href="/get-started" size="sm">
-            {t("getStarted")}
-          </Button>
+          <a
+            href="https://wa.me/33647770475"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-lg bg-accent-primary px-4 py-2 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+          >
+            {tCta("whatsappCta")}
+          </a>
         </div>
 
         {/* Mobile menu button */}
@@ -75,9 +78,14 @@ export function Header() {
             ))}
             <div className="flex items-center gap-4 pt-2">
               <LanguageSwitcher />
-              <Button href="/get-started" size="sm" className="flex-1">
-                {t("getStarted")}
-              </Button>
+              <a
+                href="https://wa.me/33647770475"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg bg-accent-primary px-4 py-2 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+              >
+                {tCta("whatsappCta")}
+              </a>
             </div>
           </nav>
         </div>

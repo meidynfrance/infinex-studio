@@ -6,10 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const locales = ["fr", "en"];
   const routes = [
     "",
-    "/ai-transformation",
-    "/ai-engineering",
     "/about",
-    "/get-started",
   ];
 
   const entries: MetadataRoute.Sitemap = [];

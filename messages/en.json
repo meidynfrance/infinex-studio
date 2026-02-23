@@ -1,95 +1,85 @@
 {
   "metadata": {
-    "title": "Infinex — AI Transformation & Augmented Engineering",
-    "description": "Infinex is your AI transformation partner. Strategy, augmented engineering, measurable results. Become AI-native with a clear strategy and concrete results.",
+    "title": "Infinex — AI-Powered Margin Growth",
+    "description": "Infinex helps SMBs increase their margins with AI. Automation, productivity, training — concrete results in just weeks.",
     "siteName": "Infinex"
   },
   "whatsappCta": "Chat with the founder",
   "nav": {
     "home": "Home",
-    "transformation": "AI Transformation",
-    "engineering": "AI Engineering",
-    "about": "About",
-    "getStarted": "Get Started"
+    "about": "About"
   },
   "hero": {
-    "title": "Infinite growth.",
-    "subtitle": "Your AI transformation partner.",
-    "description": "We partner with ambitious companies on their AI transformation journey. A tailored strategy, agile execution, and results you can measure.",
-    "cta": "Get Started",
+    "title": "Increase your margins with AI.",
+    "subtitle": "Less busywork. More productivity. Results in weeks, not months.",
+    "description": "We automate your processes, train your teams, and cut your admin overhead. Same headcount, more output — and better quality.",
+    "cta": "Chat with the founder",
     "learnMore": "Learn more"
   },
   "approach": {
-    "sectionTitle": "Our approach",
-    "sectionSubtitle": "Three pillars to become AI-native.",
-    "strategy": {
-      "title": "AI Strategy",
-      "description": "Process audit, identification of automatable tasks, custom AI roadmap. A concrete action plan, ready to deploy."
+    "sectionTitle": "How we do it",
+    "sectionSubtitle": "Three concrete steps to fast results.",
+    "audit": {
+      "title": "Audit & Diagnostic",
+      "description": "We analyze your processes in detail to find where AI can cut costs and save time. You walk away with a clear, actionable plan with numbers."
     },
-    "transformation": {
-      "title": "AI Transformation",
-      "description": "AI solution implementation, team training, change management. We deploy together, and measure results at every step."
+    "implementation": {
+      "title": "Deployment",
+      "description": "We set up the automations and AI tools tailored to your business. No theory, just action — you see the first results quickly."
     },
-    "engineering": {
-      "title": "AI Engineering",
-      "description": "AI-augmented engineering team. You pay for features delivered, not hours spent."
+    "training": {
+      "title": "Training",
+      "description": "We train your teams on the best AI tools so they become self-sufficient. Hands-on workshops they can apply the very next day."
     }
   },
   "useCases": {
     "title": "What we actually do",
-    "subtitle": "AI solutions that transform your day-to-day.",
+    "subtitle": "Concrete AI solutions that directly impact your margins.",
     "items": [
       {
-        "title": "Process automation",
-        "description": "We identify your repetitive tasks and automate them with AI. Fewer errors, more speed, your teams focus on what matters."
+        "title": "Admin automation",
+        "description": "Invoices, follow-ups, data entry, reporting — we automate everything that wastes your time and money."
       },
       {
-        "title": "Generative AI",
-        "description": "Content generation, document synthesis, conversational assistants — we deploy generative AI where it has real business impact."
+        "title": "AI assistants for your teams",
+        "description": "Your employees get an AI assistant for daily tasks: writing, summaries, research, customer responses."
       },
       {
-        "title": "Predictive AI",
-        "description": "Anticipate demand, detect anomalies, optimize decisions. We turn your data into a concrete growth lever."
+        "title": "Reporting & dashboards",
+        "description": "Your data turned into actionable insights. Make better decisions faster with intelligent dashboards."
       },
       {
-        "title": "Custom business tools",
-        "description": "We design and build AI-augmented internal tools, perfectly tailored to your processes and your business."
+        "title": "Enhanced client management",
+        "description": "Faster responses, personalized follow-up, higher satisfaction. AI improves every client interaction."
       },
       {
-        "title": "AI training for your teams",
-        "description": "We train your teams to use AI daily. 100% hands-on workshops with tools they'll use the very next day."
+        "title": "Hands-on AI training",
+        "description": "Your teams trained on the most powerful AI tools. ChatGPT, Claude, business tools — 100% practical workshops."
       },
       {
-        "title": "AI Agents",
-        "description": "We build autonomous agents that handle complex tasks for you: research, analysis, lead qualification, customer support, and much more."
+        "title": "Prospecting agents",
+        "description": "AI agents that qualify your leads, enrich your contacts, and prepare your sales meetings automatically."
       }
     ]
-  },
-  "whyNow": {
-    "title": "Why now is the right time",
-    "paragraph1": "AI has never been this accessible and powerful.",
-    "paragraph2": "The tools are mature, costs are dropping, and you can see initial results within weeks. It's the perfect time to lay the foundations of your transformation.",
-    "paragraph3": "Every company moves at its own pace. But those who start today build a lasting advantage, step by step.",
-    "highlight": "The best time to start is now."
   },
   "testimonials": {
     "title": "What our clients say",
     "comingSoon": "Testimonials coming soon",
     "items": [
       {
-        "quote": "Infinex transformed the way we work in 3 months. 4x ROI on the first project.",
-        "author": "Jeremy CTO",
-        "company": "FR Tech Company"
+        "quote": "We cut our admin tasks by 60% in 6 weeks. Our teams can finally focus on the business.",
+        "author": "Jeremy, Head of Operations",
+        "company": "Tech SMB — 35 employees"
       },
       {
-        "quote": "Clear communication, concrete and measurable results. Exactly what we were looking for.",
-        "author": "Xavier CEO",
-        "company": "SaaS Scale-up"
+        "quote": "Our margins increased by 15% in 3 months, simply by automating what we'd been doing manually for years.",
+        "author": "Xavier, CEO",
+        "company": "Digital agency — 20 employees"
       },
       {
-        "quote": "Infinex's AI engineering team delivers in 2 weeks what used to take us 6 months.",
+        "quote": "The training transformed our team. Everyone uses AI daily and we produce twice as much as before.",
         "author": "Gabriel, CEO",
-        "company": "Media Group"
+        "company": "Consulting firm — 15 employees"
       }
     ]
   },
@@ -97,182 +87,65 @@
     "title": "Frequently asked questions",
     "items": [
       {
-        "question": "How is Infinex different from a traditional consulting firm?",
-        "answer": "Our approach is centered on action and results. We quickly identify opportunities, implement solutions, and measure ROI at every step. You get a concrete action plan within the first few weeks."
+        "question": "How does it work in practice?",
+        "answer": "We start with a process audit. We identify quick wins and deploy the first automations. Results come quickly."
       },
       {
-        "question": "What does 'AI transformation' mean?",
-        "answer": "Identify your bottlenecks, build tailored AI solutions, train your teams, measure results. Rinse and repeat. The goal: make you AI-native, not AI-dependent."
+        "question": "What results can I expect and how quickly?",
+        "answer": "On average, our clients reduce their admin workload by 60% and gain 40% in productivity. First results are visible in 3 weeks, full ROI in under 2 months."
       },
       {
-        "question": "What type of companies do you work with?",
-        "answer": "Mature companies (>$100K annual revenue) motivated to become AI-native but lacking the internal resources or expertise to do it alone."
+        "question": "What type of business is this for?",
+        "answer": "SMBs with 5 to 200 employees that want to produce more with the same team. Industry doesn't matter — if you have repetitive processes, we can help."
       },
       {
-        "question": "How does AI engineering work?",
-        "answer": "We have a team of AI-augmented engineers. You pay for features delivered, not hours. We integrate AI into every stage of development to deliver faster and better."
+        "question": "How much does it cost?",
+        "answer": "Every project is different. We offer a free initial conversation to understand your needs and give you a precise estimate. The investment is always lower than the savings generated."
       }
     ]
   },
   "finalCta": {
-    "title": "Let's build your future, together.",
-    "subtitle": "We think long term. Our goal: a transformation that carries you forward for years to come.",
-    "cta": "Let's discuss your transformation"
-  },
-  "transformation": {
-    "title": "AI Transformation",
-    "metaTitle": "AI Transformation",
-    "metaDescription": "Become AI-native with Infinex. Strategy, implementation, training — for measurable results and rapid impact.",
-    "hero": {
-      "title": "From AI-absent to AI-native.",
-      "subtitle": "An agile, results-driven approach. First impacts within weeks."
-    },
-    "process": {
-      "title": "Our process",
-      "steps": [
-        {
-          "title": "Rapid diagnostic",
-          "description": "In 2 weeks, we map your processes, identify bottlenecks and AI quick wins."
-        },
-        {
-          "title": "Strategy & roadmap",
-          "description": "A clear AI roadmap, prioritized by business impact, with measurable KPIs."
-        },
-        {
-          "title": "Implementation",
-          "description": "We deploy AI solutions, train your teams, iterate rapidly."
-        },
-        {
-          "title": "Measure & optimize",
-          "description": "Continuous ROI tracking, adjustments, scaling solutions that work."
-        }
-      ]
-    },
-    "benefits": {
-      "title": "Measurable benefits",
-      "items": [
-        {
-          "metric": "60%",
-          "description": "reduction in repetitive tasks on average"
-        },
-        {
-          "metric": "3x",
-          "description": "faster decision cycles"
-        },
-        {
-          "metric": "40%",
-          "description": "productivity gain on trained teams"
-        },
-        {
-          "metric": "< 2 months",
-          "description": "to see the first tangible results"
-        }
-      ]
-    },
-    "cta": {
-      "title": "Ready to transform your business?",
-      "button": "Start your transformation"
-    }
-  },
-  "engineering": {
-    "title": "AI Engineering",
-    "metaTitle": "AI Engineering",
-    "metaDescription": "Outcome-based engineering squads augmented by AI. Pay for features delivered, not hours spent.",
-    "hero": {
-      "title": "The engineering of the future, today.",
-      "subtitle": "Outcome-based engineering squads, augmented by AI."
-    },
-    "model": {
-      "title": "Our model",
-      "subscription": {
-        "title": "Monthly subscription",
-        "description": "A fixed rate, concrete results. A clear and predictable budget, with guaranteed outcomes."
-      },
-      "outcome": {
-        "title": "Outcome-based",
-        "description": "You pay for features delivered and objectives met, not for time spent."
-      },
-      "ai": {
-        "title": "AI-augmented",
-        "description": "Our engineers use AI at every step: code, tests, review, deployment. Result: 3x velocity."
-      }
-    },
-    "advantages": {
-      "title": "What sets us apart",
-      "items": [
-        {
-          "traditional": "Hourly billing",
-          "infinex": "Outcome-based billing"
-        },
-        {
-          "traditional": "Time-based incentives",
-          "infinex": "Incentives aligned with your goals"
-        },
-        {
-          "traditional": "Standardized tech stack",
-          "infinex": "Optimal stack for your project"
-        },
-        {
-          "traditional": "Variable-sized teams",
-          "infinex": "Senior engineers augmented by AI"
-        },
-        {
-          "traditional": "Traditional development",
-          "infinex": "AI integrated at every step"
-        }
-      ]
-    },
-    "cta": {
-      "title": "Ready to scale your engineering?",
-      "button": "Discover our offerings"
-    }
+    "title": "Ready to increase your margins?",
+    "subtitle": "A 15-minute chat is all it takes to identify your first opportunities. No commitment.",
+    "cta": "Chat with the founder"
   },
   "about": {
     "title": "About",
     "metaTitle": "About Infinex",
-    "metaDescription": "Discover the vision, mission and values of Infinex — your AI transformation partner.",
+    "metaDescription": "Infinex helps SMBs increase their margins with AI. Discover our vision, mission, and values.",
     "vision": {
       "title": "Our vision",
-      "description": "A world where every company fully leverages AI's potential. Not as a gimmick, but as a fundamental strategic advantage."
+      "description": "A world where every SMB uses AI to work smarter, not harder. Where technology frees up time for what truly matters: serving your clients and growing your business."
     },
     "mission": {
       "title": "Our mission",
-      "description": "Accelerate AI transformation for ambitious companies with a pragmatic, action-oriented approach that delivers concrete results."
+      "description": "Make AI accessible and profitable for SMBs. We turn technological complexity into concrete results: less overhead, more productivity, better margins."
     },
     "values": {
       "title": "Our values",
       "items": [
         {
-          "title": "Action first",
-          "description": "Every project starts with a concrete action plan, with measurable results at every step."
+          "title": "Results first",
+          "description": "We don't sell advice, we deliver results. Every action is measured by its impact on your margins."
         },
         {
-          "title": "Radical transparency",
-          "description": "Clear and honest communication. We share what works, what can be improved, and why."
+          "title": "Total transparency",
+          "description": "No jargon, no empty promises. We tell you exactly what we do, how much it costs, and what it returns."
         },
         {
-          "title": "Speed of iteration",
-          "description": "We move fast, test, learn, and adapt. Agility is in our DNA."
+          "title": "Speed of execution",
+          "description": "First results in 3 weeks, not 6 months. We move fast because your time is money."
         },
         {
-          "title": "Long-term partnership",
-          "description": "We build lasting partnerships that transform your company for the long term."
+          "title": "Lasting partnership",
+          "description": "We build long-term relationships. Your success is our best advertisement."
         }
       ]
     }
   },
-  "getStarted": {
-    "title": "Get Started",
-    "metaTitle": "Get Started with Infinex",
-    "metaDescription": "Contact Infinex to start your AI transformation. Quick contact form, response within 24h.",
-    "heading": "Want to learn more?",
-    "subtitle": "Let's chat directly. We reply within minutes.",
-    "whatsapp": "Chat with the founder"
-  },
   "footer": {
-    "tagline": "Your AI transformation partner.",
-    "services": "Services",
-    "company": "Company",
+    "tagline": "AI-powered margin growth.",
+    "company": "Navigation",
     "rights": "All rights reserved.",
     "contact": "Contact"
   }

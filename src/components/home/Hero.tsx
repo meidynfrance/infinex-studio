@@ -3,18 +3,17 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
-import { ParticleField } from "@/components/ui/ParticleField";
 
 export function Hero() {
   const t = useTranslations("hero");
 
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-20">
-      {/* Background gradient */}
+      {/* Soft background gradients */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-1/2 top-1/4 h-96 w-96 -translate-x-1/2 rounded-full bg-accent-primary/10 blur-[128px]" />
-        <div className="absolute right-1/4 bottom-1/4 h-64 w-64 rounded-full bg-accent-secondary/10 blur-[96px]" />
-        <ParticleField variant="hero" />
+        <div className="absolute left-1/4 top-1/4 h-96 w-96 rounded-full bg-accent-primary/5 blur-[128px]" />
+        <div className="absolute right-1/4 bottom-1/3 h-80 w-80 rounded-full bg-accent-secondary/5 blur-[100px]" />
+        <div className="absolute left-1/2 bottom-1/4 h-64 w-64 -translate-x-1/2 rounded-full bg-accent-tertiary/5 blur-[96px]" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">

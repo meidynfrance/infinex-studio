@@ -5,64 +5,39 @@ export function Footer() {
   const t = useTranslations();
 
   return (
-    <footer className="border-t border-border bg-background">
+    <footer className="bg-[#1E1E2E] text-white">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Brand */}
-          <div className="md:col-span-1">
+          <div>
             <Link href="/" className="text-xl font-bold tracking-tight font-[family-name:var(--font-space-grotesk)]">
               INFINEX
             </Link>
-            <p className="mt-3 text-sm text-text-secondary">
+            <p className="mt-3 text-sm text-white/60">
               {t("footer.tagline")}
             </p>
           </div>
 
-          {/* Services */}
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-text-secondary">
-              {t("footer.services")}
-            </h3>
-            <ul className="mt-4 space-y-3">
-              <li>
-                <Link
-                  href="/ai-transformation"
-                  className="text-sm text-text-secondary transition-colors hover:text-text-primary"
-                >
-                  {t("nav.transformation")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/ai-engineering"
-                  className="text-sm text-text-secondary transition-colors hover:text-text-primary"
-                >
-                  {t("nav.engineering")}
-                </Link>
-              </li>
-            </ul>
-          </div>
-
           {/* Company */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-text-secondary">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-white/60">
               {t("footer.company")}
             </h3>
             <ul className="mt-4 space-y-3">
               <li>
                 <Link
-                  href="/about"
-                  className="text-sm text-text-secondary transition-colors hover:text-text-primary"
+                  href="/"
+                  className="text-sm text-white/60 transition-colors hover:text-white"
                 >
-                  {t("nav.about")}
+                  {t("nav.home")}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/get-started"
-                  className="text-sm text-text-secondary transition-colors hover:text-text-primary"
+                  href="/about"
+                  className="text-sm text-white/60 transition-colors hover:text-white"
                 >
-                  {t("nav.getStarted")}
+                  {t("nav.about")}
                 </Link>
               </li>
             </ul>
@@ -70,7 +45,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-text-secondary">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-white/60">
               {t("footer.contact")}
             </h3>
             <div className="mt-4">
@@ -89,8 +64,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-border pt-8 text-center">
-          <p className="text-sm text-text-secondary">
+        <div className="mt-12 border-t border-white/10 pt-8 text-center">
+          <p className="text-sm text-white/40">
             &copy; {new Date().getFullYear()} Infinex. {t("footer.rights")}
           </p>
         </div>

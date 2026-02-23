@@ -8,8 +8,8 @@ type Props = {
 };
 
 const prefillMessages: Record<string, string> = {
-  fr: "Bonjour, je veux un audit pour savoir comment transformer ma boîte en AI-native.",
-  en: "Hi, I'd like an audit to find out how to transform my company into an AI-native business.",
+  fr: "Bonjour, je souhaite discuter de comment l'IA peut augmenter les marges de mon entreprise.",
+  en: "Hi, I'd like to discuss how AI can increase my company's margins.",
 };
 
 export function WhatsAppButton({ labelKey, className = "" }: Props) {

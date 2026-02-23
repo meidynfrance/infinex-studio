@@ -2,11 +2,12 @@
 
 ## Projet
 
-Infinex est une agence de transformation IA et d'ingénierie augmentée par l'IA. On aide les entreprises à passer d'un état "AI-absent" à "AI-native" avec une approche orientée résultats, rapide, sans bullshit consulting.
+Infinex aide les PME à augmenter leurs marges grâce à l'IA. On automatise les process, on forme les équipes, et on réduit la charge administrative. Résultats concrets en quelques semaines.
 
 **Domaine** : infinex.studio (live sur Vercel)
 **Repo** : https://github.com/meidynfrance/infinex-studio
 **Marché** : Francophone d'abord, international ensuite.
+**Cible** : Chefs d'entreprise de PME (5-200 salariés)
 
 ---
 
@@ -43,35 +44,31 @@ Infinex est une agence de transformation IA et d'ingénierie augmentée par l'IA
 ## Structure du site
 
 ### 1. Page d'accueil (`/`)
-- **Hero** : "Croissance infinie." + bouton WhatsApp
-- **Approche** : 3 cartes (Stratégie, Transformation, Ingénierie)
-- **Cas d'usage** : 6 cartes (Automatisation, IA générative, IA prédictive, Outils métier, Formation, Agents IA)
-- **Pourquoi maintenant** : Texte provocateur sur l'urgence IA
+- **Hero** : "Augmentez vos marges grâce à l'IA." + bouton WhatsApp
+- **Approche** : 3 cartes (Audit & Diagnostic, Déploiement, Formation)
+- **Cas d'usage** : 6 cartes (Automatisation admin, Assistants IA, Reporting, Gestion client, Formation IA, Agents prospection)
+- **Métriques** : 4 chiffres d'impact (-60% admin, +40% productivité, 3 sem. résultats, <2 mois ROI)
 - **Témoignages** : 3 témoignages (Jeremy, Xavier, Gabriel)
 - **FAQ** : 4 questions en accordéon
-- **CTA final** : "Restez du bon côté de l'histoire" + WhatsApp
+- **CTA final** : "Prêt à augmenter vos marges ?" + WhatsApp
 
-### 2. Transformation IA (`/ai-transformation`)
-- Hero + process en 4 étapes + bénéfices chiffrés + CTA WhatsApp
-
-### 3. Ingénierie IA (`/ai-engineering`)
-- Hero + modèle (abo, outcome, IA) + comparaison vs dev shop + CTA WhatsApp
-
-### 4. À propos (`/about`)
+### 2. À propos (`/about`)
 - Vision, mission, 4 valeurs (pas de section équipe)
 
-### 5. Get Started (`/get-started`)
-- Titre + sous-titre + bouton WhatsApp (pas de formulaire)
-
 ### CTA
-- **Tous les CTA** sont des boutons "Discuter sur WhatsApp" via le composant `WhatsAppButton`
+- **Tous les CTA** sont des boutons "Discuter avec le fondateur" via le composant `WhatsAppButton`
 - Numéro WhatsApp : +33647770475
 
 ---
 
 ## Design & Branding
 
-- **Palette** : Noir #0A0A0A, Gris #141414, Violet #8B5CF6, Cyan #06B6D4, Blanc #FAFAFA, Gris texte #A1A1AA
+- **Palette (thème clair)** :
+  - Fond : Off-white #FAFAF8, Crème #F0EDE6
+  - Accents : Indigo #4F46E5, Teal #0D9488, Ambre #D97706
+  - Texte : Quasi-noir #1E1E2E, Gris ardoise #64748B
+  - Bordures : #E2DFD6, Cartes : Blanc #FFFFFF
+- **Footer** : Fond sombre #1E1E2E avec texte blanc
 - **Fonts** : Space Grotesk (headings), Inter (body) via next/font
 - **Logo** : Texte "INFINEX" (en attendant le vrai logo)
 - **Animations** : Framer Motion (fade in, slide up au scroll)
@@ -111,18 +108,15 @@ infinex-studio/
 │   ├── app/
 │   │   ├── [locale]/
 │   │   │   ├── layout.tsx     # Fonts, metadata, Header/Footer
-│   │   │   ├── page.tsx       # Home (Hero, Approach, UseCases, WhyNow, Testimonials, FAQ, FinalCTA)
-│   │   │   ├── ai-transformation/
-│   │   │   ├── ai-engineering/
-│   │   │   ├── about/
-│   │   │   └── get-started/
+│   │   │   ├── page.tsx       # Home (Hero, Approach, UseCases, Metrics, Testimonials, FAQ, FinalCTA)
+│   │   │   └── about/
 │   │   ├── api/contact/route.ts
 │   │   ├── layout.tsx         # Root layout (passthrough)
 │   │   ├── globals.css        # Tailwind + theme colors
 │   │   ├── sitemap.ts / robots.ts / icon.svg
 │   ├── components/
 │   │   ├── layout/            # Header, Footer, LanguageSwitcher
-│   │   ├── home/              # Hero, Approach, UseCases, WhyNow, Testimonials, FAQ, FinalCTA
+│   │   ├── home/              # Hero, Approach, UseCases, Metrics, Testimonials, FAQ, FinalCTA
 │   │   ├── forms/             # ContactForm (inactive, remplacé par WhatsApp)
 │   │   └── ui/                # Button, Card, Accordion, AnimatedSection, WhatsAppButton
 │   ├── lib/                   # telegram.ts, validations.ts
