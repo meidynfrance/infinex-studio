@@ -67,19 +67,19 @@
     "comingSoon": "Testimonials coming soon",
     "items": [
       {
-        "quote": "We cut our admin tasks by 60% in 6 weeks. Our teams can finally focus on the business.",
+        "quote": "We used to spend so much time on admin. Now it's handled, and my teams can finally focus on what actually drives revenue.",
         "author": "Jeremy, Head of Operations",
-        "company": "Tech SMB — 35 employees"
+        "company": "Tech SMB"
       },
       {
-        "quote": "Our margins increased by 15% in 3 months, simply by automating what we'd been doing manually for years.",
+        "quote": "We'd been doing everything manually for years without questioning it. Once it was automated, we wondered why we hadn't done it sooner.",
         "author": "Xavier, CEO",
-        "company": "Digital agency — 20 employees"
+        "company": "Digital agency"
       },
       {
-        "quote": "The training transformed our team. Everyone uses AI daily and we produce twice as much as before.",
+        "quote": "What really changed is that everyone on the team now knows how to use AI daily. It unlocked something.",
         "author": "Gabriel, CEO",
-        "company": "Consulting firm — 15 employees"
+        "company": "Consulting firm"
       }
     ]
   },

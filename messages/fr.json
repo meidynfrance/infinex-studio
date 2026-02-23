@@ -67,19 +67,19 @@
     "comingSoon": "Témoignages à venir",
     "items": [
       {
-        "quote": "On a réduit nos tâches administratives de 60% en 6 semaines. Nos équipes peuvent enfin se concentrer sur le business.",
+        "quote": "On passait un temps fou sur l'administratif. Aujourd'hui c'est géré, et mes équipes se concentrent enfin sur ce qui rapporte.",
         "author": "Jeremy, Directeur des opérations",
-        "company": "PME Tech — 35 salariés"
+        "company": "PME Tech"
       },
       {
-        "quote": "Nos marges ont augmenté de 15% en 3 mois, simplement en automatisant ce qu'on faisait à la main depuis des années.",
+        "quote": "On faisait tout à la main depuis des années sans se poser de questions. Une fois automatisé, on s'est demandé pourquoi on n'avait pas fait ça plus tôt.",
         "author": "Xavier, CEO",
-        "company": "Agence digitale — 20 salariés"
+        "company": "Agence digitale"
       },
       {
-        "quote": "La formation a transformé notre équipe. Chacun utilise l'IA au quotidien et on produit deux fois plus qu'avant.",
+        "quote": "Ce qui a vraiment changé, c'est que chacun dans l'équipe sait utiliser l'IA au quotidien. Ça a débloqué quelque chose.",
         "author": "Gabriel, CEO",
-        "company": "Cabinet de conseil — 15 salariés"
+        "company": "Cabinet de conseil"
       }
     ]
   },
