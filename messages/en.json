@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Infinex — AI Transformation & Augmented Engineering",
-    "description": "Infinex is your AI transformation partner. Strategy, augmented engineering, measurable results. Go from AI-absent to AI-native.",
+    "description": "Infinex is your AI transformation partner. Strategy, augmented engineering, measurable results. Become AI-native with a clear strategy and concrete results.",
     "siteName": "Infinex"
   },
   "whatsappCta": "Chat with the founder",
@@ -15,7 +15,7 @@
   "hero": {
     "title": "Infinite growth.",
     "subtitle": "Your AI transformation partner.",
-    "description": "We help ambitious companies go from AI-absent to AI-native. Clear strategy, fast execution, measurable results.",
+    "description": "We partner with ambitious companies on their AI transformation journey. A tailored strategy, agile execution, and results you can measure.",
     "cta": "Get Started",
     "learnMore": "Learn more"
   },
@@ -24,11 +24,11 @@
     "sectionSubtitle": "Three pillars to become AI-native.",
     "strategy": {
       "title": "AI Strategy",
-      "description": "Process audit, identification of automatable tasks, custom AI roadmap. No useless slides — a concrete action plan."
+      "description": "Process audit, identification of automatable tasks, custom AI roadmap. A concrete action plan, ready to deploy."
     },
     "transformation": {
       "title": "AI Transformation",
-      "description": "AI solution implementation, team training, change management. We execute, you measure the ROI."
+      "description": "AI solution implementation, team training, change management. We deploy together, and measure results at every step."
     },
     "engineering": {
       "title": "AI Engineering",
@@ -49,7 +49,7 @@
       },
       {
         "title": "Predictive AI",
-        "description": "Anticipate demand, detect anomalies, optimize decisions. We turn your data into a competitive advantage."
+        "description": "Anticipate demand, detect anomalies, optimize decisions. We turn your data into a concrete growth lever."
       },
       {
         "title": "Custom business tools",
@@ -57,7 +57,7 @@
       },
       {
         "title": "AI training for your teams",
-        "description": "We train your teams to use AI daily. No theory — hands-on workshops with tools they'll use the very next day."
+        "description": "We train your teams to use AI daily. 100% hands-on workshops with tools they'll use the very next day."
       },
       {
         "title": "AI Agents",
@@ -66,11 +66,11 @@
     ]
   },
   "whyNow": {
-    "title": "Why now?",
-    "paragraph1": "The cost of intelligence is trending toward zero.",
-    "paragraph2": "Every month without an AI strategy is a competitive advantage you're handing to your rivals. AI is not optional. It's a strategic imperative.",
-    "paragraph3": "You have a choice. Disrupt yourself. Or be disrupted by others.",
-    "highlight": "AI is not scary. Ignoring it is."
+    "title": "Why now is the right time",
+    "paragraph1": "AI has never been this accessible and powerful.",
+    "paragraph2": "The tools are mature, costs are dropping, and you can see initial results within weeks. It's the perfect time to lay the foundations of your transformation.",
+    "paragraph3": "Every company moves at its own pace. But those who start today build a lasting advantage, step by step.",
+    "highlight": "The best time to start is now."
   },
   "testimonials": {
     "title": "What our clients say",
@@ -82,7 +82,7 @@
         "company": "FR Tech Company"
       },
       {
-        "quote": "No jargon, no endless slides. Just concrete, measurable results.",
+        "quote": "Clear communication, concrete and measurable results. Exactly what we were looking for.",
         "author": "Xavier CEO",
         "company": "SaaS Scale-up"
       },
@@ -98,7 +98,7 @@
     "items": [
       {
         "question": "How is Infinex different from a traditional consulting firm?",
-        "answer": "We don't make slides, we execute. We measure ROI, not hours. No 200-page decks. No 6-month diagnostics. We identify opportunities, implement, and measure."
+        "answer": "Our approach is centered on action and results. We quickly identify opportunities, implement solutions, and measure ROI at every step. You get a concrete action plan within the first few weeks."
       },
       {
         "question": "What does 'AI transformation' mean?",
@@ -115,17 +115,17 @@
     ]
   },
   "finalCta": {
-    "title": "Stay on the right side of history.",
-    "subtitle": "We don't care about today. We care about the next decade.",
+    "title": "Let's build your future, together.",
+    "subtitle": "We think long term. Our goal: a transformation that carries you forward for years to come.",
     "cta": "Let's discuss your transformation"
   },
   "transformation": {
     "title": "AI Transformation",
     "metaTitle": "AI Transformation",
-    "metaDescription": "Go from AI-absent to AI-native with Infinex. Strategy, implementation, training — measurable results, not slides.",
+    "metaDescription": "Become AI-native with Infinex. Strategy, implementation, training — for measurable results and rapid impact.",
     "hero": {
       "title": "From AI-absent to AI-native.",
-      "subtitle": "No 200-slide decks. No 6-month diagnostics. We execute."
+      "subtitle": "An agile, results-driven approach. First impacts within weeks."
     },
     "process": {
       "title": "Our process",
@@ -186,7 +186,7 @@
       "title": "Our model",
       "subscription": {
         "title": "Monthly subscription",
-        "description": "A fixed rate, concrete results. No surprises, no extra hours billed."
+        "description": "A fixed rate, concrete results. A clear and predictable budget, with guaranteed outcomes."
       },
       "outcome": {
         "title": "Outcome-based",
@@ -198,26 +198,26 @@
       }
     },
     "advantages": {
-      "title": "Why not a traditional dev shop?",
+      "title": "What sets us apart",
       "items": [
         {
           "traditional": "Hourly billing",
           "infinex": "Outcome-based billing"
         },
         {
-          "traditional": "No incentive to finish fast",
+          "traditional": "Time-based incentives",
           "infinex": "Incentives aligned with your goals"
         },
         {
-          "traditional": "Imposed tech stack",
+          "traditional": "Standardized tech stack",
           "infinex": "Optimal stack for your project"
         },
         {
-          "traditional": "Junior engineers",
+          "traditional": "Variable-sized teams",
           "infinex": "Senior engineers augmented by AI"
         },
         {
-          "traditional": "No AI in the process",
+          "traditional": "Traditional development",
           "infinex": "AI integrated at every step"
         }
       ]
@@ -237,26 +237,26 @@
     },
     "mission": {
       "title": "Our mission",
-      "description": "Accelerate AI transformation for ambitious companies with a results-oriented, fast, no-BS consulting approach."
+      "description": "Accelerate AI transformation for ambitious companies with a pragmatic, action-oriented approach that delivers concrete results."
     },
     "values": {
       "title": "Our values",
       "items": [
         {
-          "title": "Execution > theory",
-          "description": "We don't make slides, we deliver results. Every action must have measurable impact."
+          "title": "Action first",
+          "description": "Every project starts with a concrete action plan, with measurable results at every step."
         },
         {
           "title": "Radical transparency",
-          "description": "No jargon, no empty promises. We tell you what works, what doesn't, and why."
+          "description": "Clear and honest communication. We share what works, what can be improved, and why."
         },
         {
           "title": "Speed of iteration",
-          "description": "The market doesn't wait. We test fast, learn fast, adapt fast."
+          "description": "We move fast, test, learn, and adapt. Agility is in our DNA."
         },
         {
           "title": "Long-term partnership",
-          "description": "We don't sell projects. We build partnerships that transform your company sustainably."
+          "description": "We build lasting partnerships that transform your company for the long term."
         }
       ]
     }
@@ -265,7 +265,7 @@
     "title": "Get Started",
     "metaTitle": "Get Started with Infinex",
     "metaDescription": "Contact Infinex to start your AI transformation. Quick contact form, response within 24h.",
-    "heading": "Ready to take action?",
+    "heading": "Want to learn more?",
     "subtitle": "Let's chat directly. We reply within minutes.",
     "whatsapp": "Chat with the founder"
   },
