@@ -50,7 +50,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.45 }}
           className="mt-10"
         >
-          <WhatsAppButton />
+          <WhatsAppButton section="hero" />
         </motion.div>
       </div>
     </section>

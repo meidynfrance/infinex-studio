@@ -1,9 +1,11 @@
 "use client";
 
 import { useTranslations, useLocale } from "next-intl";
+import { sendGAEvent } from "@next/third-parties/google";
 
 type Props = {
   labelKey?: string;
+  section?: string;
   className?: string;
 };
 
@@ -12,17 +14,22 @@ const prefillMessages: Record<string, string> = {
   en: "Hi, I'd like to find out what AI can do for my company's bottom line.",
 };
 
-export function WhatsAppButton({ labelKey, className = "" }: Props) {
+export function WhatsAppButton({ labelKey, section = "unknown", className = "" }: Props) {
   const t = useTranslations();
   const locale = useLocale();
   const label = labelKey ? t(labelKey) : t("whatsappCta");
   const message = encodeURIComponent(prefillMessages[locale] || prefillMessages.fr);
+
+  const handleClick = () => {
+    sendGAEvent("event", "whatsapp_click", { section, locale });
+  };
 
   return (
     <a
       href={`https://wa.me/33647770475?text=${message}`}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={handleClick}
       className={`inline-flex items-center gap-3 rounded-xl bg-[#25D366] px-8 py-4 text-lg font-semibold text-white transition-opacity hover:opacity-80 ${className}`}
     >
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">

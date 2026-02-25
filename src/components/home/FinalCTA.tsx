@@ -23,7 +23,7 @@ export function FinalCTA() {
             {t("subtitle")}
           </p>
           <div className="mt-10">
-            <WhatsAppButton />
+            <WhatsAppButton section="final_cta" />
           </div>
         </AnimatedSection>
       </div>
