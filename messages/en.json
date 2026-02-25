@@ -4,7 +4,7 @@
     "description": "Infinex helps SMBs increase their margins with AI. Automation, productivity, training — concrete results in just weeks.",
     "siteName": "Infinex"
   },
-  "whatsappCta": "Chat with the founder",
+  "whatsappCta": "See what AI can earn you",
   "nav": {
     "home": "Home",
     "about": "About"
@@ -13,7 +13,7 @@
     "title": "Increase your margins with AI.",
     "subtitle": "Less busywork. More productivity. Results in weeks, not months.",
     "description": "We automate your processes, train your teams, and cut your admin overhead. Same headcount, more output — and better quality.",
-    "cta": "Chat with the founder",
+    "cta": "See what AI can earn you",
     "learnMore": "Learn more"
   },
   "approach": {
@@ -107,7 +107,7 @@
   "finalCta": {
     "title": "Ready to increase your margins?",
     "subtitle": "A 15-minute chat is all it takes to identify your first opportunities. No commitment.",
-    "cta": "Chat with the founder"
+    "cta": "See what AI can earn you"
   },
   "about": {
     "title": "About",

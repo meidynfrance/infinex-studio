@@ -4,7 +4,7 @@
     "description": "Infinex aide les PME à augmenter leurs marges grâce à l'IA. Automatisation, productivité, formation — des résultats concrets en quelques semaines.",
     "siteName": "Infinex"
   },
-  "whatsappCta": "Discutez avec le fondateur",
+  "whatsappCta": "Voir ce que l'IA peut vous faire gagner",
   "nav": {
     "home": "Accueil",
     "about": "À propos"
@@ -13,7 +13,7 @@
     "title": "Augmentez vos marges grâce à l'IA.",
     "subtitle": "Moins de tâches inutiles. Plus de productivité. Des résultats en quelques semaines.",
     "description": "On automatise vos process, on forme vos équipes et on réduit votre charge administrative. Vous gardez le même effectif, mais vous produisez plus — et mieux.",
-    "cta": "Discuter avec le fondateur",
+    "cta": "Voir ce que l'IA peut vous faire gagner",
     "learnMore": "En savoir plus"
   },
   "approach": {
@@ -107,7 +107,7 @@
   "finalCta": {
     "title": "Prêt à augmenter vos marges ?",
     "subtitle": "Un échange de 15 minutes suffit pour identifier vos premières opportunités. Sans engagement.",
-    "cta": "Discuter avec le fondateur"
+    "cta": "Voir ce que l'IA peut vous faire gagner"
   },
   "about": {
     "title": "À propos",
