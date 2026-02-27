@@ -8,7 +8,7 @@ export const contactSchema = z.object({
   company: z.string().min(1),
   jobTitle: z.string().min(1),
   revenue: z.string().min(1),
-  service: z.string().min(1),
+  service: z.array(z.string()).min(1),
   needs: z.string().min(10),
   source: z.string().min(1),
 });

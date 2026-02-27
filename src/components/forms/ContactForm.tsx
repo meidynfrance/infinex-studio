@@ -183,9 +183,9 @@ export function ContactForm() {
               className="flex items-center gap-3 rounded-lg border border-border bg-surface px-4 py-3 cursor-pointer transition-colors hover:border-accent-primary has-[:checked]:border-accent-primary"
             >
               <input
-                type="radio"
+                type="checkbox"
                 value={option}
-                className="h-4 w-4"
+                className="h-4 w-4 accent-accent-primary"
                 {...register("service", { required: t("validation.serviceRequired") })}
               />
               <span className="text-sm">{t(`form.serviceOptions.${option}`)}</span>

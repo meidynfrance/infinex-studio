@@ -131,7 +131,7 @@
         "10mTo50m": "10M - 50M €",
         "over50m": "> 50M €"
       },
-      "service": "Service you're interested in",
+      "service": "Services you're interested in",
       "serviceOptions": {
         "audit": "Audit & Strategy",
         "deployment": "AI Deployment",
