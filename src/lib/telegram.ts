@@ -1,9 +1,14 @@
 type SendMessageParams = {
-  name: string;
+  firstName: string;
+  lastName: string;
   email: string;
+  phone: string;
   company: string;
+  jobTitle: string;
   revenue: string;
-  message: string;
+  service: string;
+  needs: string;
+  source: string;
   locale: string;
 };
 
@@ -22,11 +27,16 @@ export async function sendTelegramMessage(params: SendMessageParams) {
 
   const text = `🚀 Nouveau lead Infinex !
 
-👤 Nom : ${params.name}
-📧 Email : ${params.email}
-🏢 Entreprise : ${params.company}
+👤 ${params.firstName} ${params.lastName}
+📧 ${params.email}
+📱 ${params.phone}
+🏢 ${params.company}
+💼 ${params.jobTitle}
 💰 CA : ${params.revenue}
-💬 Message : ${params.message}
+🎯 Service : ${params.service}
+📣 Source : ${params.source}
+
+💬 ${params.needs}
 
 📅 ${date} | 🌐 ${params.locale}`;
 

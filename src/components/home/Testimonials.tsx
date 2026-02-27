@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Card } from "@/components/ui/Card";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 
 export function Testimonials() {
@@ -21,7 +20,7 @@ export function Testimonials() {
         <div className="mt-16 grid gap-8 md:grid-cols-3">
           {items.map((i) => (
             <AnimatedSection key={i} delay={i * 0.15}>
-              <Card className="h-full flex flex-col" hover={false}>
+              <div className="h-full flex flex-col rounded-2xl border border-border bg-surface p-6 md:p-8">
                 <div className="mb-4 text-accent-primary text-3xl">&ldquo;</div>
                 <p className="flex-1 text-text-secondary leading-relaxed italic">
                   {t(`items.${i}.quote`)}
@@ -31,10 +30,10 @@ export function Testimonials() {
                     {t(`items.${i}.author`)}
                   </p>
                   <p className="text-sm text-text-secondary">
-                    {t(`items.${i}.company`)}
+                    {t(`items.${i}.role`)}, {t(`items.${i}.company`)}
                   </p>
                 </div>
-              </Card>
+              </div>
             </AnimatedSection>
           ))}
         </div>

@@ -26,11 +26,11 @@ type Props = ButtonProps | LinkProps;
 
 const variantStyles: Record<Variant, string> = {
   primary:
-    "bg-accent-primary hover:bg-accent-primary/80 text-white shadow-lg shadow-accent-primary/25",
+    "bg-accent-primary hover:bg-accent-primary/90 text-[#0A0A0A] font-bold",
   secondary:
-    "bg-accent-secondary hover:bg-accent-secondary/80 text-white shadow-lg shadow-accent-secondary/25",
+    "bg-white/10 hover:bg-white/20 text-white border border-white/20",
   outline:
-    "border border-border hover:border-accent-primary text-text-primary hover:text-accent-primary",
+    "border border-white/30 hover:border-accent-primary text-white hover:text-accent-primary",
 };
 
 const sizeStyles: Record<Size, string> = {

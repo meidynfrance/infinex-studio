@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #FAFAF8;
-  --color-background-secondary: #F0EDE6;
-  --color-accent-primary: #4F46E5;
-  --color-accent-secondary: #0D9488;
-  --color-accent-tertiary: #D97706;
-  --color-text-primary: #1E1E2E;
-  --color-text-secondary: #64748B;
-  --color-border: #E2DFD6;
-  --color-surface: #FFFFFF;
+  --color-background: #0A0A0A;
+  --color-background-secondary: #111111;
+  --color-accent-primary: #FFE501;
+  --color-accent-secondary: #FFE501;
+  --color-accent-tertiary: #FFE501;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #9CA3AF;
+  --color-border: #2A2A2A;
+  --color-surface: #161616;
   --font-sans: var(--font-inter);
   --font-heading: var(--font-space-grotesk);
 }
@@ -22,9 +22,13 @@ body {
 
 ::selection {
   background-color: var(--color-accent-primary);
-  color: white;
+  color: #0A0A0A;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+input[type="radio"] {
+  accent-color: var(--color-accent-primary);
 }

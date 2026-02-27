@@ -4,15 +4,11 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { Button } from "@/components/ui/Button";
 
 export function Header() {
   const t = useTranslations("nav");
-  const tCta = useTranslations();
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const navLinks = [
-    { href: "/about", label: t("about") },
-  ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-lg">
@@ -22,28 +18,11 @@ export function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-sm text-text-secondary transition-colors hover:text-text-primary"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
-
         <div className="hidden md:flex items-center gap-4">
           <LanguageSwitcher />
-          <a
-            href="https://wa.me/33647770475"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg bg-accent-primary px-4 py-2 text-sm font-semibold text-white transition-opacity hover:opacity-90"
-          >
-            {tCta("whatsappCta")}
-          </a>
+          <Button href="/get-started" size="sm">
+            {t("getStarted")}
+          </Button>
         </div>
 
         {/* Mobile menu button */}
@@ -66,26 +45,11 @@ export function Header() {
       {menuOpen && (
         <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-lg">
           <nav className="flex flex-col px-4 py-4 space-y-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className="text-text-secondary transition-colors hover:text-text-primary"
-              >
-                {link.label}
-              </Link>
-            ))}
-            <div className="flex items-center gap-4 pt-2">
+            <div className="flex items-center gap-4">
               <LanguageSwitcher />
-              <a
-                href="https://wa.me/33647770475"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg bg-accent-primary px-4 py-2 text-sm font-semibold text-white transition-opacity hover:opacity-90"
-              >
-                {tCta("whatsappCta")}
-              </a>
+              <Button href="/get-started" size="sm" className="flex-1">
+                {t("getStarted")}
+              </Button>
             </div>
           </nav>
         </div>

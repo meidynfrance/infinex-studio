@@ -2,35 +2,24 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
+import { Button } from "@/components/ui/Button";
+import { SplitTextReveal } from "@/components/ui/SplitTextReveal";
 
 export function Hero() {
   const t = useTranslations("hero");
 
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-20">
-      {/* Soft background gradients */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-1/4 top-1/4 h-96 w-96 rounded-full bg-accent-primary/5 blur-[128px]" />
-        <div className="absolute right-1/4 bottom-1/3 h-80 w-80 rounded-full bg-accent-secondary/5 blur-[100px]" />
-        <div className="absolute left-1/2 bottom-1/4 h-64 w-64 -translate-x-1/2 rounded-full bg-accent-tertiary/5 blur-[96px]" />
-      </div>
-
-      <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="font-[family-name:var(--font-space-grotesk)] text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl"
-        >
-          {t("title")}
-        </motion.h1>
+      <div className="relative mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
+        <h1 className="font-[family-name:var(--font-space-grotesk)] text-5xl font-bold tracking-tight sm:text-6xl lg:text-8xl leading-[1.05]">
+          <SplitTextReveal text={t("title")} />
+        </h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.15 }}
-          className="mx-auto mt-4 text-xl text-accent-primary sm:text-2xl lg:text-3xl font-semibold"
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="mx-auto mt-6 text-xl text-accent-primary sm:text-2xl lg:text-3xl font-semibold"
         >
           {t("subtitle")}
         </motion.p>
@@ -38,8 +27,8 @@ export function Hero() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mx-auto mt-6 max-w-2xl text-lg text-text-secondary"
+          transition={{ duration: 0.6, delay: 0.7 }}
+          className="mx-auto mt-4 max-w-2xl text-lg text-text-secondary"
         >
           {t("description")}
         </motion.p>
@@ -47,10 +36,12 @@ export function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.45 }}
+          transition={{ duration: 0.6, delay: 0.9 }}
           className="mt-10"
         >
-          <WhatsAppButton section="hero" />
+          <Button href="/get-started" size="lg">
+            {t("cta")}
+          </Button>
         </motion.div>
       </div>
     </section>

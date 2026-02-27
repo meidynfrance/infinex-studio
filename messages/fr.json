@@ -1,84 +1,57 @@
 {
   "metadata": {
-    "title": "Infinex — L'IA au service de vos marges",
-    "description": "Infinex aide les PME à augmenter leurs marges grâce à l'IA. Automatisation, productivité, formation — des résultats concrets en quelques semaines.",
+    "title": "Infinex — L'IA qui booste vos marges",
+    "description": "Infinex transforme les PME avec l'IA. Stratégie, déploiement, formation. Des résultats concrets, pas des PowerPoints.",
     "siteName": "Infinex"
   },
-  "whatsappCta": "Demander mon audit gratuit",
   "nav": {
     "home": "Accueil",
-    "about": "À propos"
+    "getStarted": "Commencer"
   },
   "hero": {
-    "title": "Augmentez vos marges grâce à l'IA.",
-    "subtitle": "Moins de tâches inutiles. Plus de productivité. Des résultats en quelques semaines.",
-    "description": "On automatise vos process, on forme vos équipes et on réduit votre charge administrative. Vous gardez le même effectif, mais vous produisez plus — et mieux.",
-    "cta": "Obtenir mon audit IA gratuit",
-    "learnMore": "En savoir plus"
+    "title": "Prenez une longueur d'avance.",
+    "subtitle": "Votre partenaire transformation IA.",
+    "description": "On définit et exécute votre stratégie IA à la vitesse d'une startup.",
+    "cta": "Commencer"
   },
   "approach": {
-    "sectionTitle": "Comment on fait",
-    "sectionSubtitle": "Trois étapes concrètes pour des résultats rapides.",
+    "sectionTitle": "De la réflexion à l'action, on couvre tout.",
+    "sectionSubtitle": "Trois leviers pour transformer votre entreprise avec l'IA.",
     "audit": {
-      "title": "Audit & Diagnostic",
-      "description": "On analyse vos process en détail pour identifier où l'IA peut réduire vos coûts et gagner du temps. Vous repartez avec un plan d'action chiffré."
+      "title": "Audit & Stratégie",
+      "description": "Pas de présentations interminables. On audite vos process, on identifie les quick wins, et vous repartez avec un plan d'action chiffré."
     },
     "implementation": {
-      "title": "Déploiement",
-      "description": "On met en place les automatisations et les outils IA adaptés à votre activité. Pas de théorie, que du concret — vous voyez les premiers résultats rapidement."
+      "title": "Déploiement IA",
+      "description": "Automatisations sur mesure, outils IA intégrés à votre activité. On construit, on déploie, vous mesurez l'impact."
     },
     "training": {
-      "title": "Formation",
-      "description": "On forme vos équipes aux meilleurs outils IA pour qu'elles deviennent autonomes. Des ateliers pratiques, applicables dès le lendemain."
+      "title": "Formation & Adoption",
+      "description": "Vos équipes formées aux meilleurs outils IA. Des ateliers pratiques pour une adoption durable et autonome."
     }
   },
-  "useCases": {
-    "title": "Ce qu'on fait concrètement",
-    "subtitle": "Des solutions IA concrètes qui impactent directement vos marges.",
-    "items": [
-      {
-        "title": "Automatisation administrative",
-        "description": "Factures, relances, saisie de données, reporting — on automatise tout ce qui vous fait perdre du temps et de l'argent."
-      },
-      {
-        "title": "Assistants IA pour vos équipes",
-        "description": "Vos collaborateurs ont un assistant IA qui les aide au quotidien : rédaction, synthèse, recherche d'informations, réponses clients."
-      },
-      {
-        "title": "Reporting & tableaux de bord",
-        "description": "Vos données transformées en insights actionnables. Prenez de meilleures décisions plus rapidement grâce à des dashboards intelligents."
-      },
-      {
-        "title": "Gestion client augmentée",
-        "description": "Réponses plus rapides, suivi personnalisé, satisfaction en hausse. L'IA améliore chaque interaction avec vos clients."
-      },
-      {
-        "title": "Formation pratique IA",
-        "description": "Vos équipes formées aux outils IA les plus performants. ChatGPT, Claude, outils métier — des ateliers 100% pratiques."
-      },
-      {
-        "title": "Agents de prospection",
-        "description": "Des agents IA qui qualifient vos leads, enrichissent vos contacts et préparent vos rendez-vous commerciaux automatiquement."
-      }
-    ]
+  "valueProp": {
+    "statement": "Vous avez le choix. Adopter l'IA maintenant. Ou regarder vos concurrents le faire."
   },
   "testimonials": {
-    "title": "Ce qu'en disent nos clients",
-    "comingSoon": "Témoignages à venir",
+    "title": "Ils nous font confiance",
     "items": [
       {
-        "quote": "On passait un temps fou sur l'administratif. Aujourd'hui c'est géré, et mes équipes se concentrent enfin sur ce qui rapporte.",
-        "author": "Jeremy, Directeur des opérations",
+        "quote": "On passait un temps fou sur l'administratif. Aujourd'hui c'est géré, et mes équipes se concentrent sur ce qui rapporte.",
+        "author": "Jeremy",
+        "role": "Directeur des opérations",
         "company": "PME Tech"
       },
       {
-        "quote": "On faisait tout à la main depuis des années sans se poser de questions. Une fois automatisé, on s'est demandé pourquoi on n'avait pas fait ça plus tôt.",
-        "author": "Xavier, CEO",
+        "quote": "On faisait tout à la main depuis des années. Une fois automatisé, on s'est demandé pourquoi on n'avait pas fait ça plus tôt.",
+        "author": "Xavier",
+        "role": "CEO",
         "company": "Agence digitale"
       },
       {
-        "quote": "Ce qui a vraiment changé, c'est que chacun dans l'équipe sait utiliser l'IA au quotidien. Ça a débloqué quelque chose.",
-        "author": "Gabriel, CEO",
+        "quote": "Ce qui a changé, c'est que chacun sait utiliser l'IA au quotidien. Ça a débloqué quelque chose dans l'équipe.",
+        "author": "Gabriel",
+        "role": "CEO",
         "company": "Cabinet de conseil"
       }
     ]
@@ -88,59 +61,113 @@
     "items": [
       {
         "question": "Comment ça marche concrètement ?",
-        "answer": "On commence par un audit de vos process. On identifie les quick wins et on déploie les premières automatisations. Les résultats arrivent rapidement."
+        "answer": "On commence par un audit de vos process. On identifie les quick wins et on déploie les premières automatisations. Les résultats arrivent vite."
       },
       {
-        "question": "Quels résultats attendre et en combien de temps ?",
-        "answer": "En moyenne, nos clients réduisent leur charge admin de 60% et gagnent 40% de productivité. Les premiers résultats sont visibles en 3 semaines, le ROI complet en moins de 2 mois."
+        "question": "Quels résultats attendre ?",
+        "answer": "Nos clients réduisent leur charge admin, gagnent en productivité et voient un ROI en quelques semaines. Chaque projet est mesuré."
       },
       {
         "question": "C'est pour quel type d'entreprise ?",
-        "answer": "PME et TPE de 5 à 200 salariés qui veulent produire plus avec le même effectif. Peu importe le secteur — si vous avez des process répétitifs, on peut vous aider."
+        "answer": "PME de 5 à 200 salariés, tous secteurs. Si vous avez des process répétitifs, on peut vous aider."
       },
       {
         "question": "Combien ça coûte ?",
-        "answer": "Chaque projet est différent. On propose un premier échange gratuit pour comprendre vos besoins et vous donner une estimation précise. L'investissement est toujours inférieur aux économies générées."
+        "answer": "Chaque projet est différent. On propose un premier échange gratuit pour évaluer vos besoins et donner un devis précis."
+      },
+      {
+        "question": "En quoi Infinex est différent d'un autre cabinet ?",
+        "answer": "On ne vend pas du conseil, on livre des résultats. Pas de slides, pas de jargon. On déploie, vous mesurez."
+      },
+      {
+        "question": "Combien de temps avant les premiers résultats ?",
+        "answer": "Les premiers gains sont visibles en 3 semaines. Le ROI complet arrive généralement en moins de 2 mois."
       }
     ]
   },
   "finalCta": {
-    "title": "Découvrez combien l'IA peut vous faire gagner",
-    "subtitle": "En 15 minutes, on identifie vos leviers de marge. Audit 100% gratuit, sans engagement.",
-    "cta": "Réserver mon audit gratuit"
+    "title": "Restez du bon côté de l'histoire.",
+    "subtitle": "Le moment d'agir, c'est maintenant.",
+    "cta": "Commencer"
   },
-  "about": {
-    "title": "À propos",
-    "metaTitle": "À propos d'Infinex",
-    "metaDescription": "Infinex aide les PME à augmenter leurs marges grâce à l'IA. Découvrez notre vision, notre mission et nos valeurs.",
-    "vision": {
-      "title": "Notre vision",
-      "description": "Un monde où chaque PME utilise l'IA pour travailler mieux, pas plus. Où la technologie libère du temps pour ce qui compte vraiment : servir vos clients et développer votre activité."
+  "getStarted": {
+    "metaTitle": "Commencer — Infinex",
+    "metaDescription": "Contactez Infinex pour transformer votre entreprise avec l'IA.",
+    "title": "Prêt à transformer votre entreprise ?",
+    "subtitle": "Des audits IA aux déploiements complets, on vous accompagne à chaque étape.",
+    "benefits": [
+      {
+        "title": "Stratégie IA sur mesure",
+        "description": "Un plan d'action adapté à votre activité, pas un template générique."
+      },
+      {
+        "title": "Déploiement rapide",
+        "description": "Premiers résultats en 3 semaines, pas en 6 mois."
+      },
+      {
+        "title": "Équipes autonomes",
+        "description": "Formation pratique pour que vos collaborateurs maîtrisent l'IA au quotidien."
+      }
+    ],
+    "form": {
+      "firstName": "Prénom",
+      "firstNamePlaceholder": "Jean",
+      "lastName": "Nom",
+      "lastNamePlaceholder": "Dupont",
+      "email": "Email professionnel",
+      "emailPlaceholder": "jean@entreprise.fr",
+      "phone": "Téléphone",
+      "phonePlaceholder": "+33 6 12 34 56 78",
+      "company": "Entreprise",
+      "companyPlaceholder": "Nom de votre entreprise",
+      "jobTitle": "Fonction",
+      "jobTitlePlaceholder": "Directeur général",
+      "revenue": "Chiffre d'affaires annuel",
+      "revenueOptions": {
+        "placeholder": "Sélectionnez",
+        "under500k": "< 500K €",
+        "500kTo2m": "500K - 2M €",
+        "2mTo10m": "2M - 10M €",
+        "10mTo50m": "10M - 50M €",
+        "over50m": "> 50M €"
+      },
+      "service": "Service qui vous intéresse",
+      "serviceOptions": {
+        "audit": "Audit & Stratégie",
+        "deployment": "Déploiement IA",
+        "training": "Formation",
+        "all": "Les trois"
+      },
+      "needs": "Décrivez vos besoins",
+      "needsPlaceholder": "Parlez-nous de vos enjeux actuels et de ce que vous aimeriez accomplir avec l'IA...",
+      "source": "Comment avez-vous connu Infinex ?",
+      "sourceOptions": {
+        "placeholder": "Sélectionnez",
+        "google": "Recherche Google",
+        "linkedin": "LinkedIn",
+        "referral": "Recommandation",
+        "social": "Réseaux sociaux",
+        "event": "Événement",
+        "other": "Autre"
+      },
+      "submit": "Envoyer",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé ! On vous recontacte très vite.",
+      "error": "Une erreur est survenue. Réessayez ou contactez-nous directement."
     },
-    "mission": {
-      "title": "Notre mission",
-      "description": "Rendre l'IA accessible et rentable pour les PME. On transforme la complexité technologique en résultats concrets : moins de charge, plus de productivité, de meilleures marges."
-    },
-    "values": {
-      "title": "Nos valeurs",
-      "items": [
-        {
-          "title": "Résultats avant tout",
-          "description": "On ne vend pas du conseil, on livre des résultats. Chaque action est mesurée par son impact sur vos marges."
-        },
-        {
-          "title": "Transparence totale",
-          "description": "Pas de jargon, pas de promesses creuses. On vous dit exactement ce qu'on fait, combien ça coûte, et ce que ça rapporte."
-        },
-        {
-          "title": "Rapidité d'exécution",
-          "description": "Premiers résultats en 3 semaines, pas en 6 mois. On avance vite parce que votre temps, c'est de l'argent."
-        },
-        {
-          "title": "Partenariat durable",
-          "description": "On construit une relation long terme. Votre succès est notre meilleure publicité."
-        }
-      ]
+    "validation": {
+      "firstNameRequired": "Le prénom est requis",
+      "lastNameRequired": "Le nom est requis",
+      "emailRequired": "L'email est requis",
+      "emailInvalid": "Email invalide",
+      "phoneRequired": "Le téléphone est requis",
+      "companyRequired": "L'entreprise est requise",
+      "jobTitleRequired": "La fonction est requise",
+      "revenueRequired": "Sélectionnez une tranche de CA",
+      "serviceRequired": "Sélectionnez un service",
+      "needsRequired": "Décrivez vos besoins",
+      "needsMin": "Minimum 10 caractères",
+      "sourceRequired": "Sélectionnez une source"
     }
   },
   "footer": {

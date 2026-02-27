@@ -39,36 +39,52 @@ export function ContactForm() {
   if (status === "success") {
     return (
       <div className="rounded-2xl border border-green-500/30 bg-green-500/5 p-8 text-center">
-        <div className="text-4xl mb-4">✓</div>
+        <div className="text-4xl mb-4">&#10003;</div>
         <p className="text-lg text-green-400">{t("form.success")}</p>
       </div>
     );
   }
 
   const inputStyles =
-    "w-full rounded-lg border border-border bg-background px-4 py-3 text-text-primary placeholder:text-text-secondary/50 transition-colors focus:border-accent-primary focus:outline-none focus:ring-1 focus:ring-accent-primary";
+    "w-full rounded-lg border border-border bg-surface px-4 py-3 text-text-primary placeholder:text-text-secondary/50 transition-colors focus:border-accent-primary focus:outline-none focus:ring-1 focus:ring-accent-primary";
   const errorStyles = "mt-1 text-sm text-red-400";
+  const labelStyles = "block text-sm font-medium mb-2";
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-      {/* Name */}
-      <div>
-        <label htmlFor="name" className="block text-sm font-medium mb-2">
-          {t("form.name")}
-        </label>
-        <input
-          id="name"
-          type="text"
-          placeholder={t("form.namePlaceholder")}
-          className={inputStyles}
-          {...register("name", { required: t("validation.nameRequired") })}
-        />
-        {errors.name && <p className={errorStyles}>{errors.name.message}</p>}
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+      {/* First + Last Name */}
+      <div className="grid grid-cols-2 gap-4">
+        <div>
+          <label htmlFor="firstName" className={labelStyles}>
+            {t("form.firstName")}
+          </label>
+          <input
+            id="firstName"
+            type="text"
+            placeholder={t("form.firstNamePlaceholder")}
+            className={inputStyles}
+            {...register("firstName", { required: t("validation.firstNameRequired") })}
+          />
+          {errors.firstName && <p className={errorStyles}>{errors.firstName.message}</p>}
+        </div>
+        <div>
+          <label htmlFor="lastName" className={labelStyles}>
+            {t("form.lastName")}
+          </label>
+          <input
+            id="lastName"
+            type="text"
+            placeholder={t("form.lastNamePlaceholder")}
+            className={inputStyles}
+            {...register("lastName", { required: t("validation.lastNameRequired") })}
+          />
+          {errors.lastName && <p className={errorStyles}>{errors.lastName.message}</p>}
+        </div>
       </div>
 
       {/* Email */}
       <div>
-        <label htmlFor="email" className="block text-sm font-medium mb-2">
+        <label htmlFor="email" className={labelStyles}>
           {t("form.email")}
         </label>
         <input
@@ -87,24 +103,54 @@ export function ContactForm() {
         {errors.email && <p className={errorStyles}>{errors.email.message}</p>}
       </div>
 
-      {/* Company */}
+      {/* Phone */}
       <div>
-        <label htmlFor="company" className="block text-sm font-medium mb-2">
-          {t("form.company")}
+        <label htmlFor="phone" className={labelStyles}>
+          {t("form.phone")}
         </label>
         <input
-          id="company"
-          type="text"
-          placeholder={t("form.companyPlaceholder")}
+          id="phone"
+          type="tel"
+          placeholder={t("form.phonePlaceholder")}
           className={inputStyles}
-          {...register("company", { required: t("validation.companyRequired") })}
+          {...register("phone", { required: t("validation.phoneRequired") })}
         />
-        {errors.company && <p className={errorStyles}>{errors.company.message}</p>}
+        {errors.phone && <p className={errorStyles}>{errors.phone.message}</p>}
+      </div>
+
+      {/* Company + Job Title */}
+      <div className="grid grid-cols-2 gap-4">
+        <div>
+          <label htmlFor="company" className={labelStyles}>
+            {t("form.company")}
+          </label>
+          <input
+            id="company"
+            type="text"
+            placeholder={t("form.companyPlaceholder")}
+            className={inputStyles}
+            {...register("company", { required: t("validation.companyRequired") })}
+          />
+          {errors.company && <p className={errorStyles}>{errors.company.message}</p>}
+        </div>
+        <div>
+          <label htmlFor="jobTitle" className={labelStyles}>
+            {t("form.jobTitle")}
+          </label>
+          <input
+            id="jobTitle"
+            type="text"
+            placeholder={t("form.jobTitlePlaceholder")}
+            className={inputStyles}
+            {...register("jobTitle", { required: t("validation.jobTitleRequired") })}
+          />
+          {errors.jobTitle && <p className={errorStyles}>{errors.jobTitle.message}</p>}
+        </div>
       </div>
 
       {/* Revenue */}
       <div>
-        <label htmlFor="revenue" className="block text-sm font-medium mb-2">
+        <label htmlFor="revenue" className={labelStyles}>
           {t("form.revenue")}
         </label>
         <select
@@ -116,33 +162,82 @@ export function ContactForm() {
           <option value="" disabled>
             {t("form.revenueOptions.placeholder")}
           </option>
-          <option value="<1M">{t("form.revenueOptions.lessThan1M")}</option>
-          <option value="1M-5M">{t("form.revenueOptions.from1Mto5M")}</option>
-          <option value="5M-25M">{t("form.revenueOptions.from5Mto25M")}</option>
-          <option value="25M+">{t("form.revenueOptions.moreThan25M")}</option>
+          <option value="<500K">{t("form.revenueOptions.under500k")}</option>
+          <option value="500K-2M">{t("form.revenueOptions.500kTo2m")}</option>
+          <option value="2M-10M">{t("form.revenueOptions.2mTo10m")}</option>
+          <option value="10M-50M">{t("form.revenueOptions.10mTo50m")}</option>
+          <option value=">50M">{t("form.revenueOptions.over50m")}</option>
         </select>
         {errors.revenue && <p className={errorStyles}>{errors.revenue.message}</p>}
       </div>
 
-      {/* Message */}
+      {/* Service Interest */}
       <div>
-        <label htmlFor="message" className="block text-sm font-medium mb-2">
-          {t("form.message")}
+        <label className={labelStyles}>
+          {t("form.service")}
+        </label>
+        <div className="grid grid-cols-2 gap-3">
+          {(["audit", "deployment", "training", "all"] as const).map((option) => (
+            <label
+              key={option}
+              className="flex items-center gap-3 rounded-lg border border-border bg-surface px-4 py-3 cursor-pointer transition-colors hover:border-accent-primary has-[:checked]:border-accent-primary"
+            >
+              <input
+                type="radio"
+                value={option}
+                className="h-4 w-4"
+                {...register("service", { required: t("validation.serviceRequired") })}
+              />
+              <span className="text-sm">{t(`form.serviceOptions.${option}`)}</span>
+            </label>
+          ))}
+        </div>
+        {errors.service && <p className={errorStyles}>{errors.service.message}</p>}
+      </div>
+
+      {/* Needs */}
+      <div>
+        <label htmlFor="needs" className={labelStyles}>
+          {t("form.needs")}
         </label>
         <textarea
-          id="message"
-          rows={5}
-          placeholder={t("form.messagePlaceholder")}
+          id="needs"
+          rows={4}
+          placeholder={t("form.needsPlaceholder")}
           className={`${inputStyles} resize-none`}
-          {...register("message", {
-            required: t("validation.messageRequired"),
+          {...register("needs", {
+            required: t("validation.needsRequired"),
             minLength: {
               value: 10,
-              message: t("validation.messageMin"),
+              message: t("validation.needsMin"),
             },
           })}
         />
-        {errors.message && <p className={errorStyles}>{errors.message.message}</p>}
+        {errors.needs && <p className={errorStyles}>{errors.needs.message}</p>}
+      </div>
+
+      {/* Source */}
+      <div>
+        <label htmlFor="source" className={labelStyles}>
+          {t("form.source")}
+        </label>
+        <select
+          id="source"
+          className={`${inputStyles} cursor-pointer`}
+          defaultValue=""
+          {...register("source", { required: t("validation.sourceRequired") })}
+        >
+          <option value="" disabled>
+            {t("form.sourceOptions.placeholder")}
+          </option>
+          <option value="google">{t("form.sourceOptions.google")}</option>
+          <option value="linkedin">{t("form.sourceOptions.linkedin")}</option>
+          <option value="referral">{t("form.sourceOptions.referral")}</option>
+          <option value="social">{t("form.sourceOptions.social")}</option>
+          <option value="event">{t("form.sourceOptions.event")}</option>
+          <option value="other">{t("form.sourceOptions.other")}</option>
+        </select>
+        {errors.source && <p className={errorStyles}>{errors.source.message}</p>}
       </div>
 
       {/* Submit */}

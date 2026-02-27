@@ -1,146 +1,173 @@
 {
   "metadata": {
     "title": "Infinex — AI-Powered Margin Growth",
-    "description": "Infinex helps SMBs increase their margins with AI. Automation, productivity, training — concrete results in just weeks.",
+    "description": "Infinex transforms SMBs with AI. Strategy, deployment, training. Real results, not slide decks.",
     "siteName": "Infinex"
   },
-  "whatsappCta": "Get my free audit",
   "nav": {
     "home": "Home",
-    "about": "About"
+    "getStarted": "Get Started"
   },
   "hero": {
-    "title": "Increase your margins with AI.",
-    "subtitle": "Less busywork. More productivity. Results in weeks, not months.",
-    "description": "We automate your processes, train your teams, and cut your admin overhead. Same headcount, more output — and better quality.",
-    "cta": "Get my free AI audit",
-    "learnMore": "Learn more"
+    "title": "Win the next chapter.",
+    "subtitle": "Your AI transformation partner.",
+    "description": "We set and execute your AI strategy at startup speed.",
+    "cta": "Get Started"
   },
   "approach": {
-    "sectionTitle": "How we do it",
-    "sectionSubtitle": "Three concrete steps to fast results.",
+    "sectionTitle": "From insight to impact. We cover the full spectrum.",
+    "sectionSubtitle": "Three levers to transform your business with AI.",
     "audit": {
-      "title": "Audit & Diagnostic",
-      "description": "We analyze your processes in detail to find where AI can cut costs and save time. You walk away with a clear, actionable plan with numbers."
+      "title": "Audit & Strategy",
+      "description": "No 6-month studies. No 200-slide decks. We audit your processes, find the quick wins, and hand you a costed action plan."
     },
     "implementation": {
-      "title": "Deployment",
-      "description": "We set up the automations and AI tools tailored to your business. No theory, just action — you see the first results quickly."
+      "title": "AI Deployment",
+      "description": "Custom automations, AI tools woven into your workflow. We build, we deploy, you measure the impact."
     },
     "training": {
-      "title": "Training",
-      "description": "We train your teams on the best AI tools so they become self-sufficient. Hands-on workshops they can apply the very next day."
+      "title": "Training & Adoption",
+      "description": "Your teams trained on the best AI tools. Practical workshops for lasting, self-sufficient adoption."
     }
   },
-  "useCases": {
-    "title": "What we actually do",
-    "subtitle": "Concrete AI solutions that directly impact your margins.",
-    "items": [
-      {
-        "title": "Admin automation",
-        "description": "Invoices, follow-ups, data entry, reporting — we automate everything that wastes your time and money."
-      },
-      {
-        "title": "AI assistants for your teams",
-        "description": "Your employees get an AI assistant for daily tasks: writing, summaries, research, customer responses."
-      },
-      {
-        "title": "Reporting & dashboards",
-        "description": "Your data turned into actionable insights. Make better decisions faster with intelligent dashboards."
-      },
-      {
-        "title": "Enhanced client management",
-        "description": "Faster responses, personalized follow-up, higher satisfaction. AI improves every client interaction."
-      },
-      {
-        "title": "Hands-on AI training",
-        "description": "Your teams trained on the most powerful AI tools. ChatGPT, Claude, business tools — 100% practical workshops."
-      },
-      {
-        "title": "Prospecting agents",
-        "description": "AI agents that qualify your leads, enrich your contacts, and prepare your sales meetings automatically."
-      }
-    ]
+  "valueProp": {
+    "statement": "You have a choice. Embrace AI now. Or watch your competitors do it first."
   },
   "testimonials": {
-    "title": "What our clients say",
-    "comingSoon": "Testimonials coming soon",
+    "title": "Real stories, real results",
     "items": [
       {
-        "quote": "We used to spend so much time on admin. Now it's handled, and my teams can finally focus on what actually drives revenue.",
-        "author": "Jeremy, Head of Operations",
+        "quote": "We used to spend so much time on admin. Now it's handled, and my teams can finally focus on what drives revenue.",
+        "author": "Jeremy",
+        "role": "Head of Operations",
         "company": "Tech SMB"
       },
       {
-        "quote": "We'd been doing everything manually for years without questioning it. Once it was automated, we wondered why we hadn't done it sooner.",
-        "author": "Xavier, CEO",
+        "quote": "We'd been doing everything manually for years. Once it was automated, we wondered why we hadn't done it sooner.",
+        "author": "Xavier",
+        "role": "CEO",
         "company": "Digital agency"
       },
       {
         "quote": "What really changed is that everyone on the team now knows how to use AI daily. It unlocked something.",
-        "author": "Gabriel, CEO",
+        "author": "Gabriel",
+        "role": "CEO",
         "company": "Consulting firm"
       }
     ]
   },
   "faq": {
-    "title": "Frequently asked questions",
+    "title": "Questions? We have answers",
     "items": [
       {
-        "question": "How does it work in practice?",
-        "answer": "We start with a process audit. We identify quick wins and deploy the first automations. Results come quickly."
+        "question": "How does it actually work?",
+        "answer": "We start with a process audit. We identify quick wins and deploy the first automations. Results come fast."
       },
       {
-        "question": "What results can I expect and how quickly?",
-        "answer": "On average, our clients reduce their admin workload by 60% and gain 40% in productivity. First results are visible in 3 weeks, full ROI in under 2 months."
+        "question": "What results can I expect?",
+        "answer": "Our clients cut admin overhead, boost productivity, and see ROI within weeks. Every project is measured."
       },
       {
-        "question": "What type of business is this for?",
-        "answer": "SMBs with 5 to 200 employees that want to produce more with the same team. Industry doesn't matter — if you have repetitive processes, we can help."
+        "question": "What kind of business is this for?",
+        "answer": "SMBs with 5 to 200 employees, any industry. If you have repetitive processes, we can help."
       },
       {
         "question": "How much does it cost?",
-        "answer": "Every project is different. We offer a free initial conversation to understand your needs and give you a precise estimate. The investment is always lower than the savings generated."
+        "answer": "Every project is different. We offer a free initial conversation to understand your needs and provide a precise quote."
+      },
+      {
+        "question": "How is Infinex different from other consultancies?",
+        "answer": "We don't sell advice, we deliver results. No slide decks, no jargon. We deploy, you measure."
+      },
+      {
+        "question": "How quickly will I see results?",
+        "answer": "First gains are visible within 3 weeks. Full ROI typically arrives in under 2 months."
       }
     ]
   },
   "finalCta": {
-    "title": "Find out how much AI can save you",
-    "subtitle": "In 15 minutes, we identify your margin levers. 100% free audit, no strings attached.",
-    "cta": "Book my free audit"
+    "title": "Stay on the right side of history.",
+    "subtitle": "The time to act is now.",
+    "cta": "Get Started"
   },
-  "about": {
-    "title": "About",
-    "metaTitle": "About Infinex",
-    "metaDescription": "Infinex helps SMBs increase their margins with AI. Discover our vision, mission, and values.",
-    "vision": {
-      "title": "Our vision",
-      "description": "A world where every SMB uses AI to work smarter, not harder. Where technology frees up time for what truly matters: serving your clients and growing your business."
+  "getStarted": {
+    "metaTitle": "Get Started — Infinex",
+    "metaDescription": "Contact Infinex to transform your business with AI.",
+    "title": "Ready to transform your business?",
+    "subtitle": "From AI audits to full-scale deployment, we guide you every step of the way.",
+    "benefits": [
+      {
+        "title": "Tailored AI strategy",
+        "description": "An action plan built for your business, not a one-size-fits-all template."
+      },
+      {
+        "title": "Rapid deployment",
+        "description": "First results in 3 weeks, not 6 months."
+      },
+      {
+        "title": "Self-sufficient teams",
+        "description": "Hands-on training so your people master AI in their daily work."
+      }
+    ],
+    "form": {
+      "firstName": "First name",
+      "firstNamePlaceholder": "John",
+      "lastName": "Last name",
+      "lastNamePlaceholder": "Smith",
+      "email": "Work email",
+      "emailPlaceholder": "john@company.com",
+      "phone": "Phone number",
+      "phonePlaceholder": "+1 555 123 4567",
+      "company": "Company",
+      "companyPlaceholder": "Your company name",
+      "jobTitle": "Job title",
+      "jobTitlePlaceholder": "CEO",
+      "revenue": "Annual revenue",
+      "revenueOptions": {
+        "placeholder": "Select",
+        "under500k": "< 500K €",
+        "500kTo2m": "500K - 2M €",
+        "2mTo10m": "2M - 10M €",
+        "10mTo50m": "10M - 50M €",
+        "over50m": "> 50M €"
+      },
+      "service": "Service you're interested in",
+      "serviceOptions": {
+        "audit": "Audit & Strategy",
+        "deployment": "AI Deployment",
+        "training": "Training",
+        "all": "All of the above"
+      },
+      "needs": "Describe your needs",
+      "needsPlaceholder": "Tell us about your current challenges and what you'd like to achieve with AI...",
+      "source": "How did you hear about Infinex?",
+      "sourceOptions": {
+        "placeholder": "Select",
+        "google": "Google Search",
+        "linkedin": "LinkedIn",
+        "referral": "Referral",
+        "social": "Social media",
+        "event": "Event",
+        "other": "Other"
+      },
+      "submit": "Submit",
+      "sending": "Sending...",
+      "success": "Message sent! We'll get back to you very soon.",
+      "error": "Something went wrong. Please try again or reach out to us directly."
     },
-    "mission": {
-      "title": "Our mission",
-      "description": "Make AI accessible and profitable for SMBs. We turn technological complexity into concrete results: less overhead, more productivity, better margins."
-    },
-    "values": {
-      "title": "Our values",
-      "items": [
-        {
-          "title": "Results first",
-          "description": "We don't sell advice, we deliver results. Every action is measured by its impact on your margins."
-        },
-        {
-          "title": "Total transparency",
-          "description": "No jargon, no empty promises. We tell you exactly what we do, how much it costs, and what it returns."
-        },
-        {
-          "title": "Speed of execution",
-          "description": "First results in 3 weeks, not 6 months. We move fast because your time is money."
-        },
-        {
-          "title": "Lasting partnership",
-          "description": "We build long-term relationships. Your success is our best advertisement."
-        }
-      ]
+    "validation": {
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email address",
+      "phoneRequired": "Phone number is required",
+      "companyRequired": "Company is required",
+      "jobTitleRequired": "Job title is required",
+      "revenueRequired": "Please select a revenue range",
+      "serviceRequired": "Please select a service",
+      "needsRequired": "Please describe your needs",
+      "needsMin": "Minimum 10 characters",
+      "sourceRequired": "Please select a source"
     }
   },
   "footer": {
