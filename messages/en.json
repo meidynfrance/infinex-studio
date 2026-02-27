@@ -135,8 +135,7 @@
       "serviceOptions": {
         "audit": "Audit & Strategy",
         "deployment": "AI Deployment",
-        "training": "Training",
-        "all": "All of the above"
+        "training": "Training"
       },
       "needs": "Describe your needs",
       "needsPlaceholder": "Tell us about your current challenges and what you'd like to achieve with AI...",

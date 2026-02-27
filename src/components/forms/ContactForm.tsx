@@ -177,7 +177,7 @@ export function ContactForm() {
           {t("form.service")}
         </label>
         <div className="grid grid-cols-2 gap-3">
-          {(["audit", "deployment", "training", "all"] as const).map((option) => (
+          {(["audit", "deployment", "training"] as const).map((option) => (
             <label
               key={option}
               className="flex items-center gap-3 rounded-lg border border-border bg-surface px-4 py-3 cursor-pointer transition-colors hover:border-accent-primary has-[:checked]:border-accent-primary"

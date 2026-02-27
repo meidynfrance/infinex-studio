@@ -135,8 +135,7 @@
       "serviceOptions": {
         "audit": "Audit & Stratégie",
         "deployment": "Déploiement IA",
-        "training": "Formation",
-        "all": "Les trois"
+        "training": "Formation"
       },
       "needs": "Décrivez vos besoins",
       "needsPlaceholder": "Parlez-nous de vos enjeux actuels et de ce que vous aimeriez accomplir avec l'IA...",
