@@ -9,8 +9,6 @@ export const contactSchema = z.object({
   jobTitle: z.string().min(1),
   revenue: z.string().min(1),
   service: z.array(z.string()).min(1),
-  needs: z.string().min(10),
-  source: z.string().min(1),
 });
 
 export type ContactFormData = z.infer<typeof contactSchema>;

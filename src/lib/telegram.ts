@@ -7,8 +7,6 @@ type SendMessageParams = {
   jobTitle: string;
   revenue: string;
   service: string[];
-  needs: string;
-  source: string;
   locale: string;
 };
 
@@ -34,9 +32,6 @@ export async function sendTelegramMessage(params: SendMessageParams) {
 💼 ${params.jobTitle}
 💰 CA : ${params.revenue}
 🎯 Services : ${params.service.join(", ")}
-📣 Source : ${params.source}
-
-💬 ${params.needs}
 
 📅 ${date} | 🌐 ${params.locale}`;
 

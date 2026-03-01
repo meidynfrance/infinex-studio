@@ -195,51 +195,6 @@ export function ContactForm() {
         {errors.service && <p className={errorStyles}>{errors.service.message}</p>}
       </div>
 
-      {/* Needs */}
-      <div>
-        <label htmlFor="needs" className={labelStyles}>
-          {t("form.needs")}
-        </label>
-        <textarea
-          id="needs"
-          rows={4}
-          placeholder={t("form.needsPlaceholder")}
-          className={`${inputStyles} resize-none`}
-          {...register("needs", {
-            required: t("validation.needsRequired"),
-            minLength: {
-              value: 10,
-              message: t("validation.needsMin"),
-            },
-          })}
-        />
-        {errors.needs && <p className={errorStyles}>{errors.needs.message}</p>}
-      </div>
-
-      {/* Source */}
-      <div>
-        <label htmlFor="source" className={labelStyles}>
-          {t("form.source")}
-        </label>
-        <select
-          id="source"
-          className={`${inputStyles} cursor-pointer`}
-          defaultValue=""
-          {...register("source", { required: t("validation.sourceRequired") })}
-        >
-          <option value="" disabled>
-            {t("form.sourceOptions.placeholder")}
-          </option>
-          <option value="google">{t("form.sourceOptions.google")}</option>
-          <option value="linkedin">{t("form.sourceOptions.linkedin")}</option>
-          <option value="referral">{t("form.sourceOptions.referral")}</option>
-          <option value="social">{t("form.sourceOptions.social")}</option>
-          <option value="event">{t("form.sourceOptions.event")}</option>
-          <option value="other">{t("form.sourceOptions.other")}</option>
-        </select>
-        {errors.source && <p className={errorStyles}>{errors.source.message}</p>}
-      </div>
-
       {/* Submit */}
       <Button type="submit" size="lg" className="w-full" disabled={status === "sending"}>
         {status === "sending" ? t("form.sending") : t("form.submit")}
