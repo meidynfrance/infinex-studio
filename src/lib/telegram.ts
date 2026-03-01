@@ -1,3 +1,11 @@
+type UtmParams = {
+  utm_source?: string;
+  utm_medium?: string;
+  utm_campaign?: string;
+  utm_term?: string;
+  utm_content?: string;
+};
+
 type SendMessageParams = {
   firstName: string;
   lastName: string;
@@ -8,6 +16,7 @@ type SendMessageParams = {
   revenue: string;
   service: string[];
   locale: string;
+  utm?: UtmParams;
 };
 
 export async function sendTelegramMessage(params: SendMessageParams) {
@@ -23,6 +32,18 @@ export async function sendTelegramMessage(params: SendMessageParams) {
     timeZone: "Europe/Paris",
   });
 
+  // Build UTM/source line
+  const utm = params.utm;
+  const utmParts: string[] = [];
+  if (utm?.utm_source) utmParts.push(`Source: ${utm.utm_source}`);
+  if (utm?.utm_medium) utmParts.push(`Medium: ${utm.utm_medium}`);
+  if (utm?.utm_campaign) utmParts.push(`Campaign: ${utm.utm_campaign}`);
+  if (utm?.utm_term) utmParts.push(`Term: ${utm.utm_term}`);
+  if (utm?.utm_content) utmParts.push(`Content: ${utm.utm_content}`);
+  const utmLine = utmParts.length > 0
+    ? `\n📣 ${utmParts.join(" | ")}`
+    : "";
+
   const text = `🚀 Nouveau lead Infinex !
 
 👤 ${params.firstName} ${params.lastName}
@@ -31,7 +52,7 @@ export async function sendTelegramMessage(params: SendMessageParams) {
 🏢 ${params.company}
 💼 ${params.jobTitle}
 💰 CA : ${params.revenue}
-🎯 Services : ${params.service.join(", ")}
+🎯 Services : ${params.service.join(", ")}${utmLine}
 
 📅 ${date} | 🌐 ${params.locale}`;
 

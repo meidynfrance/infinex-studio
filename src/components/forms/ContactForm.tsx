@@ -4,11 +4,13 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslations, useLocale } from "next-intl";
 import { Button } from "@/components/ui/Button";
+import { useUtm } from "@/hooks/useUtm";
 import type { ContactFormData } from "@/lib/validations";
 
 export function ContactForm() {
   const t = useTranslations("getStarted");
   const locale = useLocale();
+  const utm = useUtm();
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
   const {
@@ -24,7 +26,7 @@ export function ContactForm() {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, locale }),
+        body: JSON.stringify({ ...data, locale, utm }),
       });
 
       if (!response.ok) throw new Error("Failed");

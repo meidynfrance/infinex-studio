@@ -15,7 +15,8 @@ export async function POST(request: Request) {
     }
 
     const locale = body.locale || "en";
-    const result = await sendTelegramMessage({ ...parsed.data, locale });
+    const utm = body.utm || {};
+    const result = await sendTelegramMessage({ ...parsed.data, locale, utm });
 
     if (!result.ok) {
       return NextResponse.json(

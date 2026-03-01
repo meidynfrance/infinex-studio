@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { ContactForm } from "@/components/forms/ContactForm";
@@ -52,7 +53,7 @@ export function GetStartedPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            <ContactForm />
+            <Suspense><ContactForm /></Suspense>
           </motion.div>
         </div>
       </div>
