@@ -20,7 +20,7 @@ Infinex aide les PME à augmenter leurs marges grâce à l'IA. On automatise les
 | Styling | Tailwind CSS v4 |
 | Animations | Framer Motion |
 | i18n | next-intl v4 |
-| Déploiement | Vercel (CLI) |
+| Déploiement | Vercel (auto-deploy on push) |
 | Repo | GitHub (CLI `gh`) |
 | Package manager | pnpm |
 | Blog | MDX (gray-matter + next-mdx-remote) |
@@ -118,11 +118,12 @@ Infinex aide les PME à augmenter leurs marges grâce à l'IA. On automatise les
 
 ## Déploiement
 
+Vercel déploie automatiquement à chaque `git push` sur `main`. Ne PAS utiliser `vercel --prod` (ça crée un doublon).
+
 ```bash
 pnpm build          # Vérifier le build
 git add . && git commit -m "message"
-git push
-vercel --prod       # Déployer en production
+git push             # Vercel déploie automatiquement
 ```
 
 ---
@@ -166,5 +167,5 @@ infinex-studio/
 2. **Toujours sync FR et EN** : Quand on modifie un texte FR, mettre à jour EN aussi (traductions non littérales)
 3. **Commits** : atomiques, messages descriptifs en anglais
 4. **TypeScript strict** : pas de `any`
-5. **Workflow de deploy** : build → commit → push → `vercel --prod`
+5. **Workflow de deploy** : build → commit → push (Vercel auto-deploy, jamais `vercel --prod`)
 6. **Variables d'env** : Ne jamais commit de secrets
