@@ -1,0 +1,98 @@
+---
+title: "Automated Quality Control with AI"
+description: "How AI automates quality control in manufacturing: computer vision, anomaly detection, and defect classification for SMBs."
+date: 2026-01-19
+author: "Infinex"
+category: "cas-usage"
+---
+
+**TL;DR**: Manual quality control is expensive and imperfect — fatigue, subjectivity, throughput limits. AI-powered computer vision inspects every part with a consistency and precision humans simply cannot sustain. Manufacturing SMBs that adopt it typically reduce scrap rates by 20 to 40% within the first few months.
+
+---
+
+A defect that slips through to production means a frustrated customer, a costly return, a damaged reputation. Yet most manufacturing SMBs still rely on manual inspection to guarantee the quality of their parts and products.
+
+That's not a choice made in ignorance — it's often the only accessible option. Until now.
+
+## Why Manual Quality Control Hits a Wall
+
+An experienced quality inspector, no matter how skilled, works under varying conditions: end-of-shift fatigue, changing lighting, a sustained production pace. Industry research estimates that visual defect detection rates in manual inspection range from 70 to 90% depending on conditions — meaning 10 to 30% of defects get through.
+
+Add to this a **subjectivity problem**: two inspectors may classify the same borderline part differently, creating inconsistency in quality data and friction with customers.
+
+Finally, manual inspection creates a **throughput bottleneck**: if production speeds up, inspection must keep pace, which means either hiring more staff or accepting less rigorous checks.
+
+## What Computer Vision Changes
+
+**Computer vision** combines high-resolution industrial cameras with AI algorithms trained to recognize defects specific to your production.
+
+In practice, the system:
+1. Captures an image or sequence of each part on the line
+2. Analyzes it in real time (typically in under 100 milliseconds)
+3. Classifies the part: conforming, non-conforming, or flagged for manual review
+4. Records every decision with the associated image for full traceability
+
+What distinguishes AI from traditional optical inspection: it **learns**. You show it examples of conforming and non-conforming parts, it extracts the characteristic patterns of defects, and it improves over time as you feed it new cases.
+
+## Types of Detectable Defects
+
+AI vision systems are effective across a wide range of defect types:
+
+**Surface defects**: scratches, dents, marks, oxidation, contamination, burrs. These are often the first cases addressed, since they are visually distinct and well-documented in your quality records.
+
+**Dimensional defects**: using 3D vision and image measurement techniques, systems can detect dimensional deviations below one millimeter — without any physical contact with the part.
+
+**Assembly defects**: mispositioned parts, missing components, incorrect orientations. Particularly valuable on assembly lines where complexity makes manual inspection difficult.
+
+**Color and texture defects**: color variations, printing defects, material heterogeneities. These defects are often impossible to quantify manually but are critical in certain sectors (food, cosmetics, plastics).
+
+## Anomaly Detection: When You Don't Have a Defect Catalog
+
+A common situation in SMBs: you know you have quality problems, but you don't have an exhaustive catalog of all possible defect types. **Unsupervised learning** methods address exactly this need.
+
+Rather than learning to recognize specific defects, the algorithm learns what a "normal" part looks like — and flags anything that deviates from that baseline. This is especially useful for:
+- Production runs with many different references
+- New production lines where defect types aren't yet well-documented
+- Detection of rare or novel defects
+
+## AI-Assisted Statistical Process Control
+
+Beyond part-by-part inspection, AI can automate **Statistical Process Control (SPC)**. The concept: instead of only detecting defective parts after the fact, you monitor production parameter drift in real time to intervene before defects appear.
+
+An AI system can:
+- Monitor dozens of parameters simultaneously (temperatures, pressures, speeds)
+- Detect correlations between parameters and defect rates
+- Alert the operator when a parameter is drifting and a defect is likely within the next few minutes
+- Automatically adjust certain parameters on connected machines
+
+Moving from reactive control (detecting defects) to predictive control (preventing defects from forming) represents a major qualitative leap.
+
+## Automatic Classification and Traceability
+
+Every part inspected by the system generates a digital record: image, timestamp, classification, production parameters at the moment of inspection. This **automatic traceability** delivers multiple benefits:
+
+- Simplified quality audits: all data is available instantly
+- Easier root cause analysis: when a defect appears, you can trace it back to the exact production conditions
+- Regulatory compliance: in sectors with traceability requirements (automotive, food, medical), documentation is produced automatically
+
+## What This Means in Practice for an SMB
+
+Here is what you can reasonably expect from a well-executed deployment:
+
+- **Defect detection rate**: 97 to 99% (vs. 75 to 90% with manual inspection)
+- **Scrap rate reduction**: 20 to 40% in the first year
+- **Inspection speed**: 3 to 10 times faster than manual inspection, with no throughput bottleneck
+- **Customer complaint reduction**: significant from the first months
+- **Quality staff freed up**: redeployed to higher-value tasks (analysis, continuous improvement, training)
+
+## Where to Start
+
+Deploying AI quality control typically follows these steps:
+
+1. **Audit your current process**: which defects, at what frequency, what is the cost of non-quality?
+2. **Build a dataset**: collect images of conforming and non-conforming parts (generally a few hundred to a few thousand images to start)
+3. **Train and validate**: the algorithm is trained and tested on parts with known classifications
+4. **Progressive deployment**: initially running in parallel with manual inspection to validate real-world performance
+5. **Scale up**: once performance is validated, progressively reduce manual inspection
+
+For a broader view of AI applications in your sector: [AI for Manufacturing and Logistics SMBs](/blog/ia-industrie-logistique). And if unplanned downtime is your primary challenge, see our guide on [predictive maintenance](/blog/ia-maintenance-predictive).

@@ -1,0 +1,161 @@
+---
+title: "Prompt engineering pour débutants : guide pratique"
+description: "Structure d'un bon prompt, exemples par cas d'usage, itération et techniques avancées : tout ce qu'il faut pour obtenir des résultats fiables avec l'IA."
+date: "2025-12-08"
+author: "Infinex"
+category: "formation"
+---
+
+**En bref** : La qualité de ce que vous obtenez d'un outil d'IA dépend à 80% de la façon dont vous lui parlez. Le prompt engineering n'est pas une compétence technique réservée aux développeurs — c'est une méthode de communication que n'importe quel dirigeant ou collaborateur peut maîtriser en quelques heures de pratique.
+
+---
+
+## Pourquoi votre IA vous déçoit (et ce n'est pas sa faute)
+
+"J'ai essayé ChatGPT mais les résultats ne sont pas terrible." C'est la phrase qu'on entend le plus souvent lors des premiers accompagnements.
+
+Invariablement, quand on demande à voir les prompts utilisés, on trouve des instructions vagues, des contextes absents, et des objectifs flous. L'IA a retourné quelque chose de générique parce qu'elle n'avait pas d'autre choix.
+
+Un LLM (GPT, Claude, Gemini) est un outil de complétion ultra-sophistiqué. Il ne lit pas dans vos pensées. Il ne connaît pas votre entreprise, votre secteur, votre ton ni vos contraintes — à moins que vous ne les lui donniez.
+
+---
+
+## La structure d'un prompt efficace
+
+Un bon prompt repose sur quatre éléments, que vous pouvez retenir avec l'acronyme **RICO** :
+
+### R — Rôle
+
+Dites à l'IA qui elle est censée être dans cet échange.
+
+> "Tu es un expert en communication commerciale spécialisé dans les PME industrielles."
+
+Assigner un rôle calibre le niveau de langage, l'expertise supposée et le ton des réponses. Sans rôle, l'IA adopte un registre généraliste qui convient à tout le monde et impressionne personne.
+
+### I — Instruction
+
+L'action précise que vous demandez. Utilisez des verbes d'action clairs : rédige, résume, liste, compare, traduis, reformule, analyse.
+
+> "Rédige un email de relance pour un prospect qui n'a pas répondu à notre devis depuis 10 jours."
+
+Évitez les formulations ouvertes comme "parle-moi de" ou "explique". Elles produisent des dissertations. Préférez des formulations fermées qui impliquent un livrable précis.
+
+### C — Contexte
+
+Les informations dont l'IA a besoin pour personnaliser sa réponse.
+
+> "Notre entreprise fabrique des équipements de manutention. Le prospect est directeur des opérations dans une PME de 80 personnes. Notre devis portait sur 3 chariots élévateurs à 45 000 €."
+
+Plus le contexte est riche, moins la réponse sera générique. N'ayez pas peur de donner beaucoup de contexte — les LLMs modernes gèrent très bien les prompts longs.
+
+### O — Output
+
+Le format attendu pour la réponse.
+
+> "Format : email professionnel de 5 à 8 lignes, ton chaleureux mais direct, sans formule de politesse excessive."
+
+Précisez la longueur, le format (liste, paragraphes, tableau, JSON), le ton, et toute contrainte spécifique (ne pas mentionner les prix, utiliser le tutoiement, éviter les anglicismes).
+
+---
+
+## Exemples pratiques par cas d'usage
+
+### Rédaction d'emails commerciaux
+
+```
+Rôle : Tu es un commercial B2B expérimenté dans le secteur des services aux entreprises.
+
+Instruction : Rédige un email de premier contact pour un prospect identifié lors d'un salon professionnel.
+
+Contexte : La personne est DRH dans une PME de 120 salariés (secteur logistique). On a échangé 5 minutes sur les difficultés de formation continue de leurs équipes terrain. Notre offre : programme de formation IA sur mesure.
+
+Output : Email de 6-8 lignes, objet inclus, ton professionnel mais pas corporate, une seule proposition de valeur, une seule question de fin pour ouvrir le dialogue.
+```
+
+### Résumé de réunion
+
+```
+Rôle : Tu es un assistant exécutif précis et synthétique.
+
+Instruction : Résume ce compte-rendu de réunion en points d'action clairs.
+
+Contexte : [coller le texte brut de vos notes]
+
+Output : Liste des décisions prises, liste des actions avec responsable et deadline, liste des points en suspens. Maximum 200 mots au total.
+```
+
+### Génération d'une FAQ produit
+
+```
+Rôle : Tu es expert produit pour un logiciel de gestion de plannings pour artisans.
+
+Instruction : Génère 10 questions fréquentes que se pose un nouveau client lors de l'onboarding, avec les réponses associées.
+
+Contexte : Le logiciel permet de gérer les rendez-vous, d'envoyer des rappels SMS et de facturer directement depuis l'agenda. Cible : plombiers, électriciens, menuisiers avec 2 à 8 techniciens.
+
+Output : Format Q&R, réponses de 2-3 lignes maximum, langage simple et direct.
+```
+
+---
+
+## L'itération : la compétence la plus sous-estimée
+
+Le meilleur prompt n'est jamais le premier. L'itération est le vrai moteur de la qualité.
+
+Quand le résultat ne vous convient pas, ne recommencez pas from scratch. Modifiez un seul élément à la fois :
+
+- Le résultat est trop long ? Ajoutez "Maximum 100 mots."
+- Le ton est trop formel ? Ajoutez "Ton conversationnel, comme si tu écrivais à un collègue."
+- Le contenu est trop générique ? Enrichissez le contexte avec des détails spécifiques.
+- Le format ne convient pas ? Précisez exactement ce que vous voulez voir.
+
+Conservez vos meilleurs prompts dans un fichier ou une page Notion. Un bon prompt réutilisable vaut bien plus qu'un résultat unique parfait.
+
+---
+
+## Techniques avancées pour aller plus loin
+
+### Le chain-of-thought (raisonnement pas à pas)
+
+Pour les tâches complexes qui impliquent une analyse, demandez à l'IA de raisonner étape par étape avant de conclure.
+
+> "Avant de répondre, liste les 3 facteurs clés à considérer, puis analyse chacun, puis formule ta recommandation."
+
+Cette technique réduit significativement les hallucinations sur les sujets qui requièrent du raisonnement.
+
+### Le few-shot prompting (exemples en entrée)
+
+Donnez un ou deux exemples du type de réponse attendue avant de formuler votre vraie demande.
+
+> "Voici un exemple d'email que j'aime bien : [exemple]. En utilisant le même style et la même structure, rédige maintenant un email pour [situation]."
+
+### Les contraintes négatives
+
+Précisez ce que vous ne voulez pas, pas seulement ce que vous voulez.
+
+> "Évite les formules creuses comme 'dans un monde en constante évolution' ou 'n'hésitez pas à nous contacter'. Évite les anglicismes. Pas de bullet points."
+
+---
+
+## Templates réutilisables pour votre équipe
+
+Créez une bibliothèque de prompts validés pour les tâches récurrentes de votre équipe. Quelques exemples à adapter :
+
+| Cas d'usage | Éléments RICO clés |
+|-------------|-------------------|
+| Email de relance commercial | Rôle commercial, contexte prospect spécifique, output longueur + ton |
+| Résumé de compte-rendu | Rôle assistant, instruction liste d'actions, output max 200 mots |
+| Fiche produit | Rôle expert produit, contexte caractéristiques techniques, output format structuré |
+| Réponse à un avis négatif | Rôle service client, contexte avis verbatim, output ton empathique + solution |
+
+Standardiser ces prompts prend une journée. L'effet sur la cohérence et la vitesse de production de votre équipe est immédiat.
+
+---
+
+## Par où commencer
+
+Choisissez une tâche répétitive que vous faites au moins deux fois par semaine. Rédigez un prompt RICO pour cette tâche. Testez-le trois fois, itérez à chaque fois. Partagez le prompt validé avec votre équipe.
+
+C'est tout. Pas de formation de deux jours, pas d'outil supplémentaire. La compétence se construit dans l'usage.
+
+Pour aller plus loin, consultez nos guides sur [structurer un programme de formation IA en PME](/blog/programme-formation-ia-pme), [choisir entre ChatGPT et Claude pour votre entreprise](/blog/chatgpt-vs-claude-entreprise) et [les outils IA gratuits pour PME](/blog/outils-ia-gratuits-pme).

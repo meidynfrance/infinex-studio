@@ -1,0 +1,161 @@
+---
+title: "Prompt Engineering for Beginners: A Practical Guide"
+description: "How to structure prompts, examples by use case, iteration techniques, and advanced methods — everything you need to get reliable results from AI."
+date: "2025-12-08"
+author: "Infinex"
+category: "formation"
+---
+
+**TL;DR**: 80% of what you get from an AI tool depends on how you communicate with it. Prompt engineering isn't a technical skill reserved for developers — it's a communication method that any business owner or team member can master in a few hours of practice.
+
+---
+
+## Why Your AI Disappoints You (And It's Not the AI's Fault)
+
+"I tried ChatGPT but the results weren't great." That's the sentence we hear most often in early conversations.
+
+Invariably, when we ask to see the prompts that were used, we find vague instructions, absent context, and unclear objectives. The AI returned something generic because it had no other choice.
+
+An LLM (GPT, Claude, Gemini) is an ultra-sophisticated completion tool. It doesn't read your mind. It doesn't know your business, your industry, your tone, or your constraints — unless you give them.
+
+---
+
+## The Structure of an Effective Prompt
+
+A good prompt relies on four elements, remembered with the acronym **RICE**:
+
+### R — Role
+
+Tell the AI who it's supposed to be in this exchange.
+
+> "You are a B2B communication expert specializing in industrial SMBs."
+
+Assigning a role calibrates the language level, assumed expertise, and tone of responses. Without a role, the AI adopts a generalist register that fits everyone and impresses no one.
+
+### I — Instruction
+
+The precise action you're requesting. Use clear action verbs: write, summarize, list, compare, translate, rewrite, analyze.
+
+> "Write a follow-up email for a prospect who hasn't responded to our quote in 10 days."
+
+Avoid open-ended prompts like "tell me about" or "explain." They produce essays. Prefer closed formulations that imply a specific deliverable.
+
+### C — Context
+
+The information the AI needs to personalize its response.
+
+> "Our company makes material handling equipment. The prospect is Operations Director at an 80-person SMB. Our quote was for 3 forklifts at $50,000."
+
+The richer the context, the less generic the response. Don't be afraid to provide a lot of context — modern LLMs handle long prompts very well.
+
+### E — End format (Output)
+
+The expected format for the response.
+
+> "Format: professional email of 5 to 8 lines, warm but direct tone, no excessive pleasantries."
+
+Specify the length, format (list, paragraphs, table, JSON), tone, and any specific constraints (don't mention pricing, use informal register, avoid jargon).
+
+---
+
+## Practical Examples by Use Case
+
+### Writing Sales Emails
+
+```
+Role: You are an experienced B2B salesperson in the business services sector.
+
+Instruction: Write a first-contact email for a prospect met at a trade show.
+
+Context: The person is an HR Director at a 120-person SMB (logistics sector). We talked for 5 minutes about their difficulties with continuous training for their field teams. Our offer: a custom AI training program.
+
+Output: 6-8 line email, subject line included, professional but not corporate tone, one value proposition, one closing question to open dialogue.
+```
+
+### Meeting Summary
+
+```
+Role: You are a precise and concise executive assistant.
+
+Instruction: Summarize this meeting transcript into clear action points.
+
+Context: [paste raw meeting notes here]
+
+Output: List of decisions made, list of actions with owner and deadline, list of open items. Maximum 200 words total.
+```
+
+### Product FAQ Generation
+
+```
+Role: You are a product expert for a scheduling software for tradespeople.
+
+Instruction: Generate 10 frequently asked questions that new clients have during onboarding, with the associated answers.
+
+Context: The software allows managing appointments, sending SMS reminders, and invoicing directly from the calendar. Target users: plumbers, electricians, carpenters with 2 to 8 technicians.
+
+Output: Q&A format, answers 2-3 lines maximum, simple and direct language.
+```
+
+---
+
+## Iteration: The Most Underrated Skill
+
+The best prompt is never the first one. Iteration is the real driver of quality.
+
+When the result doesn't work for you, don't start from scratch. Change one element at a time:
+
+- Result too long? Add "Maximum 100 words."
+- Tone too formal? Add "Conversational tone, like you're writing to a colleague."
+- Content too generic? Enrich the context with specific details.
+- Wrong format? Specify exactly what you want to see.
+
+Save your best prompts in a file or Notion page. A reusable good prompt is worth far more than a single perfect result.
+
+---
+
+## Advanced Techniques to Go Further
+
+### Chain-of-Thought (Step-by-Step Reasoning)
+
+For complex tasks that require analysis, ask the AI to reason step by step before concluding.
+
+> "Before answering, list the 3 key factors to consider, then analyze each one, then formulate your recommendation."
+
+This technique significantly reduces hallucinations on topics that require reasoning.
+
+### Few-Shot Prompting (Examples as Input)
+
+Provide one or two examples of the expected response type before your actual request.
+
+> "Here's an example of an email I like: [example]. Using the same style and structure, now write an email for [situation]."
+
+### Negative Constraints
+
+Specify what you don't want, not just what you want.
+
+> "Avoid filler phrases like 'in today's fast-changing world' or 'don't hesitate to reach out.' Avoid buzzwords. No bullet points."
+
+---
+
+## Reusable Templates for Your Team
+
+Build a library of validated prompts for your team's recurring tasks. A few examples to adapt:
+
+| Use case | Key RICE elements |
+|----------|------------------|
+| Sales follow-up email | Sales role, specific prospect context, output length + tone |
+| Meeting summary | Assistant role, action list instruction, 200-word max output |
+| Product sheet | Product expert role, technical specs context, structured format output |
+| Response to negative review | Customer service role, verbatim review context, empathetic tone + solution output |
+
+Standardizing these prompts takes a day. The impact on your team's consistency and production speed is immediate.
+
+---
+
+## Where to Start
+
+Pick a repetitive task you do at least twice a week. Write a RICE prompt for that task. Test it three times, iterate each time. Share the validated prompt with your team.
+
+That's it. No two-day training session, no additional tool. The skill builds through use.
+
+To go further, see our guides on [structuring an AI training program for your business](/blog/programme-formation-ia-pme), [choosing between ChatGPT and Claude for your company](/blog/chatgpt-vs-claude-entreprise), and [free AI tools for SMBs](/blog/outils-ia-gratuits-pme).

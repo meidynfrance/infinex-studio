@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { Link, usePathname } from "@/i18n/navigation";
 import type { BlogCategory } from "@/lib/blog";
 
-const categories: BlogCategory[] = ["strategie-ia", "automatisation", "formation", "cas-usage"];
+const categories: BlogCategory[] = ["strategie-ia", "automatisation", "formation", "cas-usage", "outils-ia"];
 
 export function CategoryFilter() {
   const t = useTranslations("blog");

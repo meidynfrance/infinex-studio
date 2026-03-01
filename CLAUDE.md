@@ -23,6 +23,7 @@ Infinex aide les PME à augmenter leurs marges grâce à l'IA. On automatise les
 | Déploiement | Vercel (CLI) |
 | Repo | GitHub (CLI `gh`) |
 | Package manager | pnpm |
+| Blog | MDX (gray-matter + next-mdx-remote) |
 | Contact | Formulaire /get-started |
 | Notifications | Telegram Bot API (@notification_meidy_bot) |
 
@@ -52,9 +53,17 @@ Infinex aide les PME à augmenter leurs marges grâce à l'IA. On automatise les
 - **FAQ** : 6 questions en accordéon
 - **CTA final** : "Restez du bon côté de l'histoire." + Get Started
 
-### 2. Get Started (`/get-started`)
+### 2. Blog (`/blog`)
+- Listing bilingue avec filtre par catégorie (pills)
+- Catégories : strategie-ia, automatisation, formation, cas-usage
+- Articles MDX dans `content/blog/` (convention : `{slug}.{locale}.mdx`)
+- Rendu via `next-mdx-remote/rsc`, styles `.prose-blog` dans globals.css
+- Chaque article a un CTA fin d'article → /get-started
+- JSON-LD BlogPosting sur chaque article
+
+### 3. Get Started (`/get-started`)
 - 2 colonnes : infos + bénéfices à gauche, formulaire à droite
-- Formulaire 10 champs : firstName, lastName, email, phone, company, jobTitle, revenue (select), service (checkboxes multi-select), needs (textarea), source (select)
+- Formulaire : firstName, lastName, email, phone, company, jobTitle, revenue (select), service (checkboxes multi-select)
 - Soumission → notification Telegram
 
 ### CTA
@@ -85,6 +94,28 @@ Infinex aide les PME à augmenter leurs marges grâce à l'IA. On automatise les
 
 ---
 
+## Blog
+
+- Contenu dans `content/blog/` : fichiers `{slug}.fr.mdx` et `{slug}.en.mdx`
+- Librairie `src/lib/blog.ts` : `getAllPosts()`, `getPostBySlug()`, `getAllSlugs()`
+- Catégories : `strategie-ia`, `automatisation`, `formation`, `cas-usage`
+- Frontmatter : title, description, date, author, category
+- Composants blog dans `src/components/blog/`
+- Styles prose dans `.prose-blog` (globals.css)
+
+---
+
+## Optimisation LLM (GEO)
+
+- **llms.txt** : `/llms.txt` sert un Markdown avec description du site + liens vers toutes les pages et articles
+- **JSON-LD** :
+  - `OrganizationSchema` → layout (toutes les pages)
+  - `FAQSchema` → page d'accueil (6 items)
+  - `BlogPostSchema` → chaque article de blog
+- **SEO GEO** : articles structurés avec TL;DR, H2/H3, listes, paragraphes courts, CTA naturels
+
+---
+
 ## Déploiement
 
 ```bash
@@ -112,15 +143,18 @@ infinex-studio/
 │   │   │   ├── page.tsx       # Home (Hero, Approach, ValueProp, Testimonials, FAQ, FinalCTA)
 │   │   │   └── get-started/   # Page formulaire de contact
 │   │   ├── api/contact/route.ts
+│   │   ├── llms.txt/route.ts  # llms.txt pour LLM discoverability
 │   │   ├── layout.tsx         # Root layout (passthrough)
-│   │   ├── globals.css        # Tailwind + theme colors (dark)
+│   │   ├── globals.css        # Tailwind + theme colors (dark) + .prose-blog
 │   │   ├── sitemap.ts / robots.ts / icon.svg
 │   ├── components/
 │   │   ├── layout/            # Header, Footer, LanguageSwitcher
 │   │   ├── home/              # Hero, Approach, ValueProp, Testimonials, FAQ, FinalCTA
+│   │   ├── blog/              # PostCard, PostHeader, PostContent, BlogCTA, CategoryFilter
+│   │   ├── structured-data/   # OrganizationSchema, FAQSchema, BlogPostSchema
 │   │   ├── forms/             # ContactForm (formulaire /get-started)
 │   │   └── ui/                # Button, Card, Accordion, AnimatedSection, SplitTextReveal, SplitTextRevealOnScroll
-│   ├── lib/                   # telegram.ts, validations.ts
+│   ├── lib/                   # telegram.ts, validations.ts, blog.ts
 │   └── i18n/                  # routing.ts, request.ts, navigation.ts
 ```
 

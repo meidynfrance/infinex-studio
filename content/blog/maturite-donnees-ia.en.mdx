@@ -1,0 +1,100 @@
+---
+title: "Is Your Data Ready for AI?"
+description: "Data quality checklist for SMBs before an AI project: common data problems, cleaning strategies, and minimum requirements for AI tools to actually work."
+date: "2025-12-11"
+author: "Infinex"
+category: "strategie-ia"
+---
+
+**TL;DR**: AI is only as good as the data you feed it. Most AI projects that fail in SMBs don't fail because of the technology — they fail because the data was incomplete, inconsistent, or scattered across too many places. Here's how to assess your situation and fix it before you launch.
+
+---
+
+## The problem no one wants to see
+
+There's a widespread myth: "deploy AI, it learns from our data, results come in." In reality, AI doesn't perform magic on mediocre data. "Garbage in, garbage out" has always been true in software — it's even more true with AI.
+
+Before spending a dollar on any AI tool, take 2 hours to honestly assess the state of your data. This diagnosis can save you months of frustration.
+
+---
+
+## The most common data problems in SMBs
+
+### Data scattered across too many tools
+
+Your CRM doesn't talk to your invoicing tool. Customer data lives in a local Excel spreadsheet with the accountant and a shared Google Sheet used by sales. Emails contain information that's never recorded anywhere else.
+
+Result: no AI tool can build a complete, consistent, up-to-date picture of your business.
+
+### Incomplete or poorly filled data
+
+Important fields are often empty — purchase date not filled in, customer industry left blank, quote status never updated. Sometimes these fields are filled inconsistently depending on who entered the data.
+
+### Duplicate or contradictory data
+
+The same customer appears three times in your CRM with three different spellings of their name. The same invoice shows up in two systems with different amounts.
+
+### Outdated or unmaintained data
+
+Data that hasn't been updated in two years is often less useful than no data at all. An AI trained on stale data will give stale recommendations.
+
+---
+
+## The data maturity checklist
+
+Evaluate each point honestly. Every "no" is a priority work item.
+
+**Accessibility**
+- Is your core data in accessible digital systems? (not in paper binders, not only in someone's head)
+- Can you easily export your data as CSV or via an API?
+- Can a designated person access all key data in under an hour?
+
+**Quality**
+- Are critical fields (name, email, amount, date) filled in at more than 90%?
+- Is data consistent across different tools?
+- Is there a process to keep data up to date daily?
+
+**Structure**
+- Does your data follow a standardized format? (dates always in the same format, statuses always the same values)
+- Are categories and tags consistent and defined?
+
+**Volume**
+- Do you have enough historical data for AI to find patterns? (generally, at least a few hundred examples for a simple use case)
+
+---
+
+## How to fix it
+
+### Step 1: Centralize before you clean
+
+There's no point cleaning data that's still scattered across 5 different tools. Start by choosing your "source of truth" tool and migrate the essentials there. That could be your CRM, a simple database, or even a well-structured Google Sheet to start.
+
+### Step 2: Clean in priority order
+
+Don't chase total perfection — you'll never get there. Focus on the data that will feed your first AI use case. If you're automating customer follow-ups, prioritize cleaning your contact and billing data first.
+
+Effective cleaning tactics:
+- **Deduplication**: merge duplicates (most CRMs have this feature)
+- **Standardization**: enforce fixed values for multiple-choice fields (status, category, industry)
+- **Minimal enrichment**: identify the 3-4 critical empty fields and fill them first
+
+### Step 3: Set data entry rules going forward
+
+A cleanup without a process change gets dirty again in 6 months. Define clear rules: which fields are mandatory, who enters what, how to handle duplicates when they come in.
+
+---
+
+## The minimum viable starting point for an AI project
+
+You don't need perfect data to get started. Here's the realistic minimum:
+
+- **Digitally accessible data** in at least one exportable tool
+- **A unique identifier field** per record (customer email, order number…)
+- **Less than 30% of critical fields empty** for the targeted use case
+- **At least 3 to 6 months of history** for analysis or prediction projects
+
+To go further with your preparation, check out our [complete AI audit guide](/blog/guide-complet-audit-ia) and our [AI self-assessment tool](/blog/auto-diagnostic-ia) to evaluate your overall AI readiness.
+
+---
+
+Your data quality isn't fixed. It's an ongoing effort, but one that pays off: every improvement in data quality improves what AI can do for you. Start with your [AI roadmap assessment](/blog/feuille-route-ia-pme) to know exactly where to focus your efforts first.

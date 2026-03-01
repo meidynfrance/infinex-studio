@@ -1,0 +1,124 @@
+---
+title: "Scaling Your Automations: From 3 to 30 Workflows"
+description: "How to move from a handful of isolated automations to a coherent, governed system in your business — without losing control or visibility."
+date: "2026-01-13"
+author: "Infinex"
+category: "automatisation"
+---
+
+**TL;DR**: Three workflows, you can manage by eye. Thirty demands a method. Between those two stages, most businesses lose track of what they've automated, who owns it, and what happens when it breaks. Here's how to scale cleanly.
+
+---
+
+## The Ungoverned Growth Trap
+
+A business's first automations usually emerge from urgency: a salesperson builds a quick Zap to save time, the accountant automates an export, management requests an automatic weekly report. It works. More get created.
+
+Six months later, nobody knows exactly how many workflows are running, who built them, or which ones are still active. A salesperson leaves and takes knowledge of three critical automations with them. An API changes and five workflows break simultaneously.
+
+Scaling from 3 to 30 automations without governance turns an asset into technical debt.
+
+---
+
+## When Should You Start Structuring?
+
+The short answer: before you need to.
+
+The practical answer: once you hit **5 to 8 active workflows**, it's time to introduce minimal structure. Not a whole department, not a complex management tool — just three foundational elements.
+
+**Warning sign #1**: you can no longer explain in one sentence what each automation does.
+**Warning sign #2**: a workflow breaks and you don't know who to call.
+**Warning sign #3**: you're afraid to modify an existing workflow in case it breaks something else.
+
+If you're checking any of these boxes, you already need governance.
+
+---
+
+## The Three Pillars of Automation Governance
+
+### 1. Minimal but Systematic Documentation
+
+Every workflow should have a reference sheet with:
+
+- **Name and unique ID** (e.g., AUTO-007)
+- **Purpose**: what the workflow does in one sentence
+- **Trigger**: what activates it
+- **Owner**: the person responsible
+- **Dependencies**: tools and APIs used
+- **Last modified**: date and author
+- **Error behavior**: what happens if it breaks?
+
+A Google Sheet or Notion page is fine. What matters is the discipline of keeping it updated, not the tool.
+
+### 2. Versioning and Environments
+
+As soon as your automations touch client data or financial processes, you need two environments: **test** and **production**.
+
+Never modify a production workflow directly. Create a copy, test with dummy data, validate, then deploy. Keep the old version for at least 30 days before deleting it.
+
+For tools like Make or n8n, enable version history. For more complex workflows (scripts, code), use Git.
+
+### 3. Responsibility Assignment
+
+Every workflow has a designated owner. This doesn't have to be the creator — it's the person who will be contacted when something goes wrong. For an SMB, two roles are enough:
+
+- **Business owner**: understands what the workflow should produce, validates that the output is correct
+- **Technical owner**: knows how to modify it, handles errors and updates
+
+These two roles can be the same person. The key is that it's written down.
+
+---
+
+## Organizing 30 Workflows by Domain
+
+Once you pass around twenty workflows, flat management becomes unwieldy. Organize them by business domain:
+
+| Domain | Examples |
+|--------|---------|
+| **Sales** | Lead qualification, follow-ups, pipeline tracking |
+| **Admin** | Invoicing, reports, accounting data entry |
+| **Client** | Onboarding, satisfaction, renewals |
+| **HR** | Employee onboarding, leave, training |
+| **Marketing** | Newsletter, social media, market watch |
+
+This structure simplifies search, makes audits easier, and quickly reveals which domains are over- or under-automated.
+
+---
+
+## Quarterly Review: The Anti-Debt Tool
+
+Every quarter, block two hours for a review of your automation portfolio:
+
+1. **Active vs. inactive**: disable anything that hasn't run in 60 days
+2. **Error rates**: identify consistently failing workflows and prioritize their refactoring
+3. **Obsolete dependencies**: verify that APIs and tools in use are still supported
+4. **Real ROI**: measure time actually saved vs. time spent on maintenance
+
+This review takes less time than managing an unexpected outage. And it prevents your automation foundation from becoming a museum of workflows that nobody knows are still working.
+
+---
+
+## Classic Mistakes When Scaling
+
+**Automating without documenting**: you create debt from day one. Every undocumented workflow is a latent risk.
+
+**Centralizing everything on one person**: if your "automation expert" goes on holiday or leaves the company, you're stuck. Train at least two people.
+
+**Ignoring costs**: at 30 workflows, Make, Zapier, and API call costs accumulate. Audit your monthly spend and identify what can be consolidated or optimized.
+
+**Scaling broken processes**: automating an inefficient process just makes it efficiently bad. Before scaling, make sure the underlying process is sound.
+
+---
+
+## The Right Growth Pace
+
+Aim for deliberate rather than opportunistic progression:
+
+- **Months 1-2**: consolidate and document what exists
+- **Month 3**: identify the next 5 highest-impact workflows
+- **Months 4-5**: deploy and stabilize
+- **Month 6**: review, adjust, plan next cycle
+
+This pace isn't slow — it's sustainable. Businesses that try to deploy 20 workflows in two months typically end up disabling half of them six months later.
+
+To go further, see our guides on [building solid AI workflows](/blog/construire-workflows-ia), [handling errors in your automations](/blog/gerer-erreurs-automatisation), and [AI governance for SMBs](/blog/gouvernance-ia-pme).

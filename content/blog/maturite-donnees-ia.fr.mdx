@@ -1,0 +1,100 @@
+---
+title: "Vos données sont-elles prêtes pour l'IA ?"
+description: "Checklist qualité des données pour PME avant un projet IA : problèmes courants, stratégies de nettoyage et prérequis minimum pour que vos outils IA fonctionnent vraiment."
+date: "2025-12-11"
+author: "Infinex"
+category: "strategie-ia"
+---
+
+**En bref** : L'IA est aussi bonne que les données qu'on lui donne. La plupart des projets IA qui échouent en PME n'échouent pas à cause de la technologie — ils échouent parce que les données étaient incomplètes, incohérentes ou dispersées. Voici comment évaluer votre situation et corriger le tir avant de lancer.
+
+---
+
+## Le problème que personne ne veut voir
+
+Il y a un mythe très répandu : "on déploie l'IA, elle apprend de nos données, et les résultats arrivent." En réalité, l'IA ne fait pas de magie avec des données médiocres. Ce qu'on appelle "garbage in, garbage out" en informatique est encore plus vrai avec l'IA.
+
+Avant de dépenser un euro sur un outil IA, prenez 2 heures pour évaluer honnêtement l'état de vos données. Ce diagnostic peut vous économiser des mois de frustration.
+
+---
+
+## Les problèmes de données les plus courants en PME
+
+### Données dispersées dans trop d'outils
+
+Votre CRM ne parle pas à votre outil de facturation. Les données clients sont dans un Excel en local chez la comptable et dans un Google Sheets partagé par le commercial. Les emails contiennent des informations qui ne sont jamais retranscrites nulle part.
+
+Résultat : impossible pour un outil IA d'avoir une vue complète, cohérente et à jour de votre activité.
+
+### Données incomplètes ou mal renseignées
+
+Les champs importants sont souvent vides — date d'achat non renseignée, secteur d'activité client laissé vide, statut des devis jamais mis à jour. Parfois, ces champs sont remplis de façon incohérente selon les utilisateurs.
+
+### Données dupliquées ou contradictoires
+
+Le même client existe en triple dans votre CRM avec trois orthographes différentes de son nom. La même facture apparaît dans deux systèmes avec des montants différents.
+
+### Données trop vieilles ou non maintenues
+
+Des données qui n'ont pas été mises à jour depuis 2 ans sont souvent moins utiles que pas de données du tout. Une IA entraînée sur des données obsolètes donnera des recommandations obsolètes.
+
+---
+
+## La checklist de maturité données
+
+Évaluez honnêtement chaque point. Pour chaque "non", vous avez un chantier à prioriser.
+
+**Accessibilité**
+- Vos données principales sont-elles dans des systèmes numériques accessibles ? (pas dans des classeurs papier, pas uniquement dans la tête de quelqu'un)
+- Pouvez-vous exporter facilement vos données en CSV ou via une API ?
+- Une personne désignée peut-elle accéder à l'ensemble des données importantes en moins d'une heure ?
+
+**Qualité**
+- Les champs critiques (nom, email, montant, date) sont-ils remplis à plus de 90% ?
+- Les données sont-elles cohérentes entre les différents outils ?
+- Y a-t-il un process pour maintenir les données à jour au quotidien ?
+
+**Structure**
+- Vos données suivent-elles un format standardisé ? (ex : les dates toujours au même format, les statuts toujours les mêmes valeurs)
+- Les catégories et tags sont-ils cohérents et définis ?
+
+**Volume**
+- Avez-vous suffisamment de données historiques pour que l'IA puisse trouver des patterns ? (en général, au moins quelques centaines d'exemples pour un cas d'usage simple)
+
+---
+
+## Comment corriger le tir
+
+### Étape 1 : Centralisez avant de nettoyer
+
+Inutile de nettoyer des données qui sont encore dispersées dans 5 outils différents. Commencez par choisir votre outil "source de vérité" et migrez-y l'essentiel. Ça peut être votre CRM, une base de données simple, ou même un Google Sheets bien structuré pour commencer.
+
+### Étape 2 : Nettoyez par ordre de priorité
+
+Ne cherchez pas la perfection totale — vous n'y arriverez jamais. Concentrez-vous sur les données qui alimenteront votre premier cas d'usage IA. Si vous automatisez les relances clients, nettoyez en priorité vos données contacts et facturation.
+
+Tactiques de nettoyage efficaces :
+- **Déduplication** : fusionnez les doublons (la plupart des CRM ont cette fonction)
+- **Standardisation** : forcez des valeurs fixes pour les champs à choix multiple (statut, catégorie, secteur)
+- **Enrichissement minimal** : identifiez les 3-4 champs critiques vides et remplissez-les en priorité
+
+### Étape 3 : Mettez en place des règles de saisie
+
+Un nettoyage sans changement de process se re-salit en 6 mois. Définissez des règles claires : quels champs sont obligatoires, qui saisit quoi, comment on gère les doublons quand ils arrivent.
+
+---
+
+## Le minimum viable pour démarrer un projet IA
+
+Vous n'avez pas besoin de données parfaites pour commencer. Voici le minimum réaliste :
+
+- **Des données accessibles numériquement** dans au moins un outil exportable
+- **Un champ identifiant unique** par enregistrement (email client, numéro de commande…)
+- **Moins de 30% de champs critiques vides** pour le cas d'usage ciblé
+- **Au moins 3 à 6 mois d'historique** pour les projets d'analyse ou de prédiction
+
+Pour aller plus loin dans votre préparation, consultez notre [guide complet de l'audit IA](/blog/guide-complet-audit-ia) et notre outil d'[auto-diagnostic IA](/blog/auto-diagnostic-ia) pour évaluer votre maturité globale.
+
+---
+
+La qualité de vos données n'est pas figée. C'est un chantier continu, mais un chantier qui paie : chaque amélioration de la qualité des données améliore la qualité de ce que l'IA peut faire pour vous. Commencez par le [diagnostic de votre feuille de route IA](/blog/feuille-route-ia-pme) pour savoir exactement où concentrer vos efforts en priorité.

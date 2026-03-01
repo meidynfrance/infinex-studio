@@ -1,0 +1,110 @@
+---
+title: "Data Security and AI Tools: What SMBs Need to Know"
+description: "GDPR, data residency, encryption: what every SMB owner must verify before adopting an AI tool. A practical, jargon-free guide."
+date: 2026-02-12
+author: "Infinex"
+category: "outils-ia"
+---
+
+**TL;DR**: Adopting AI without checking data security is like leaving a back door open in your business. SMBs are prime targets because they have fewer resources to defend themselves — but a few straightforward checks can dramatically reduce your exposure.
+
+---
+
+## The Problem Nobody Sees Coming
+
+A free or cheap AI tool. Impressive results from day one. And buried in the terms of service, a clause letting the vendor use your data to train their models.
+
+This is the situation thousands of SMBs find themselves in every year. Not because their owners are careless — but because AI data security seems complex, technical, and reserved for large enterprises.
+
+It isn't. And this guide proves it.
+
+---
+
+## What GDPR Actually Requires
+
+The **General Data Protection Regulation** applies to any processing of personal data from EU residents — including when that processing is delegated to an AI tool.
+
+Three key obligations for SMBs:
+
+- **Know where your data goes**: The server processing your customer data must be identified. If it's in the US, a transfer agreement (SCCs) must be in place.
+- **Have a signed DPA**: A Data Processing Agreement with every vendor that touches your data. Without this document, you're in violation.
+- **Be able to delete on request**: If a customer asks for their data to be removed, you must be able to comply — including in the AI systems you use.
+
+Regulators don't distinguish between large companies and SMBs. Fines can reach 4% of your annual global turnover.
+
+---
+
+## Data Residency: A Concrete Question
+
+**Where are your data physically stored?**
+
+This is the first question to ask any AI vendor. Possible answers:
+
+- **Europe (EU)**: Ideal. No legal complications.
+- **United States with SCCs in place**: Possible, but verify the DPA and transfer mechanisms.
+- **"Our infrastructure is global"**: Walk away, or demand a written commitment to EU data location.
+
+Tools like **Microsoft 365 Copilot**, **Google Workspace with Gemini**, and **Claude for Work** let you choose European data residency. Treat this as a selection criterion, not a nice-to-have.
+
+---
+
+## Encryption: Two Levels to Understand
+
+Encryption protects your data if someone gains unauthorized access. It comes in two forms:
+
+### Encryption in Transit
+Your data is encrypted while being transferred between your device and the vendor's servers. In 2026, this is the bare minimum — any serious vendor implements it (TLS 1.2 or 1.3).
+
+### Encryption at Rest
+Your data is encrypted when stored on the vendor's servers. Check that the vendor uses **AES-256** or equivalent. More importantly: who holds the encryption keys? You or the vendor?
+
+If the vendor holds the keys, they can technically access your data. For sensitive data (HR, financial, customer records), prefer a solution where you control the keys.
+
+---
+
+## Evaluating Vendor Security: 5 Questions to Ask
+
+Before integrating an AI tool into your workflows, ask these five questions. Not to the sales team — to the technical team or in the official documentation.
+
+**1. Do you use my data to train your models?**
+The answer must be no, or there must be a clear opt-out. If it's yes with no alternative, move on.
+
+**2. Where is my data hosted?**
+Ask for a written commitment on server geography.
+
+**3. Do you have a GDPR-compliant DPA?**
+This document must exist and be signable. If they don't know what it is, that's a red flag.
+
+**4. What security certifications do you hold?**
+ISO 27001, SOC 2 Type II — these certifications mean security is audited by an independent third party.
+
+**5. What happens in case of a data breach?**
+The vendor must notify you within 72 hours (GDPR requirement). Make sure this clause is in the contract.
+
+---
+
+## Risks Specific to SMBs
+
+SMBs have particular vulnerabilities when it comes to AI tools:
+
+- **Shared accounts**: One account used by multiple employees, making it impossible to track who accessed what.
+- **Shadow IT**: Employees using free AI tools on personal devices — with your data.
+- **No usage policy**: No clear rules on what can or cannot be entered into an AI tool.
+
+The solution isn't to ban AI — it's to frame it. A one-page AI usage policy, clear and shared with your teams, reduces human behavior-related risks by roughly 80%.
+
+---
+
+## Where to Start
+
+Three concrete actions this week:
+
+1. **Inventory your current AI tools**: List every tool your teams use, even informally. ChatGPT, Notion AI, Grammarly — all of them.
+
+2. **Check the terms of service for your main tools**: Look for clauses on using data for model training. Most offer an opt-out — activate it.
+
+3. **Request a DPA from your key vendors**: An email is enough. If they can't provide one, you have your answer about their security maturity.
+
+AI data security isn't a topic reserved for enterprise IT departments. It's an owner's responsibility — and it's manageable with the right habits.
+
+To go further, read our [panorama of AI tools for SMBs in 2026](/blog/panorama-outils-ia-pme-2026), our guide on [AI governance in SMBs](/blog/gouvernance-ia-pme), and our [ChatGPT vs Claude for business](/blog/chatgpt-vs-claude-entreprise) comparison.

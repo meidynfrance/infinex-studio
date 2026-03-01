@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import readingTime from "reading-time";
 
-export type BlogCategory = "strategie-ia" | "automatisation" | "formation" | "cas-usage";
+export type BlogCategory = "strategie-ia" | "automatisation" | "formation" | "cas-usage" | "outils-ia";
 
 export type BlogPostMeta = {
   slug: string;

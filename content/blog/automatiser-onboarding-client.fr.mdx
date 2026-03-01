@@ -1,0 +1,113 @@
+---
+title: "Automatiser l'onboarding client avec l'IA"
+description: "Séquences de bienvenue, collecte de documents, création de compte et communication personnalisée : comment automatiser chaque étape de l'onboarding client."
+date: "2026-01-20"
+author: "Infinex"
+category: "automatisation"
+---
+
+**En bref** : L'onboarding client est l'une des premières impressions durables que vous laissez. C'est aussi l'une des zones les plus chronophages pour vos équipes — et l'une des plus faciles à automatiser. Voici comment structurer un onboarding efficace avec l'IA, sans perdre la touche humaine.
+
+---
+
+## Le coût caché d'un onboarding manuel
+
+Combien de temps votre équipe passe-t-elle à accueillir un nouveau client ? Entre l'email de bienvenue, la collecte des informations, la création des accès, l'envoi du contrat, le premier rapport de démarrage et les relances — il n'est pas rare que l'onboarding d'un seul client mobilise 3 à 5 heures de travail dispersées sur deux semaines.
+
+Multipliez par le nombre de nouveaux clients par mois, et vous obtenez un poste invisible mais massif.
+
+Pire : un onboarding manuel est rarement homogène. Selon qui s'en occupe, l'ordre des étapes change, des informations sont oubliées, les délais varient. Le client perçoit ce manque de structure, même s'il ne le formule pas explicitement.
+
+---
+
+## Les quatre grandes étapes à automatiser
+
+### 1. La séquence de bienvenue
+
+Dès la signature du contrat (ou la première commande), déclenchez automatiquement une séquence d'emails structurée :
+
+- **Email J+0** : confirmation, prochaines étapes, qui contacter
+- **Email J+1** : accès à vos outils ou espace client
+- **Email J+3** : premiers conseils ou ressources utiles
+- **Email J+7** : check-in proactif ("avez-vous des questions ?")
+
+Cette séquence peut être rédigée une fois avec un LLM, puis personnalisée automatiquement avec le nom du client, son secteur et le service souscrit. Elle donne l'impression d'un suivi individualisé sans mobiliser personne.
+
+### 2. La collecte de documents
+
+C'est souvent le goulot d'étranglement : vous avez besoin de pièces (KBIS, RIB, contrats signés, données techniques), et les relancer manuellement prend un temps fou.
+
+Automatisez avec un formulaire intelligent ou un lien de collecte (Typeform, Notion, Google Form) envoyé automatiquement après la signature. Le workflow vérifie si les documents ont été fournis — si non, il envoie une relance après 48h, puis 72h, puis alerte un humain.
+
+**Bénéfice** : zéro relance manuelle, et un taux de complétude bien supérieur.
+
+### 3. La création de compte et la configuration initiale
+
+Pour les PME proposant un service digital (SaaS, plateforme, espace client), la création de compte peut être entièrement automatisée :
+
+- Création du compte dans votre outil (via API ou Zapier/Make)
+- Envoi des identifiants par email sécurisé
+- Configuration des paramètres de base selon le profil client
+- Attribution à un responsable de compte dans votre CRM
+
+Si votre outil ne propose pas d'API, un formulaire de saisie simplifié avec validation humaine en aval reste bien plus rapide qu'un processus entièrement manuel.
+
+### 4. La communication personnalisée à chaque étape
+
+L'IA permet d'aller plus loin que la simple personnalisation du prénom. En fonction des informations collectées lors de l'onboarding, générez automatiquement :
+
+- Un **plan de démarrage personnalisé** adapté au secteur et aux objectifs du client
+- Un **email de bilan J+30** qui reprend les actions réalisées et propose les prochaines étapes
+- Des **ressources ciblées** selon les problématiques mentionnées lors de l'inscription
+
+Ces contenus peuvent être générés par un LLM à partir d'un template structuré, relus par un humain si nécessaire, puis envoyés automatiquement.
+
+---
+
+## Architecture d'un workflow d'onboarding complet
+
+Un onboarding automatisé efficace repose sur une architecture en trois couches :
+
+**Déclencheur** → signature d'un contrat, paiement confirmé, inscription validée
+
+**Orchestrateur** → Make, n8n ou Zapier qui coordonne les étapes et gère les branchements conditionnels (client entreprise vs particulier, service A vs service B)
+
+**Exécuteurs** → les outils spécialisés : email (Mailchimp, ActiveCampaign), CRM (HubSpot, Pipedrive), stockage de documents (Google Drive, Notion), générateur de contenus (GPT-4 via API)
+
+La clé est de ne pas essayer de tout faire dans un seul outil. Laissez chaque outil faire ce qu'il fait bien, et l'orchestrateur faire la coordination.
+
+---
+
+## Ce qu'il ne faut pas automatiser
+
+Toutes les étapes de l'onboarding ne bénéficient pas de l'automatisation. Certains moments exigent un contact humain réel :
+
+- **L'appel de découverte initial** : même 15 minutes de conversation téléphonique créent une relation que l'email ne peut pas remplacer
+- **La validation stratégique** : si votre service implique de comprendre des objectifs complexes, un humain doit lire et valider avant que le workflow continue
+- **La gestion d'un blocage** : quand un client ne complète pas les étapes, une escalade humaine est plus efficace qu'une 4e relance automatique
+
+L'automatisation doit amplifier la relation client, pas la remplacer.
+
+---
+
+## Mesurer la réussite de votre onboarding automatisé
+
+Trois métriques à suivre :
+
+- **Délai moyen d'activation** : combien de jours entre la signature et le premier usage réel ?
+- **Taux de complétion des documents** : quel pourcentage de clients fournissent tout dans les 7 jours ?
+- **Score de satisfaction J+30** : un court NPS ou enquête à 30 jours révèle immédiatement les frictions résiduelles
+
+Itérez sur ces métriques tous les trimestres. L'onboarding n'est jamais définitivement "fait".
+
+---
+
+## Par où commencer
+
+Commencez par cartographier votre onboarding actuel sur une feuille blanche : listez chaque étape, qui la fait, combien de temps elle prend, et à quel moment elle se produit. Cette cartographie seule révèle souvent 2 ou 3 étapes immédiatement automatisables sans aucun développement.
+
+Déployez d'abord la séquence d'emails de bienvenue — c'est le plus rapide et celui qui a l'impact le plus visible sur la perception client. Ensuite, automatisez la collecte de documents. Puis la création de compte.
+
+Chaque étape automatisée libère du temps pour ce qui compte : la relation.
+
+Pour aller plus loin, consultez nos guides sur [construire des workflows IA](/blog/construire-workflows-ia), [automatiser la gestion des emails](/blog/gestion-emails-ia) et [générer des documents avec l'IA](/blog/generation-documents-ia).

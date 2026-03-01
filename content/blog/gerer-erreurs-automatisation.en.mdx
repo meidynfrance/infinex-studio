@@ -1,0 +1,106 @@
+---
+title: "Handling Errors in Your AI Automations"
+description: "Common error types, monitoring strategies, fallbacks, and alerting — everything you need to keep your AI automations reliable in production."
+date: "2026-01-06"
+author: "Infinex"
+category: "automatisation"
+---
+
+**TL;DR**: AI automations don't fail randomly — they fail predictably. Identifying error types upfront, setting up simple monitoring, and defining fallback procedures is all it takes to make your workflows robust. Here's how.
+
+---
+
+## Why Your Automations Will Eventually Break
+
+A production automation is a living system. APIs change, vendors go down, data arrives in unexpected formats, LLMs occasionally return malformed responses. It's not a question of "if" but "when."
+
+The difference between a business that loses data and one that recovers in five minutes is preparation — not technology.
+
+Too many business owners deploy an automation, test it once, and consider it done. Three weeks later, a client hasn't received their invoice, a report hasn't generated, and nobody knows how long it's been broken.
+
+---
+
+## The Four Error Types to Anticipate
+
+### 1. Connectivity Errors
+
+The external tool isn't responding. The API is in maintenance. The webhook never arrives. These are the most frequent errors and the easiest to handle: a retry mechanism with exponential backoff (1s, 5s, 30s) absorbs the vast majority of temporary outages.
+
+**What to put in place**: 3 retries maximum by default, then escalate to a human alert.
+
+### 2. Data Errors
+
+The source format changes. A field becomes required. A null value breaks parsing. These errors are insidious because they don't always produce an explicit error message — they silently produce a wrong result.
+
+**What to put in place**: schema validation at every critical step, not just at the input.
+
+### 3. AI Logic Errors
+
+The LLM returns something unexpected: an empty response, malformed JSON, a hallucination in a key field. These errors are particularly risky in automations that send client-facing communications.
+
+**What to put in place**: output guards after the model call (minimum length, required fields present, expected format) before injecting the result into the next step.
+
+### 4. Volume and Rate Limiting Errors
+
+Your automation sends 500 requests in an hour and the API cuts you off. Or an activity spike overloads the queue. This type of error is often invisible until it's too late.
+
+**What to put in place**: explicit rate limits within your workflows, and monitoring of volume processed per hour.
+
+---
+
+## Setting Up Effective Monitoring
+
+Monitoring doesn't need to be complex. For an SMB, a simple dashboard with three metrics is enough:
+
+- **Success rate**: percentage of error-free executions over the last 24 hours
+- **Average execution time**: a sudden increase often signals an upstream problem
+- **Volume processed**: a sharp drop indicates the trigger has stopped working
+
+Tools like Make, n8n, or Zapier offer native logs. Make a habit of reviewing them at least once a week, and configure automatic alerts for any error rate above 5%.
+
+---
+
+## Fallback Strategies: What to Do When Things Break
+
+A **fallback** is the default behavior when an automation fails. Define three levels for each critical workflow:
+
+1. **Automatic retry**: for temporary errors (connectivity, timeouts)
+2. **Degraded mode**: the automation continues with partial data rather than stopping completely
+3. **Human escalation**: a team member receives an alert and takes over manually
+
+The third level is often neglected. Yet it's what prevents disasters. An automatic Slack message, email, or Telegram notification sent as soon as a critical step fails changes everything.
+
+---
+
+## Human-in-the-Loop: Where to Place Control Points
+
+Not all automations should be 100% autonomous. Certain actions deserve human validation before execution:
+
+- Sending an email to a list of more than 100 contacts
+- Modifying data in a CRM
+- Generating a contractual document
+- Any action that triggers a payment or invoice
+
+For these cases, build in an **approval step**: the automation prepares, a human validates, the automation executes. This can be as simple as a Slack message with a Yes/No button, or a row in a Google Sheet with a status field to update.
+
+---
+
+## Alerting: Three Golden Rules
+
+1. **Actionable alerts only**: an alert that doesn't say what to do is noise. Every notification should identify the workflow, the step that failed, and the recommended next action.
+
+2. **One channel per severity level**: blocking errors go to mobile (Telegram, SMS), non-critical errors go to a dedicated Slack channel, everything else goes to logs.
+
+3. **No alert fatigue**: if an alert fires more than ten times a day, either fix the underlying bug or adjust the threshold. Alerts that fire too frequently get ignored.
+
+---
+
+## Where to Start
+
+If your automations don't yet have a monitoring system, start with the simplest approach: enable native logs in your automation tool, create a "#automation-errors" Slack channel, and configure an email alert for every failure.
+
+Then audit your three most critical workflows and define for each: the most likely error type, the associated fallback, and the person responsible in case of escalation.
+
+It's this preparatory work — not technical sophistication — that determines the long-term reliability of your automations.
+
+To go further, see our guides on [building robust AI workflows](/blog/construire-workflows-ia) and [scaling your automations from 3 to 30 workflows](/blog/scaler-automatisations-ia).

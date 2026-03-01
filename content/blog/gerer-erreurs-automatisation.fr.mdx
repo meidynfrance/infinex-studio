@@ -1,0 +1,106 @@
+---
+title: "Gérer les erreurs dans vos automatisations IA"
+description: "Types d'erreurs courants, stratégies de monitoring, fallbacks et alertes : tout ce qu'il faut pour que vos automatisations restent fiables en production."
+date: "2026-01-06"
+author: "Infinex"
+category: "automatisation"
+---
+
+**En bref** : Les automatisations IA ne tombent pas en panne par hasard — elles tombent en panne de façon prévisible. Identifier les types d'erreurs à l'avance, mettre en place un monitoring simple et définir des procédures de fallback suffit à rendre vos workflows robustes. Voici comment faire.
+
+---
+
+## Pourquoi vos automatisations vont inévitablement planter
+
+Une automatisation en production, c'est un système vivant. Les APIs changent, les fournisseurs coupent des services, les données arrivent dans un format inattendu, les LLMs retournent parfois des réponses malformées. Ce n'est pas une question de "si" mais de "quand".
+
+La différence entre une PME qui perd des données et une PME qui rebondit en cinq minutes, c'est la préparation. Pas la technologie.
+
+Trop de dirigeants déploient une automatisation, la testent une fois, et considèrent que c'est fait. Trois semaines plus tard, un client ne reçoit pas sa facture, un rapport ne se génère pas, et personne ne sait depuis quand.
+
+---
+
+## Les quatre types d'erreurs à anticiper
+
+### 1. Erreurs de connectivité
+
+L'outil externe ne répond pas. L'API est en maintenance. Le webhook n'arrive pas. Ce sont les erreurs les plus fréquentes et les plus simples à gérer : un mécanisme de retry avec délai exponentiel (1s, 5s, 30s) absorbe la majorité des pannes temporaires.
+
+**Ce qu'il faut mettre en place** : 3 tentatives maximum par défaut, puis escalade vers une alerte humaine.
+
+### 2. Erreurs de données
+
+Le format change côté source. Un champ devient obligatoire. Une valeur nulle casse le parsing. Ces erreurs sont traîtresses car elles ne génèrent pas toujours un message d'erreur explicite — elles produisent un résultat silencieusement faux.
+
+**Ce qu'il faut mettre en place** : des validations de schéma à chaque étape critique, pas seulement en entrée.
+
+### 3. Erreurs de logique IA
+
+Le LLM retourne quelque chose d'inattendu : une réponse vide, un JSON mal formé, une hallucination dans un champ clé. Ces erreurs sont particulièrement risquées dans les automatisations qui envoient des communications clients.
+
+**Ce qu'il faut mettre en place** : des gardes-fous en sortie du modèle (longueur minimale, présence de champs obligatoires, format attendu) avant d'injecter le résultat dans l'étape suivante.
+
+### 4. Erreurs de volume ou de rate limiting
+
+Votre automatisation envoie 500 requêtes en une heure et l'API vous coupe. Ou un pic d'activité provoque une surcharge de la file d'attente. Ce type d'erreur est souvent invisible jusqu'à ce qu'il soit trop tard.
+
+**Ce qu'il faut mettre en place** : des limites de débit explicites dans vos workflows, et un monitoring du volume traité par heure.
+
+---
+
+## Mettre en place un monitoring efficace
+
+Le monitoring n'a pas besoin d'être complexe. Pour une PME, un tableau de bord simple avec trois métriques suffit :
+
+- **Taux de succès** : pourcentage d'exécutions sans erreur sur les 24 dernières heures
+- **Temps moyen d'exécution** : une hausse soudaine signale souvent un problème en amont
+- **Volume traité** : une chute brutale indique que le déclencheur ne fonctionne plus
+
+Des outils comme Make, n8n ou Zapier proposent des logs natifs. Prenez l'habitude de les consulter une fois par semaine minimum, et configurez des alertes automatiques pour tout taux d'erreur supérieur à 5%.
+
+---
+
+## Stratégies de fallback : que faire quand ça casse
+
+Un **fallback** est le comportement par défaut quand l'automatisation échoue. Trois niveaux à définir pour chaque workflow critique :
+
+1. **Retry automatique** : pour les erreurs temporaires (connectivité, timeout)
+2. **Mode dégradé** : l'automatisation continue avec des données partielles plutôt que de s'arrêter complètement
+3. **Escalade humaine** : un membre de l'équipe reçoit une alerte et prend le relais manuellement
+
+Le troisième niveau est souvent négligé. Pourtant, c'est lui qui évite les catastrophes. Un Slack, un email ou une notification Telegram envoyé automatiquement dès qu'une étape critique échoue change tout.
+
+---
+
+## Le human-in-the-loop : où placer les points de contrôle
+
+Toutes les automatisations ne doivent pas être 100% autonomes. Certaines actions méritent une validation humaine avant d'être exécutées :
+
+- Envoi d'un email à une liste de plus de 100 contacts
+- Modification de données dans un CRM
+- Génération d'un document contractuel
+- Action qui déclenche un paiement ou une facturation
+
+Pour ces cas, intégrez une **étape d'approbation** : l'automatisation prépare, un humain valide, l'automatisation exécute. Cela peut se faire via un simple message Slack avec un bouton Oui/Non, ou une ligne dans un Google Sheet avec un statut à mettre à jour.
+
+---
+
+## Alerting : les trois règles d'or
+
+1. **Alertes actionnables uniquement** : une alerte qui ne dit pas quoi faire est du bruit. Chaque notification doit indiquer le workflow concerné, l'étape qui a échoué, et la prochaine action recommandée.
+
+2. **Un seul canal par criticité** : les erreurs bloquantes vont sur mobile (Telegram, SMS), les erreurs non critiques dans un canal Slack dédié, le reste dans les logs.
+
+3. **Pas d'alert fatigue** : si une alerte se déclenche plus de dix fois par jour, c'est soit un bug à corriger, soit un seuil à ajuster. Des alertes trop fréquentes finissent par être ignorées.
+
+---
+
+## Par où commencer
+
+Si vos automatisations n'ont pas encore de système de monitoring, commencez par le plus simple : activez les logs natifs de votre outil, créez un canal Slack "#automatisations-erreurs", et configurez une alerte email pour chaque échec.
+
+Ensuite, auditez vos trois workflows les plus critiques et définissez pour chacun : le type d'erreur le plus probable, le fallback associé, et la personne responsable en cas d'escalade.
+
+C'est ce travail préparatoire — pas la sophistication technique — qui détermine la fiabilité de vos automatisations sur le long terme.
+
+Pour aller plus loin, consultez nos guides sur [construire des workflows IA robustes](/blog/construire-workflows-ia) et [scaler vos automatisations de 3 à 30 workflows](/blog/scaler-automatisations-ia).
