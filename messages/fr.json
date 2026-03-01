@@ -6,6 +6,7 @@
   },
   "nav": {
     "home": "Accueil",
+    "blog": "Blog",
     "getStarted": "Commencer"
   },
   "hero": {
@@ -167,6 +168,26 @@
       "needsRequired": "Décrivez vos besoins",
       "needsMin": "Minimum 10 caractères",
       "sourceRequired": "Sélectionnez une source"
+    }
+  },
+  "blog": {
+    "metaTitle": "Blog — Infinex",
+    "metaDescription": "Stratégies IA, automatisation, formation : nos articles pour transformer votre PME.",
+    "title": "Blog",
+    "subtitle": "Stratégies concrètes pour intégrer l'IA dans votre entreprise.",
+    "allCategories": "Tout",
+    "categories": {
+      "strategie-ia": "Stratégie IA",
+      "automatisation": "Automatisation",
+      "formation": "Formation",
+      "cas-usage": "Cas d'usage"
+    },
+    "readingTime": "{minutes} min de lecture",
+    "backToBlog": "Retour au blog",
+    "postCta": {
+      "title": "Prêt à passer à l'action ?",
+      "description": "Discutons de votre projet et définissons ensemble votre stratégie IA.",
+      "cta": "Commencer"
     }
   },
   "footer": {

@@ -18,7 +18,13 @@ export function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-6">
+          <Link
+            href="/blog"
+            className="text-sm text-text-secondary transition-colors hover:text-text-primary"
+          >
+            {t("blog")}
+          </Link>
           <LanguageSwitcher />
           <Button href="/get-started" size="sm">
             {t("getStarted")}
@@ -45,6 +51,13 @@ export function Header() {
       {menuOpen && (
         <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-lg">
           <nav className="flex flex-col px-4 py-4 space-y-4">
+            <Link
+              href="/blog"
+              onClick={() => setMenuOpen(false)}
+              className="text-sm text-text-secondary transition-colors hover:text-text-primary"
+            >
+              {t("blog")}
+            </Link>
             <div className="flex items-center gap-4">
               <LanguageSwitcher />
               <Button href="/get-started" size="sm" className="flex-1">

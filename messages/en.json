@@ -6,6 +6,7 @@
   },
   "nav": {
     "home": "Home",
+    "blog": "Blog",
     "getStarted": "Get Started"
   },
   "hero": {
@@ -167,6 +168,26 @@
       "needsRequired": "Please describe your needs",
       "needsMin": "Minimum 10 characters",
       "sourceRequired": "Please select a source"
+    }
+  },
+  "blog": {
+    "metaTitle": "Blog — Infinex",
+    "metaDescription": "AI strategies, automation, training: actionable insights for SMBs.",
+    "title": "Blog",
+    "subtitle": "Actionable strategies to integrate AI into your business.",
+    "allCategories": "All",
+    "categories": {
+      "strategie-ia": "AI Strategy",
+      "automatisation": "Automation",
+      "formation": "Training",
+      "cas-usage": "Use Cases"
+    },
+    "readingTime": "{minutes} min read",
+    "backToBlog": "Back to blog",
+    "postCta": {
+      "title": "Ready to take action?",
+      "description": "Let's discuss your project and define your AI strategy together.",
+      "cta": "Get Started"
     }
   },
   "footer": {

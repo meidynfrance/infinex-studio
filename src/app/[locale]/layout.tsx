@@ -8,6 +8,7 @@ import { routing } from "@/i18n/routing";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { OrganizationSchema } from "@/components/structured-data/OrganizationSchema";
 import "../globals.css";
 
 const inter = Inter({
@@ -80,6 +81,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={locale} className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <body className="min-h-screen bg-background text-text-primary antialiased">
+        <OrganizationSchema />
         <NextIntlClientProvider>
           <Header />
           <main>{children}</main>
