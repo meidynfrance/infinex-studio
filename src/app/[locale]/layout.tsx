@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { type ReactNode, Suspense } from "react";
 import type { Metadata } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { setRequestLocale, getTranslations } from "next-intl/server";
@@ -9,6 +9,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { OrganizationSchema } from "@/components/structured-data/OrganizationSchema";
+import { UtmCapture } from "@/components/UtmCapture";
 import "../globals.css";
 
 const inter = Inter({
@@ -83,6 +84,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       <body className="min-h-screen bg-background text-text-primary antialiased">
         <OrganizationSchema />
         <NextIntlClientProvider>
+          <Suspense><UtmCapture /></Suspense>
           <Header />
           <main>{children}</main>
           <Footer />
