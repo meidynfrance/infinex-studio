@@ -37,38 +37,6 @@ function getAuth() {
   });
 }
 
-export async function initializeSheetHeaders() {
-  const auth = getAuth();
-  const sheets = google.sheets({ version: "v4", auth });
-
-  const headers = [
-    "Date",
-    "Prénom",
-    "Nom",
-    "Email",
-    "Téléphone",
-    "Entreprise",
-    "Poste",
-    "CA",
-    "Services",
-    "Source",
-    "Medium",
-    "Campagne",
-    "Langue",
-  ];
-
-  await sheets.spreadsheets.values.update({
-    spreadsheetId: SPREADSHEET_ID!,
-    range: `${SHEET_NAME}!A1:M1`,
-    valueInputOption: "RAW",
-    requestBody: {
-      values: [headers],
-    },
-  });
-
-  return { ok: true };
-}
-
 export async function appendLeadToSheet(data: LeadData) {
   if (!SPREADSHEET_ID) {
     console.error("GOOGLE_SPREADSHEET_ID not configured");
@@ -112,7 +80,10 @@ export async function appendLeadToSheet(data: LeadData) {
 
     return { ok: true };
   } catch (error) {
-    console.error("Google Sheets error:", error);
-    return { ok: false, error: String(error) };
+    console.error(
+      "Google Sheets error:",
+      error instanceof Error ? error.message : "Unknown error"
+    );
+    return { ok: false, error: "Sheets write failed" };
   }
 }

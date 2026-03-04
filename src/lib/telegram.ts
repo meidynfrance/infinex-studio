@@ -69,9 +69,8 @@ export async function sendTelegramMessage(params: SendMessageParams) {
   );
 
   if (!response.ok) {
-    const error = await response.text();
-    console.error("Telegram API error:", error);
-    return { ok: false, error };
+    console.error("Telegram API error: status", response.status);
+    return { ok: false, error: "Notification service failed" };
   }
 
   return { ok: true };
