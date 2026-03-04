@@ -67,10 +67,32 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-border pt-8 text-center">
-          <p className="text-sm text-text-secondary/60">
-            &copy; {new Date().getFullYear()} Infinex. {t("footer.rights")}
-          </p>
+        <div className="mt-12 border-t border-border pt-8">
+          <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
+            <p className="text-sm text-text-secondary/60">
+              &copy; {new Date().getFullYear()} Infinex. {t("footer.rights")}
+            </p>
+            <div className="flex gap-6">
+              <Link
+                href="/legal"
+                className="text-xs text-text-secondary/60 transition-colors hover:text-text-secondary"
+              >
+                {t("nav.legal")}
+              </Link>
+              <Link
+                href="/privacy"
+                className="text-xs text-text-secondary/60 transition-colors hover:text-text-secondary"
+              >
+                {t("nav.privacy")}
+              </Link>
+              <Link
+                href="/terms"
+                className="text-xs text-text-secondary/60 transition-colors hover:text-text-secondary"
+              >
+                {t("nav.terms")}
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

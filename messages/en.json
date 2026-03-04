@@ -7,7 +7,10 @@
   "nav": {
     "home": "Home",
     "blog": "Blog",
-    "getStarted": "Get Started"
+    "getStarted": "Get Started",
+    "legal": "Legal Notice",
+    "privacy": "Privacy",
+    "terms": "Terms"
   },
   "hero": {
     "title": "Win the next chapter.",
@@ -196,5 +199,107 @@
     "company": "Navigation",
     "rights": "All rights reserved.",
     "contact": "Contact"
+  },
+  "legal": {
+    "metaTitle": "Legal Notice — Infinex",
+    "metaDescription": "Legal notice for the infinex.studio website.",
+    "title": "Legal Notice",
+    "lastUpdated": "Last updated: March 4, 2026",
+    "editor": {
+      "title": "Website Publisher",
+      "content": "EI Meidy BAFFOU\nSIRET: 80473268300045\nEmail: contact@makeitglobal-agency.com\nWebsite: infinex.studio"
+    },
+    "publication": {
+      "title": "Publication Director",
+      "content": "Meidy BAFFOU"
+    },
+    "hosting": {
+      "title": "Hosting",
+      "content": "Vercel Inc.\n340 S Lemon Ave #4133\nWalnut, CA 91789, USA\nhttps://vercel.com"
+    },
+    "ip": {
+      "title": "Intellectual Property",
+      "content": "All content on this website (text, images, graphics, logos, icons, software) is the exclusive property of the publisher or its partners. Any reproduction, representation, modification, publication, or adaptation of these elements, in whole or in part, is prohibited without prior written authorization."
+    },
+    "liability": {
+      "title": "Limitation of Liability",
+      "content": "The publisher cannot be held liable for errors, unavailability of information, or the presence of viruses on the website. Information is provided for indicative purposes only and does not constitute a contractual commitment."
+    },
+    "law": {
+      "title": "Applicable Law",
+      "content": "This legal notice is governed by French law. Any dispute shall be submitted to the competent courts of Paris, France."
+    }
+  },
+  "privacy": {
+    "metaTitle": "Privacy Policy — Infinex",
+    "metaDescription": "Privacy policy and data protection for the infinex.studio website.",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: March 4, 2026",
+    "controller": {
+      "title": "Data Controller",
+      "content": "EI Meidy BAFFOU\nSIRET: 80473268300045\nEmail: contact@makeitglobal-agency.com"
+    },
+    "dataCollected": {
+      "title": "Data Collected",
+      "content": "We only collect data that you submit through our contact form: first name, last name, email, phone number, company, job title, revenue range, and services of interest. No data is collected automatically beyond standard server logs."
+    },
+    "purpose": {
+      "title": "Purpose of Processing",
+      "content": "Your data is used to respond to your inquiries, follow up for commercial purposes, and improve our services. We never sell, rent, or share your data with third parties for commercial purposes."
+    },
+    "storage": {
+      "title": "Data Hosting and Storage",
+      "content": "The website is hosted by Vercel Inc. (USA). Form submissions are stored in Google Sheets (Google LLC, USA) for commercial follow-up and transmitted via Telegram Bot API for internal notifications. These services comply with GDPR through Standard Contractual Clauses (SCCs)."
+    },
+    "retention": {
+      "title": "Data Retention",
+      "content": "Your data is retained for the duration of the business relationship and for a maximum of 3 years after the last contact. You may request deletion at any time."
+    },
+    "rights": {
+      "title": "Your Rights (GDPR)",
+      "content": "Under the General Data Protection Regulation (GDPR), you have the right to access, rectify, delete, port, and object to the processing of your personal data. To exercise your rights, contact us at contact@makeitglobal-agency.com."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "content": "This website does not use advertising cookies or third-party trackers. Only strictly necessary technical cookies may be used for the website to function properly."
+    },
+    "thirdParty": {
+      "title": "Third-Party Services",
+      "content": "The website uses Google Analytics for audience measurement. This data is anonymized and cannot be used to personally identify you. You can disable tracking through your browser settings."
+    }
+  },
+  "terms": {
+    "metaTitle": "Terms of Use — Infinex",
+    "metaDescription": "Terms and conditions of use for the infinex.studio website.",
+    "title": "Terms of Use",
+    "lastUpdated": "Last updated: March 4, 2026",
+    "object": {
+      "title": "Purpose",
+      "content": "These Terms of Use govern access to and use of the infinex.studio website, published by EI Meidy BAFFOU (SIRET: 80473268300045). By using this website, you fully accept these terms."
+    },
+    "services": {
+      "title": "Services Description",
+      "content": "Infinex provides AI consulting services for SMBs: AI audit and strategy, automation deployment, and team training. The website allows you to discover our offerings, read our articles, and contact us through the dedicated form."
+    },
+    "access": {
+      "title": "Website Access",
+      "content": "The website is freely accessible to any user with an Internet connection. The publisher reserves the right to suspend or interrupt access for maintenance or updates, without prior notice or compensation."
+    },
+    "ip": {
+      "title": "Intellectual Property",
+      "content": "All content on this website (text, images, logos, graphics, videos) is protected by intellectual property law. Any unauthorized reproduction or use is prohibited."
+    },
+    "liability": {
+      "title": "Limitation of Liability",
+      "content": "The publisher strives to provide accurate information on the website. However, it cannot be held liable for errors, omissions, or results obtained from using this information. The website is provided \"as is\" without warranty of any kind."
+    },
+    "modifications": {
+      "title": "Changes to Terms",
+      "content": "The publisher reserves the right to modify these Terms at any time. Changes take effect upon publication on the website. Continued use of the website after modification constitutes acceptance of the new terms."
+    },
+    "law": {
+      "title": "Applicable Law",
+      "content": "These Terms are governed by French law. Any dispute relating to the use of the website shall be subject to the exclusive jurisdiction of the courts of Paris, France."
+    }
   }
 }

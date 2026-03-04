@@ -7,7 +7,10 @@
   "nav": {
     "home": "Accueil",
     "blog": "Blog",
-    "getStarted": "Commencer"
+    "getStarted": "Commencer",
+    "legal": "Mentions légales",
+    "privacy": "Confidentialité",
+    "terms": "CGU"
   },
   "hero": {
     "title": "Prenez une longueur d'avance.",
@@ -196,5 +199,107 @@
     "company": "Navigation",
     "rights": "Tous droits réservés.",
     "contact": "Contact"
+  },
+  "legal": {
+    "metaTitle": "Mentions légales — Infinex",
+    "metaDescription": "Mentions légales du site infinex.studio.",
+    "title": "Mentions légales",
+    "lastUpdated": "Dernière mise à jour : 4 mars 2026",
+    "editor": {
+      "title": "Éditeur du site",
+      "content": "EI Meidy BAFFOU\nSIRET : 80473268300045\nEmail : contact@makeitglobal-agency.com\nSite : infinex.studio"
+    },
+    "publication": {
+      "title": "Directeur de la publication",
+      "content": "Meidy BAFFOU"
+    },
+    "hosting": {
+      "title": "Hébergement",
+      "content": "Vercel Inc.\n340 S Lemon Ave #4133\nWalnut, CA 91789, USA\nhttps://vercel.com"
+    },
+    "ip": {
+      "title": "Propriété intellectuelle",
+      "content": "L'ensemble du contenu de ce site (textes, images, graphismes, logo, icônes, logiciels) est la propriété exclusive de l'éditeur ou de ses partenaires. Toute reproduction, représentation, modification, publication, adaptation totale ou partielle de ces éléments est interdite sans autorisation écrite préalable."
+    },
+    "liability": {
+      "title": "Limitation de responsabilité",
+      "content": "L'éditeur ne saurait être tenu responsable des erreurs, d'une absence de disponibilité des informations ou de la présence de virus sur le site. Les informations sont fournies à titre indicatif et ne sauraient constituer un engagement contractuel."
+    },
+    "law": {
+      "title": "Droit applicable",
+      "content": "Les présentes mentions légales sont soumises au droit français. Tout litige sera porté devant les juridictions compétentes de Paris, France."
+    }
+  },
+  "privacy": {
+    "metaTitle": "Politique de confidentialité — Infinex",
+    "metaDescription": "Politique de confidentialité et protection des données du site infinex.studio.",
+    "title": "Politique de confidentialité",
+    "lastUpdated": "Dernière mise à jour : 4 mars 2026",
+    "controller": {
+      "title": "Responsable du traitement",
+      "content": "EI Meidy BAFFOU\nSIRET : 80473268300045\nEmail : contact@makeitglobal-agency.com"
+    },
+    "dataCollected": {
+      "title": "Données collectées",
+      "content": "Nous collectons uniquement les données que vous nous transmettez via le formulaire de contact : prénom, nom, email, téléphone, entreprise, poste, chiffre d'affaires et services souhaités. Aucune donnée n'est collectée automatiquement en dehors des logs serveur standards."
+    },
+    "purpose": {
+      "title": "Finalité du traitement",
+      "content": "Vos données sont utilisées pour répondre à vos demandes de renseignement, vous recontacter dans le cadre d'un suivi commercial et améliorer nos services. Nous ne vendons, ne louons et ne partageons jamais vos données avec des tiers à des fins commerciales."
+    },
+    "storage": {
+      "title": "Hébergement et stockage des données",
+      "content": "Le site est hébergé par Vercel Inc. (USA). Les données du formulaire sont stockées dans Google Sheets (Google LLC, USA) pour le suivi commercial et transmises via Telegram Bot API pour les notifications internes. Ces services sont conformes au RGPD via les clauses contractuelles types (SCC)."
+    },
+    "retention": {
+      "title": "Durée de conservation",
+      "content": "Vos données sont conservées pendant la durée de la relation commerciale et au maximum 3 ans après le dernier contact. Vous pouvez demander leur suppression à tout moment."
+    },
+    "rights": {
+      "title": "Vos droits (RGPD)",
+      "content": "Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification, de suppression, de portabilité et d'opposition au traitement de vos données personnelles. Pour exercer vos droits, contactez-nous à contact@makeitglobal-agency.com."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "content": "Ce site n'utilise pas de cookies publicitaires ni de traceurs tiers. Seuls des cookies techniques strictement nécessaires au fonctionnement du site peuvent être déposés."
+    },
+    "thirdParty": {
+      "title": "Services tiers",
+      "content": "Le site utilise Google Analytics pour mesurer l'audience. Ces données sont anonymisées et ne permettent pas de vous identifier personnellement. Vous pouvez désactiver le suivi via les paramètres de votre navigateur."
+    }
+  },
+  "terms": {
+    "metaTitle": "Conditions générales d'utilisation — Infinex",
+    "metaDescription": "Conditions générales d'utilisation du site infinex.studio.",
+    "title": "Conditions générales d'utilisation",
+    "lastUpdated": "Dernière mise à jour : 4 mars 2026",
+    "object": {
+      "title": "Objet",
+      "content": "Les présentes conditions générales d'utilisation (CGU) régissent l'accès et l'utilisation du site infinex.studio, édité par EI Meidy BAFFOU (SIRET : 80473268300045). L'utilisation du site implique l'acceptation pleine et entière de ces CGU."
+    },
+    "services": {
+      "title": "Description des services",
+      "content": "Infinex propose des services de conseil en intelligence artificielle à destination des PME : audit et stratégie IA, déploiement d'automatisations, et formation des équipes. Le site permet de découvrir nos offres, de consulter nos articles et de nous contacter via le formulaire dédié."
+    },
+    "access": {
+      "title": "Accès au site",
+      "content": "Le site est accessible gratuitement à tout utilisateur disposant d'un accès Internet. L'éditeur se réserve le droit de suspendre ou d'interrompre l'accès au site pour des raisons de maintenance ou de mise à jour, sans préavis ni indemnité."
+    },
+    "ip": {
+      "title": "Propriété intellectuelle",
+      "content": "Tous les contenus présents sur le site (textes, images, logo, graphismes, vidéos) sont protégés par le droit de la propriété intellectuelle. Toute reproduction ou utilisation non autorisée est interdite."
+    },
+    "liability": {
+      "title": "Limitation de responsabilité",
+      "content": "L'éditeur met tout en œuvre pour fournir des informations fiables sur le site. Toutefois, il ne saurait être tenu responsable des erreurs, omissions ou résultats obtenus suite à l'utilisation de ces informations. Le site est fourni « en l'état » sans garantie d'aucune sorte."
+    },
+    "modifications": {
+      "title": "Modification des CGU",
+      "content": "L'éditeur se réserve le droit de modifier les présentes CGU à tout moment. Les modifications prennent effet dès leur publication sur le site. L'utilisation continue du site après modification vaut acceptation des nouvelles conditions."
+    },
+    "law": {
+      "title": "Droit applicable",
+      "content": "Les présentes CGU sont soumises au droit français. Tout litige relatif à l'utilisation du site sera soumis à la compétence exclusive des tribunaux de Paris, France."
+    }
   }
 }
