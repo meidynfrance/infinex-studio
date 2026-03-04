@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { contactSchema } from "@/lib/validations";
 import { sendTelegramMessage } from "@/lib/telegram";
+import { appendLeadToSheet } from "@/lib/google-sheets";
 
 export async function POST(request: Request) {
   try {
@@ -16,9 +17,17 @@ export async function POST(request: Request) {
 
     const locale = body.locale || "en";
     const utm = body.utm || {};
-    const result = await sendTelegramMessage({ ...parsed.data, locale, utm });
+    const leadData = { ...parsed.data, locale, utm };
 
-    if (!result.ok) {
+    const [telegramResult] = await Promise.all([
+      sendTelegramMessage(leadData),
+      appendLeadToSheet(leadData).catch((error) => {
+        console.error("Google Sheets append failed:", error);
+        return { ok: false, error: String(error) };
+      }),
+    ]);
+
+    if (!telegramResult.ok) {
       return NextResponse.json(
         { error: "Failed to send notification" },
         { status: 500 }
