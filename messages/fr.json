@@ -1,98 +1,89 @@
 {
   "metadata": {
-    "title": "Infinex — L'IA qui booste vos marges",
-    "description": "Infinex transforme les PME avec l'IA. Stratégie, déploiement, formation. Des résultats concrets, pas des PowerPoints.",
+    "title": "Infinex — L'IA qui travaille pour votre business",
+    "description": "Infinex déploie l'intelligence artificielle là où elle crée le plus de valeur : plus de revenus, moins de friction dans vos process.",
     "siteName": "Infinex"
   },
   "nav": {
     "home": "Accueil",
     "blog": "Blog",
     "getStarted": "Commencer",
+    "bookCall": "Réserver un appel",
     "legal": "Mentions légales",
     "privacy": "Confidentialité",
     "terms": "CGU"
   },
   "hero": {
-    "title": "Prenez une longueur d'avance.",
-    "subtitle": "Votre partenaire transformation IA.",
-    "description": "On définit et exécute votre stratégie IA à la vitesse d'une startup.",
-    "cta": "Commencer"
+    "eyebrow": "Agence IA — Infinex Studio",
+    "title": "L'IA qui travaille pour votre business.",
+    "titleAccent": "travaille",
+    "subtitle": "Nous déployons l'intelligence artificielle là où elle crée le plus de valeur — plus de revenus, moins de friction dans vos process."
   },
-  "approach": {
-    "sectionTitle": "De la réflexion à l'action, on couvre tout.",
-    "sectionSubtitle": "Trois leviers pour transformer votre entreprise avec l'IA.",
-    "audit": {
-      "title": "Audit & Stratégie",
-      "description": "Pas de présentations interminables. On audite vos process, on identifie les quick wins, et vous repartez avec un plan d'action chiffré."
+  "homeCards": {
+    "growth": {
+      "badge": "Croissance",
+      "title": "Augmenter votre chiffre d'affaires",
+      "description": "Leads qualifiés, acquisition payante optimisée, contenu automatisé, prospection ultra-ciblée. On fait grossir votre pipeline.",
+      "cta": "Voir les services"
     },
-    "implementation": {
-      "title": "Déploiement IA",
-      "description": "Automatisations sur mesure, outils IA intégrés à votre activité. On construit, on déploie, vous mesurez l'impact."
-    },
-    "training": {
-      "title": "Formation & Adoption",
-      "description": "Vos équipes formées aux meilleurs outils IA. Des ateliers pratiques pour une adoption durable et autonome."
+    "efficiency": {
+      "badge": "Efficacité",
+      "title": "Réduire vos coûts opérationnels",
+      "description": "Automatisation des tâches répétitives, rapports générés en un clic, documents produits sans effort. On libère vos équipes.",
+      "cta": "Voir les services"
     }
   },
-  "valueProp": {
-    "statement": "Vous avez le choix. Adopter l'IA maintenant. Ou regarder vos concurrents le faire."
-  },
-  "testimonials": {
-    "title": "Ils nous font confiance",
-    "items": [
-      {
-        "quote": "On passait un temps fou sur l'administratif. Aujourd'hui c'est géré, et mes équipes se concentrent sur ce qui rapporte.",
-        "author": "Jeremy",
-        "role": "Directeur des opérations",
-        "company": "PME Tech"
-      },
-      {
-        "quote": "On faisait tout à la main depuis des années. Une fois automatisé, on s'est demandé pourquoi on n'avait pas fait ça plus tôt.",
-        "author": "Xavier",
-        "role": "CEO",
-        "company": "Agence digitale"
-      },
-      {
-        "quote": "Ce qui a changé, c'est que chacun sait utiliser l'IA au quotidien. Ça a débloqué quelque chose dans l'équipe.",
-        "author": "Gabriel",
-        "role": "CEO",
-        "company": "Cabinet de conseil"
-      }
+  "croissance": {
+    "metaTitle": "Augmenter votre CA avec l'IA — Infinex",
+    "metaDescription": "Leads entrants, prospection, contenu, publicités optimisées. Découvrez nos services IA pour augmenter votre chiffre d'affaires.",
+    "back": "Retour",
+    "eyebrow": "Augmentation du CA",
+    "title": "Générez plus de revenus avec moins d'effort humain.",
+    "titleAccent": "moins d'effort humain",
+    "subtitle": "Leads entrants, prospection sortante, contenu à l'échelle, publicités optimisées. Nous déployons les bonnes armes pour chaque étape de votre acquisition.",
+    "ctaTitle": "Prêt à faire grossir votre pipeline ?",
+    "ctaSubtitle": "Un échange de 30 minutes suffit pour identifier vos 3 premiers leviers de croissance IA.",
+    "ctaButton": "Réserver un appel gratuit",
+    "services": [
+      { "icon": "search", "benefit": "Des leads entrants gratuits, chaque mois", "how": "SEO & GEO dopés à l'IA : on optimise votre visibilité sur Google et les moteurs IA (Perplexity, ChatGPT…) pour que vos prospects vous trouvent avant vos concurrents." },
+      { "icon": "target", "benefit": "Identifiez vos prospects les plus chauds sur LinkedIn", "how": "Scraping avancé + scoring IA pour cibler uniquement les décideurs qui correspondent à votre ICP — sans passer des heures sur Sales Navigator." },
+      { "icon": "email", "benefit": "Remplissez votre agenda avec du cold emailing automatisé", "how": "Séquences personnalisées à grande échelle, enrichissement de données et A/B testing IA pour maximiser les taux d'ouverture et de réponse." },
+      { "icon": "video", "benefit": "Des pubs UGC qui convertissent, sans tournage", "how": "Création de vidéos publicitaires style UGC grâce à l'IA générative — avatars réalistes, scripts optimisés, déclinaisons illimitées." },
+      { "icon": "social", "benefit": "Un flux continu de carrousels pour vos réseaux sociaux", "how": "Templates dynamiques alimentés par IA : un brief suffit pour générer des dizaines de visuels engageants adaptés à chaque plateforme." },
+      { "icon": "analytics", "benefit": "Optimisez Google Ads & Meta Ads sans expertise technique", "how": "Analyse IA de vos campagnes existantes, détection des dépenses inutiles et recommandations d'optimisation — ou gestion complète déléguée." },
+      { "icon": "image", "benefit": "Des dizaines de visuels publicitaires en quelques minutes", "how": "Génération de créatives statiques à la chaîne (bannières, stories, display) avec variantes de messages et formats en un seul workflow." },
+      { "icon": "globe", "benefit": "Dupliquez votre business dans n'importe quelle langue", "how": "Traduction, adaptation culturelle et déploiement SEO dans vos marchés cibles — votre offre localisée sans effort, prête à convertir." },
+      { "icon": "bot", "benefit": "Un commercial IA disponible 24h/24 sur votre site", "how": "Chatbot de qualification des leads intégré à votre CRM : il répond, filtre et classe vos prospects pendant que vous dormez." },
+      { "icon": "blog", "benefit": "Un blog qui génère du trafic en pilote automatique", "how": "Stratégie éditoriale + rédaction IA d'articles SEO publiés automatiquement — votre audience grandit sans y passer une heure." },
+      { "icon": "lightbulb", "benefit": "Scorez vos leads et concentrez-vous sur les bons", "how": "Modèle IA entraîné sur vos données CRM pour prédire la probabilité de conversion de chaque contact — priorité aux deals qui closent." },
+      { "icon": "refresh", "benefit": "Des emails de nurturing personnalisés à chaque contact", "how": "Séquences de suivi adaptées au comportement de chaque lead, rédigées et envoyées automatiquement pour maintenir le lien jusqu'à la décision." }
     ]
   },
-  "faq": {
-    "title": "Questions fréquentes",
-    "items": [
-      {
-        "question": "Comment ça marche concrètement ?",
-        "answer": "On commence par un audit de vos process. On identifie les quick wins et on déploie les premières automatisations. Les résultats arrivent vite."
-      },
-      {
-        "question": "Quels résultats attendre ?",
-        "answer": "Nos clients réduisent leur charge admin, gagnent en productivité et voient un ROI en quelques semaines. Chaque projet est mesuré."
-      },
-      {
-        "question": "C'est pour quel type d'entreprise ?",
-        "answer": "PME de 5 à 200 salariés, tous secteurs. Si vous avez des process répétitifs, on peut vous aider."
-      },
-      {
-        "question": "Combien ça coûte ?",
-        "answer": "Chaque projet est différent. On propose un premier échange gratuit pour évaluer vos besoins et donner un devis précis."
-      },
-      {
-        "question": "En quoi Infinex est différent d'un autre cabinet ?",
-        "answer": "On ne vend pas du conseil, on livre des résultats. Pas de slides, pas de jargon. On déploie, vous mesurez."
-      },
-      {
-        "question": "Combien de temps avant les premiers résultats ?",
-        "answer": "Les premiers gains sont visibles en 3 semaines. Le ROI complet arrive généralement en moins de 2 mois."
-      }
+  "efficacite": {
+    "metaTitle": "Réduire vos coûts avec l'IA — Infinex",
+    "metaDescription": "Automatisation, rapports, dashboards, formation. Découvrez nos services IA pour réduire vos coûts opérationnels.",
+    "back": "Retour",
+    "eyebrow": "Réduction des coûts",
+    "title": "Vos équipes sur ce qui compte. L'IA gère le reste.",
+    "titleAccent": "L'IA gère le reste.",
+    "subtitle": "Automatisez les tâches chronophages, éliminez les erreurs manuelles et produisez en quelques secondes ce qui prenait des heures. Sans recruter.",
+    "ctaTitle": "On calcule vos économies ensemble ?",
+    "ctaSubtitle": "En 30 minutes, on identifie les process à automatiser en priorité et on chiffre le gain réel pour votre équipe.",
+    "ctaButton": "Réserver un appel gratuit",
+    "services": [
+      { "icon": "clipboard", "benefit": "Produisez vos rapports d'audit en quelques clics", "how": "Pipeline IA qui collecte, analyse et met en forme vos données dans un rapport structuré et personnalisé — ce qui prenait 3h ne prend plus 10 minutes." },
+      { "icon": "gear", "benefit": "Automatisez vos tâches administratives répétitives", "how": "Traitement des emails entrants, saisie de données, relances, validations — tout ce qui se répète est scriptable et délégable à l'IA." },
+      { "icon": "dashboard", "benefit": "Un dashboard de pilotage toujours à jour, sans effort", "how": "Connexion de vos sources de données (CRM, ERP, Sheets…) dans un tableau de bord automatisé avec alertes intelligentes en temps réel." },
+      { "icon": "presentation", "benefit": "Des PowerPoints professionnels générés automatiquement", "how": "Vos données et briefs transformés en présentations structurées et à votre charte graphique — sans ouvrir PowerPoint une seule fois." },
+      { "icon": "document", "benefit": "Vos documents mis en page en quelques secondes", "how": "Automatisation de la mise en forme (Word, PDF, rapports) à partir de vos contenus bruts — cohérence visuelle garantie sans effort manuel." },
+      { "icon": "education", "benefit": "Vos équipes maîtrisent Excel & les outils IA en quelques semaines", "how": "Formations pratiques avec Claude comme assistant pédagogique : exercices personnalisés, réponses instantanées et montée en compétences accélérée." },
+      { "icon": "chat", "benefit": "Un support client automatisé qui répond à 80% des questions", "how": "Chatbot IA entraîné sur votre base de connaissance — gère les demandes courantes, escalade les cas complexes, disponible 24h/24." },
+      { "icon": "inbox", "benefit": "Traitez 3x plus d'emails sans recruter", "how": "Classification automatique, suggestions de réponses et réponses automatisées pour les emails récurrents — votre boîte mail ne déborde plus." },
+      { "icon": "extract", "benefit": "Extrayez les données de vos documents sans effort", "how": "OCR + IA pour lire factures, contrats, formulaires et peupler automatiquement vos outils — fin de la saisie manuelle." },
+      { "icon": "calendar", "benefit": "Automatisez votre onboarding RH de A à Z", "how": "Génération de contrats, envoi automatique des documents, relances et suivi des signatures — chaque nouvelle arrivée gérée en quelques clics." },
+      { "icon": "legal", "benefit": "Analysez vos contrats et documents juridiques en secondes", "how": "IA d'extraction des clauses clés, comparaison de versions, alertes sur les points sensibles — sans mobiliser un juriste pour chaque lecture." },
+      { "icon": "radar", "benefit": "Suivez vos concurrents et votre marché en temps réel", "how": "Veille automatisée (prix, actualités, réseaux sociaux) compilée chaque semaine dans un digest clair — toujours un temps d'avance." }
     ]
-  },
-  "finalCta": {
-    "title": "Restez du bon côté de l'histoire.",
-    "subtitle": "Le moment d'agir, c'est maintenant.",
-    "cta": "Commencer"
   },
   "getStarted": {
     "metaTitle": "Commencer — Infinex",
@@ -191,11 +182,11 @@
     "postCta": {
       "title": "Prêt à passer à l'action ?",
       "description": "Discutons de votre projet et définissons ensemble votre stratégie IA.",
-      "cta": "Commencer"
+      "cta": "Réserver un appel"
     }
   },
   "footer": {
-    "tagline": "L'IA au service de vos marges.",
+    "tagline": "L'IA au service de votre croissance.",
     "company": "Navigation",
     "rights": "Tous droits réservés.",
     "contact": "Contact"

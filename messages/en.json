@@ -1,98 +1,89 @@
 {
   "metadata": {
-    "title": "Infinex — AI-Powered Margin Growth",
-    "description": "Infinex transforms SMBs with AI. Strategy, deployment, training. Real results, not slide decks.",
+    "title": "Infinex — AI That Works for Your Business",
+    "description": "Infinex deploys artificial intelligence where it creates the most value — more revenue, less friction in your processes.",
     "siteName": "Infinex"
   },
   "nav": {
     "home": "Home",
     "blog": "Blog",
     "getStarted": "Get Started",
+    "bookCall": "Book a Call",
     "legal": "Legal Notice",
     "privacy": "Privacy",
     "terms": "Terms"
   },
   "hero": {
-    "title": "Win the next chapter.",
-    "subtitle": "Your AI transformation partner.",
-    "description": "We set and execute your AI strategy at startup speed.",
-    "cta": "Get Started"
+    "eyebrow": "AI Agency — Infinex Studio",
+    "title": "AI that works for your business.",
+    "titleAccent": "works",
+    "subtitle": "We deploy artificial intelligence where it creates the most value — more revenue, less friction in your processes."
   },
-  "approach": {
-    "sectionTitle": "From insight to impact. We cover the full spectrum.",
-    "sectionSubtitle": "Three levers to transform your business with AI.",
-    "audit": {
-      "title": "Audit & Strategy",
-      "description": "No 6-month studies. No 200-slide decks. We audit your processes, find the quick wins, and hand you a costed action plan."
+  "homeCards": {
+    "growth": {
+      "badge": "Growth",
+      "title": "Grow your revenue",
+      "description": "Qualified leads, optimized paid acquisition, automated content, laser-targeted prospecting. We scale your pipeline.",
+      "cta": "See services"
     },
-    "implementation": {
-      "title": "AI Deployment",
-      "description": "Custom automations, AI tools woven into your workflow. We build, we deploy, you measure the impact."
-    },
-    "training": {
-      "title": "Training & Adoption",
-      "description": "Your teams trained on the best AI tools. Practical workshops for lasting, self-sufficient adoption."
+    "efficiency": {
+      "badge": "Efficiency",
+      "title": "Cut your operating costs",
+      "description": "Automate repetitive tasks, generate reports in one click, produce documents effortlessly. We free up your teams.",
+      "cta": "See services"
     }
   },
-  "valueProp": {
-    "statement": "You have a choice. Embrace AI now. Or watch your competitors do it first."
-  },
-  "testimonials": {
-    "title": "Real stories, real results",
-    "items": [
-      {
-        "quote": "We used to spend so much time on admin. Now it's handled, and my teams can finally focus on what drives revenue.",
-        "author": "Jeremy",
-        "role": "Head of Operations",
-        "company": "Tech SMB"
-      },
-      {
-        "quote": "We'd been doing everything manually for years. Once it was automated, we wondered why we hadn't done it sooner.",
-        "author": "Xavier",
-        "role": "CEO",
-        "company": "Digital agency"
-      },
-      {
-        "quote": "What really changed is that everyone on the team now knows how to use AI daily. It unlocked something.",
-        "author": "Gabriel",
-        "role": "CEO",
-        "company": "Consulting firm"
-      }
+  "croissance": {
+    "metaTitle": "Grow Your Revenue with AI — Infinex",
+    "metaDescription": "Inbound leads, outbound prospecting, content, optimized ads. Discover our AI services to grow your revenue.",
+    "back": "Back",
+    "eyebrow": "Revenue Growth",
+    "title": "Generate more revenue with less human effort.",
+    "titleAccent": "less human effort",
+    "subtitle": "Inbound leads, outbound prospecting, content at scale, optimized ads. We deploy the right weapons for every stage of your acquisition.",
+    "ctaTitle": "Ready to grow your pipeline?",
+    "ctaSubtitle": "A 30-minute conversation is all it takes to identify your top 3 AI growth levers.",
+    "ctaButton": "Book a free call",
+    "services": [
+      { "icon": "search", "benefit": "Free inbound leads, every month", "how": "AI-powered SEO & GEO: we optimize your visibility on Google and AI engines (Perplexity, ChatGPT…) so prospects find you before your competitors." },
+      { "icon": "target", "benefit": "Identify your hottest prospects on LinkedIn", "how": "Advanced scraping + AI scoring to target only the decision-makers matching your ICP — no more hours wasted on Sales Navigator." },
+      { "icon": "email", "benefit": "Fill your calendar with automated cold emailing", "how": "Personalized sequences at scale, data enrichment, and AI A/B testing to maximize open and reply rates." },
+      { "icon": "video", "benefit": "UGC ads that convert — no filming needed", "how": "AI-generated UGC-style video ads — realistic avatars, optimized scripts, unlimited variations." },
+      { "icon": "social", "benefit": "A steady stream of carousels for your social channels", "how": "AI-powered dynamic templates: one brief generates dozens of engaging visuals tailored to each platform." },
+      { "icon": "analytics", "benefit": "Optimize Google Ads & Meta Ads without the expertise", "how": "AI analysis of your existing campaigns, detection of wasted spend, and optimization recommendations — or fully managed for you." },
+      { "icon": "image", "benefit": "Dozens of ad creatives in minutes", "how": "Batch generation of static creatives (banners, stories, display) with message variants and formats in a single workflow." },
+      { "icon": "globe", "benefit": "Scale your business into any language", "how": "Translation, cultural adaptation, and SEO deployment in your target markets — your offer localized and conversion-ready." },
+      { "icon": "bot", "benefit": "An AI sales rep on your site, 24/7", "how": "Lead-qualifying chatbot integrated with your CRM: it answers, filters, and scores your prospects while you sleep." },
+      { "icon": "blog", "benefit": "A blog that drives traffic on autopilot", "how": "Content strategy + AI-written SEO articles published automatically — your audience grows without you lifting a finger." },
+      { "icon": "lightbulb", "benefit": "Score your leads and focus on the right ones", "how": "AI model trained on your CRM data to predict conversion probability for each contact — prioritize the deals that close." },
+      { "icon": "refresh", "benefit": "Personalized nurturing emails for every contact", "how": "Follow-up sequences adapted to each lead's behavior, written and sent automatically to keep the relationship warm until they decide." }
     ]
   },
-  "faq": {
-    "title": "Questions? We have answers",
-    "items": [
-      {
-        "question": "How does it actually work?",
-        "answer": "We start with a process audit. We identify quick wins and deploy the first automations. Results come fast."
-      },
-      {
-        "question": "What results can I expect?",
-        "answer": "Our clients cut admin overhead, boost productivity, and see ROI within weeks. Every project is measured."
-      },
-      {
-        "question": "What kind of business is this for?",
-        "answer": "SMBs with 5 to 200 employees, any industry. If you have repetitive processes, we can help."
-      },
-      {
-        "question": "How much does it cost?",
-        "answer": "Every project is different. We offer a free initial conversation to understand your needs and provide a precise quote."
-      },
-      {
-        "question": "How is Infinex different from other consultancies?",
-        "answer": "We don't sell advice, we deliver results. No slide decks, no jargon. We deploy, you measure."
-      },
-      {
-        "question": "How quickly will I see results?",
-        "answer": "First gains are visible within 3 weeks. Full ROI typically arrives in under 2 months."
-      }
+  "efficacite": {
+    "metaTitle": "Cut Costs with AI — Infinex",
+    "metaDescription": "Automation, reports, dashboards, training. Discover our AI services to reduce your operating costs.",
+    "back": "Back",
+    "eyebrow": "Cost Reduction",
+    "title": "Your teams on what matters. AI handles the rest.",
+    "titleAccent": "AI handles the rest.",
+    "subtitle": "Automate time-consuming tasks, eliminate manual errors, and produce in seconds what used to take hours. Without hiring.",
+    "ctaTitle": "Let's calculate your savings together?",
+    "ctaSubtitle": "In 30 minutes, we identify the processes to automate first and quantify the real gains for your team.",
+    "ctaButton": "Book a free call",
+    "services": [
+      { "icon": "clipboard", "benefit": "Generate audit reports in a few clicks", "how": "AI pipeline that collects, analyzes, and formats your data into a structured, personalized report — what took 3 hours now takes 10 minutes." },
+      { "icon": "gear", "benefit": "Automate your repetitive admin tasks", "how": "Processing incoming emails, data entry, follow-ups, approvals — everything that repeats is scriptable and delegatable to AI." },
+      { "icon": "dashboard", "benefit": "A dashboard that's always up to date, effortlessly", "how": "Connect your data sources (CRM, ERP, Sheets…) into an automated dashboard with real-time smart alerts." },
+      { "icon": "presentation", "benefit": "Professional PowerPoints generated automatically", "how": "Your data and briefs transformed into structured, on-brand presentations — without opening PowerPoint once." },
+      { "icon": "document", "benefit": "Your documents formatted in seconds", "how": "Automated formatting (Word, PDF, reports) from your raw content — visual consistency guaranteed without manual effort." },
+      { "icon": "education", "benefit": "Your teams master Excel & AI tools in weeks", "how": "Hands-on training with Claude as a teaching assistant: personalized exercises, instant answers, and accelerated skill-building." },
+      { "icon": "chat", "benefit": "Automated support that handles 80% of questions", "how": "AI chatbot trained on your knowledge base — handles common requests, escalates complex cases, available 24/7." },
+      { "icon": "inbox", "benefit": "Process 3x more emails without hiring", "how": "Automatic classification, reply suggestions, and automated responses for recurring emails — your inbox never overflows." },
+      { "icon": "extract", "benefit": "Extract data from your documents effortlessly", "how": "OCR + AI to read invoices, contracts, forms and automatically populate your tools — no more manual data entry." },
+      { "icon": "calendar", "benefit": "Automate your HR onboarding from A to Z", "how": "Contract generation, automatic document sending, reminders and signature tracking — every new hire onboarded in a few clicks." },
+      { "icon": "legal", "benefit": "Analyze your contracts and legal documents in seconds", "how": "AI extraction of key clauses, version comparison, alerts on sensitive points — without mobilizing a lawyer for every read." },
+      { "icon": "radar", "benefit": "Track your competitors and market in real time", "how": "Automated monitoring (pricing, news, social media) compiled weekly into a clear digest — always one step ahead." }
     ]
-  },
-  "finalCta": {
-    "title": "Stay on the right side of history.",
-    "subtitle": "The time to act is now.",
-    "cta": "Get Started"
   },
   "getStarted": {
     "metaTitle": "Get Started — Infinex",
@@ -191,11 +182,11 @@
     "postCta": {
       "title": "Ready to take action?",
       "description": "Let's discuss your project and define your AI strategy together.",
-      "cta": "Get Started"
+      "cta": "Book a Call"
     }
   },
   "footer": {
-    "tagline": "AI-powered margin growth.",
+    "tagline": "AI-powered growth for your business.",
     "company": "Navigation",
     "rights": "All rights reserved.",
     "contact": "Contact"

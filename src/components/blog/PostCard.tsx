@@ -20,7 +20,7 @@ export function PostCard({ post, delay = 0 }: Props) {
           <span className="inline-block rounded-full bg-accent-primary/10 px-3 py-1 text-xs font-semibold text-accent-primary">
             {t(`categories.${post.category}`)}
           </span>
-          <h3 className="mt-4 text-xl font-bold font-[family-name:var(--font-space-grotesk)] group-hover:text-accent-primary transition-colors">
+          <h3 className="mt-4 text-xl font-bold group-hover:text-accent-primary transition-colors">
             {post.title}
           </h3>
           <p className="mt-3 text-text-secondary leading-relaxed line-clamp-2">

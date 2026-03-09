@@ -31,7 +31,7 @@ export function Approach() {
                 <span className="text-accent-primary font-bold text-sm tracking-wide">
                   {card.number}
                 </span>
-                <h3 className="mt-4 text-xl font-bold font-[family-name:var(--font-space-grotesk)]">
+                <h3 className="mt-4 text-xl font-bold">
                   {t(`${card.key}.title`)}
                 </h3>
                 <p className="mt-3 text-text-secondary leading-relaxed">

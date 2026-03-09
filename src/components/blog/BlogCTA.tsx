@@ -4,6 +4,8 @@ import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 
+const CALENDAR_URL = "https://calendar.app.google/aqawDZzHn7Ncxsy69";
+
 export function BlogCTA() {
   const t = useTranslations("blog.postCta");
 
@@ -17,7 +19,7 @@ export function BlogCTA() {
           {t("description")}
         </p>
         <div className="mt-6">
-          <Button href="/get-started" size="lg">
+          <Button href={CALENDAR_URL} external size="lg">
             {t("cta")}
           </Button>
         </div>
