@@ -2,7 +2,7 @@
 
 ## Projet
 
-Infinex aide les PME à augmenter leurs marges grâce à l'IA. On automatise les process, on forme les équipes, et on réduit la charge administrative. Résultats concrets en quelques semaines.
+Infinex déploie l'IA là où elle crée le plus de valeur pour les PME : plus de revenus (croissance) ou moins de friction (efficacité). Résultats concrets en quelques semaines.
 
 **Domaine** : infinex.studio (live sur Vercel)
 **Repo** : https://github.com/meidynfrance/infinex-studio
@@ -24,8 +24,9 @@ Infinex aide les PME à augmenter leurs marges grâce à l'IA. On automatise les
 | Repo | GitHub (CLI `gh`) |
 | Package manager | pnpm |
 | Blog | MDX (gray-matter + next-mdx-remote) |
-| Contact | Formulaire /get-started |
+| Contact | Formulaire /get-started → Google Sheets + Telegram |
 | Notifications | Telegram Bot API (@notification_meidy_bot) |
+| Icons | Custom SVG (ServiceIcon component) |
 
 ---
 
@@ -46,43 +47,59 @@ Infinex aide les PME à augmenter leurs marges grâce à l'IA. On automatise les
 ## Structure du site
 
 ### 1. Page d'accueil (`/`)
-- **Hero** : "Prenez une longueur d'avance." + bouton Get Started
-- **Approche** : 3 cartes numérotées (01 Audit & Stratégie, 02 Déploiement IA, 03 Formation & Adoption)
-- **ValueProp** : phrase d'impact bold ("Vous avez le choix. Adopter l'IA maintenant. Ou regarder vos concurrents le faire.")
-- **Témoignages** : 3 témoignages (Jeremy, Xavier, Gabriel)
-- **FAQ** : 6 questions en accordéon
-- **CTA final** : "Restez du bon côté de l'histoire." + Get Started
+- **HomeHero** : "L'IA qui travaille pour votre business." — spotlight, particles, bi-tone text
+- **HomeCards** : 2 cartes de choix (Croissance vert / Efficacité bleu) → liens vers sous-pages
 
-### 2. Blog (`/blog`)
+### 2. Page Croissance (`/croissance`)
+- 12 services de croissance (leads, prospection, ads, SEO, contenu, chatbot, etc.)
+- Thème vert, fond animé (orbes, dot grid, scan line)
+- CTA → /get-started
+
+### 3. Page Efficacité (`/efficacite`)
+- 12 services d'efficacité (reporting, automatisation, dashboards, formation, etc.)
+- Thème bleu, fond animé (orbes, dot grid, scan line)
+- CTA → /get-started
+
+### 4. Blog (`/blog`)
 - Listing bilingue avec filtre par catégorie (pills)
-- Catégories : strategie-ia, automatisation, formation, cas-usage
+- Catégories : strategie-ia, automatisation, formation, cas-usage, outils-ia
 - Articles MDX dans `content/blog/` (convention : `{slug}.{locale}.mdx`)
 - Rendu via `next-mdx-remote/rsc`, styles `.prose-blog` dans globals.css
 - Chaque article a un CTA fin d'article → /get-started
 - JSON-LD BlogPosting sur chaque article
 
-### 3. Get Started (`/get-started`)
-- 2 colonnes : infos + bénéfices à gauche, formulaire à droite
+### 5. Get Started (`/get-started`)
+- 2 colonnes : promesses à gauche, formulaire à droite
 - Formulaire : firstName, lastName, email, phone, company, jobTitle, revenue (select), service (checkboxes multi-select)
-- Soumission → notification Telegram
+- Soumission → Google Sheets + Telegram
+- Succès : message + bouton "Réserver un créneau" (lien Google Calendar)
 
-### CTA
-- **Tous les CTA** sont des boutons "Commencer" / "Get Started" qui renvoient vers `/get-started`
+### CTA Flow
+- **Tous les CTA** du site renvoient vers `/get-started` (formulaire)
+- Après soumission réussie, le prospect peut réserver un créneau via Google Calendar
+- Lien Calendar : `https://calendar.app.google/aqawDZzHn7Ncxsy69`
 
 ---
 
 ## Design & Branding
 
-- **Palette (thème dark, inspiré tenex.co)** :
+- **Style** : Dark premium, inspiré dhero.studio
+- **Palette** :
   - Fond : Near-black #0A0A0A, Secondaire #111111
   - Accent : Jaune #FFE501
-  - Texte : Blanc #FFFFFF, Gris #9CA3AF
+  - Vert (croissance) : #5ec97e
+  - Bleu (efficacité) : #4fa3e0
+  - Texte : Blanc #FFFFFF, Gris #9CA3AF, Muted #404040
   - Bordures : #2A2A2A, Cartes/Surface : #161616
-- **Footer** : Fond secondaire #111111
-- **Fonts** : Space Grotesk (headings), Inter (body) via next/font
+- **Font unique** : Inter partout (headings + body) via next/font
 - **Logo** : Texte "INFINEX" (en attendant le vrai logo)
-- **Animations** : Framer Motion — SplitTextReveal (word-by-word) pour titres, AnimatedSection pour scroll
+- **Animations** :
+  - Framer Motion : scroll-triggered entrances, staggered cards
+  - CSS : spotlight glow, floating particles, gradient orbs, dot grid, scan line
+  - Cards : mouse-follow glow, icon scale+glow on hover, background number shift
+  - Buttons : shimmer effect
 - **Responsive** : Mobile-first
+- **Icons** : Custom SVG via `ServiceIcon` component (26 icons)
 
 ---
 
@@ -98,7 +115,7 @@ Infinex aide les PME à augmenter leurs marges grâce à l'IA. On automatise les
 
 - Contenu dans `content/blog/` : fichiers `{slug}.fr.mdx` et `{slug}.en.mdx`
 - Librairie `src/lib/blog.ts` : `getAllPosts()`, `getPostBySlug()`, `getAllSlugs()`
-- Catégories : `strategie-ia`, `automatisation`, `formation`, `cas-usage`
+- Catégories : `strategie-ia`, `automatisation`, `formation`, `cas-usage`, `outils-ia`
 - Frontmatter : title, description, date, author, category
 - Composants blog dans `src/components/blog/`
 - Styles prose dans `.prose-blog` (globals.css)
@@ -110,7 +127,6 @@ Infinex aide les PME à augmenter leurs marges grâce à l'IA. On automatise les
 - **llms.txt** : `/llms.txt` sert un Markdown avec description du site + liens vers toutes les pages et articles
 - **JSON-LD** :
   - `OrganizationSchema` → layout (toutes les pages)
-  - `FAQSchema` → page d'accueil (6 items)
   - `BlogPostSchema` → chaque article de blog
 - **SEO GEO** : articles structurés avec TL;DR, H2/H3, listes, paragraphes courts, CTA naturels
 
@@ -141,20 +157,23 @@ infinex-studio/
 │   ├── app/
 │   │   ├── [locale]/
 │   │   │   ├── layout.tsx     # Fonts, metadata, Header/Footer
-│   │   │   ├── page.tsx       # Home (Hero, Approach, ValueProp, Testimonials, FAQ, FinalCTA)
+│   │   │   ├── page.tsx       # Home (HomeHero + HomeCards)
+│   │   │   ├── croissance/    # Page services croissance (green)
+│   │   │   ├── efficacite/    # Page services efficacité (blue)
 │   │   │   └── get-started/   # Page formulaire de contact
 │   │   ├── api/contact/route.ts
 │   │   ├── llms.txt/route.ts  # llms.txt pour LLM discoverability
 │   │   ├── layout.tsx         # Root layout (passthrough)
-│   │   ├── globals.css        # Tailwind + theme colors (dark) + .prose-blog
+│   │   ├── globals.css        # Tailwind + theme colors + animations + .prose-blog
 │   │   ├── sitemap.ts / robots.ts / icon.svg
 │   ├── components/
 │   │   ├── layout/            # Header, Footer, LanguageSwitcher
-│   │   ├── home/              # Hero, Approach, ValueProp, Testimonials, FAQ, FinalCTA
+│   │   ├── home/              # HomeHero, HomeCards
+│   │   ├── services/          # ServiceLanding (shared for croissance/efficacite)
 │   │   ├── blog/              # PostCard, PostHeader, PostContent, BlogCTA, CategoryFilter
-│   │   ├── structured-data/   # OrganizationSchema, FAQSchema, BlogPostSchema
+│   │   ├── structured-data/   # OrganizationSchema, BlogPostSchema
 │   │   ├── forms/             # ContactForm (formulaire /get-started)
-│   │   └── ui/                # Button, Card, Accordion, AnimatedSection, SplitTextReveal, SplitTextRevealOnScroll
+│   │   └── ui/                # Button, ServiceCard, ServiceIcon, AnimatedSection, SplitTextReveal
 │   ├── lib/                   # telegram.ts, validations.ts, blog.ts
 │   └── i18n/                  # routing.ts, request.ts, navigation.ts
 ```
@@ -169,3 +188,5 @@ infinex-studio/
 4. **TypeScript strict** : pas de `any`
 5. **Workflow de deploy** : build → commit → push (Vercel auto-deploy, jamais `vercel --prod`)
 6. **Variables d'env** : Ne jamais commit de secrets
+7. **Font unique** : Inter partout, ne pas réintroduire Space Grotesk
+8. **Pas d'emojis** : Utiliser ServiceIcon (SVG custom) à la place
