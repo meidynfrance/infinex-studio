@@ -92,12 +92,10 @@ export function HomeHero() {
             Nos services
           </a>
           <a
-            href="https://calendar.app.google/aqawDZzHn7Ncxsy69"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/get-started"
             className="rounded-full bg-white px-8 py-3.5 text-sm font-medium text-black transition-all duration-300 hover:bg-white/90"
           >
-            Réserver un appel
+            Get Started
           </a>
         </motion.div>
       </div>

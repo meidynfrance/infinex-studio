@@ -1,8 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
-const CALENDAR_URL = "https://calendar.app.google/aqawDZzHn7Ncxsy69";
-
 export function Footer() {
   const t = useTranslations();
 
@@ -52,17 +50,15 @@ export function Footer() {
               {t("footer.contact")}
             </h3>
             <div className="mt-5">
-              <a
-                href={CALENDAR_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/get-started"
                 className="inline-flex items-center gap-2 text-sm text-white transition-colors duration-200 hover:text-text-secondary"
               >
-                {t("nav.bookCall")}
+                {t("nav.getStarted")}
                 <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

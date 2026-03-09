@@ -5,6 +5,8 @@ import { useForm } from "react-hook-form";
 import { useTranslations, useLocale } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { useUtm } from "@/hooks/useUtm";
+
+const CALENDAR_URL = "https://calendar.app.google/aqawDZzHn7Ncxsy69";
 import type { ContactFormData } from "@/lib/validations";
 
 export function ContactForm() {
@@ -43,6 +45,17 @@ export function ContactForm() {
       <div className="rounded-2xl border border-green-500/30 bg-green-500/5 p-8 text-center">
         <div className="text-4xl mb-4">&#10003;</div>
         <p className="text-lg text-green-400">{t("form.success")}</p>
+        <a
+          href={CALENDAR_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-5 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-medium text-white transition-all hover:bg-white/10"
+        >
+          {t("form.bookSlot")}
+          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+          </svg>
+        </a>
       </div>
     );
   }

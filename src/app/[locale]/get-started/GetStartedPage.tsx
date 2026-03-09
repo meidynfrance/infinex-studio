@@ -17,7 +17,7 @@ export function GetStartedPage() {
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
           {/* Left: Info */}
           <div>
-            <h1 className="font-[family-name:var(--font-space-grotesk)] text-4xl font-bold sm:text-5xl lg:text-6xl leading-[1.1]">
+            <h1 className="text-4xl font-bold sm:text-5xl lg:text-6xl leading-[1.1]">
               <SplitTextReveal text={t("title")} />
             </h1>
             <motion.p

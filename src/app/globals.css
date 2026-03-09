@@ -115,9 +115,128 @@ input[type="radio"] {
   animation: shimmer 3s ease-in-out infinite;
 }
 
+/* ═══════════════════════════════════════
+   ANIMATED BACKGROUND (service pages)
+   ═══════════════════════════════════════ */
+
+/* Dot grid pattern */
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Floating gradient orbs */
+@keyframes orb-drift-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%      { transform: translate(60px, -40px) scale(1.1); }
+  66%      { transform: translate(-30px, 30px) scale(0.95); }
+}
+
+@keyframes orb-drift-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%      { transform: translate(-50px, 50px) scale(1.05); }
+  66%      { transform: translate(40px, -20px) scale(0.9); }
+}
+
+@keyframes orb-drift-3 {
+  0%, 100% { transform: translate(0, 0) scale(0.95); }
+  50%      { transform: translate(30px, 60px) scale(1.1); }
+}
+
+@keyframes orb-pulse {
+  0%, 100% { opacity: 0.4; }
+  50%      { opacity: 0.7; }
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  will-change: transform;
+}
+
+.orb-1 {
+  width: 500px;
+  height: 500px;
+  top: -10%;
+  right: -5%;
+  animation: orb-drift-1 20s ease-in-out infinite, orb-pulse 8s ease-in-out infinite;
+}
+
+.orb-2 {
+  width: 400px;
+  height: 400px;
+  top: 40%;
+  left: -10%;
+  animation: orb-drift-2 25s ease-in-out infinite, orb-pulse 10s ease-in-out infinite 3s;
+}
+
+.orb-3 {
+  width: 350px;
+  height: 350px;
+  bottom: 10%;
+  right: 15%;
+  animation: orb-drift-3 18s ease-in-out infinite, orb-pulse 7s ease-in-out infinite 5s;
+}
+
+/* Horizontal scanning line */
+@keyframes scan-line {
+  0%   { top: -2px; opacity: 0; }
+  5%   { opacity: 1; }
+  95%  { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+.scan-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  pointer-events: none;
+  animation: scan-line 12s linear infinite;
+}
+
+/* Card mouse-follow glow */
+.card-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.group:hover .card-glow {
+  opacity: 1;
+}
+
+/* Icon container pulse on hover */
+.icon-box {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .icon-box {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px var(--glow-color, rgba(255,255,255,0.1));
+}
+
+/* Background number shift on hover */
+.bg-number {
+  transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .bg-number {
+  transform: translate(8px, -8px) scale(1.05);
+  opacity: 0.08;
+}
+
 /* Reduce motion */
 @media (prefers-reduced-motion: reduce) {
-  .particle, .btn-shimmer::after {
+  .particle, .btn-shimmer::after, .orb, .scan-line {
     animation: none !important;
   }
   .animate-fade-up {

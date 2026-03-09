@@ -7,7 +7,6 @@ import { ServiceCard } from "@/components/ui/ServiceCard";
 import { ServiceIcon } from "@/components/ui/ServiceIcon";
 import { Button } from "@/components/ui/Button";
 
-const CALENDAR_URL = "https://calendar.app.google/aqawDZzHn7Ncxsy69";
 
 type ServiceLandingProps = {
   namespace: "croissance" | "efficacite";
@@ -27,15 +26,6 @@ const themeConfig = {
   },
 };
 
-const particles = [
-  { top: "5%", right: "10%", delay: 0.5, duration: 8 },
-  { top: "30%", left: "5%", delay: 2, duration: 10 },
-  { top: "60%", right: "15%", delay: 1, duration: 7 },
-  { top: "80%", left: "20%", delay: 3, duration: 9 },
-  { top: "15%", left: "45%", delay: 1.5, duration: 8 },
-  { top: "50%", right: "5%", delay: 0, duration: 11 },
-];
-
 export function ServiceLanding({ namespace, theme }: ServiceLandingProps) {
   const t = useTranslations(namespace);
   const config = themeConfig[theme];
@@ -48,19 +38,38 @@ export function ServiceLanding({ namespace, theme }: ServiceLandingProps) {
 
   return (
     <div className="relative overflow-hidden">
-      {/* Particles */}
-      {particles.map((p, i) => (
-        <div
-          key={i}
-          className="particle"
-          style={{
-            ...p,
-            animationDelay: `${p.delay}s`,
-            animationDuration: `${p.duration}s`,
-            background: `rgba(${config.rgb},0.3)`,
-          }}
-        />
-      ))}
+      {/* ── Animated background ── */}
+      <div className="pointer-events-none absolute inset-0 dot-grid" />
+
+      {/* Gradient orbs */}
+      <div
+        className="orb orb-1"
+        style={{ background: `rgba(${config.rgb},0.06)` }}
+      />
+      <div
+        className="orb orb-2"
+        style={{ background: `rgba(${config.rgb},0.04)` }}
+      />
+      <div
+        className="orb orb-3"
+        style={{ background: `rgba(${config.rgb},0.05)` }}
+      />
+
+      {/* Horizontal scan line */}
+      <div
+        className="scan-line z-[1]"
+        style={{
+          background: `linear-gradient(90deg, transparent, rgba(${config.rgb},0.15), transparent)`,
+        }}
+      />
+
+      {/* Top edge glow */}
+      <div
+        className="pointer-events-none absolute top-0 left-0 right-0 h-[500px]"
+        style={{
+          background: `radial-gradient(ellipse 60% 40% at 50% 0%, rgba(${config.rgb},0.08) 0%, transparent 70%)`,
+        }}
+      />
 
       {/* Back button */}
       <div className="relative z-10 mx-auto max-w-7xl px-4 pt-28 sm:px-6 lg:px-8">
@@ -87,14 +96,15 @@ export function ServiceLanding({ namespace, theme }: ServiceLandingProps) {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="inline-flex items-center rounded-full border px-5 py-2 text-[0.65rem] font-medium uppercase tracking-[0.2em]"
+          className="inline-flex items-center gap-2 rounded-full border px-5 py-2 text-[0.65rem] font-medium uppercase tracking-[0.2em]"
           style={{
             color: config.color,
             borderColor: `rgba(${config.rgb},0.2)`,
             backgroundColor: `rgba(${config.rgb},0.04)`,
           }}
         >
-          <ServiceIcon name={namespace === "croissance" ? "trend-up" : "bolt"} color={config.color} size={14} /> {t("eyebrow")}
+          <ServiceIcon name={namespace === "croissance" ? "trend-up" : "bolt"} color={config.color} size={14} />
+          {t("eyebrow")}
         </motion.div>
 
         <motion.h1
@@ -121,9 +131,17 @@ export function ServiceLanding({ namespace, theme }: ServiceLandingProps) {
       {/* Separator */}
       <div className="gradient-line mx-auto max-w-7xl" />
 
-      {/* Services grid — all featured, 2 cols */}
+      {/* Services grid */}
       <section className="relative z-10 mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-        <div className="grid gap-5 md:grid-cols-2">
+        {/* Section mid-glow */}
+        <div
+          className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px]"
+          style={{
+            background: `radial-gradient(circle, rgba(${config.rgb},0.03) 0%, transparent 60%)`,
+          }}
+        />
+
+        <div className="relative grid gap-5 md:grid-cols-2">
           {services.map((service, i) => (
             <ServiceCard
               key={i}
@@ -140,11 +158,11 @@ export function ServiceLanding({ namespace, theme }: ServiceLandingProps) {
 
       {/* CTA section */}
       <section className="relative py-28">
-        {/* Spotlight glow */}
+        {/* CTA spotlight glow */}
         <div
-          className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] pointer-events-none"
+          className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[500px]"
           style={{
-            background: `radial-gradient(ellipse 50% 50% at 50% 30%, rgba(${config.rgb},0.06) 0%, transparent 70%)`,
+            background: `radial-gradient(ellipse 50% 50% at 50% 30%, rgba(${config.rgb},0.08) 0%, transparent 70%)`,
           }}
         />
 
@@ -162,7 +180,7 @@ export function ServiceLanding({ namespace, theme }: ServiceLandingProps) {
             {t("ctaSubtitle")}
           </p>
           <div className="mt-10">
-            <Button href={CALENDAR_URL} external variant={config.buttonVariant} size="lg" className="btn-shimmer rounded-full">
+            <Button href="/get-started" variant={config.buttonVariant} size="lg" className="btn-shimmer rounded-full">
               {t("ctaButton")} →
             </Button>
           </div>

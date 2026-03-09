@@ -5,8 +5,6 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
-const CALENDAR_URL = "https://calendar.app.google/aqawDZzHn7Ncxsy69";
-
 export function Header() {
   const t = useTranslations("nav");
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,14 +25,12 @@ export function Header() {
             {t("blog")}
           </Link>
           <LanguageSwitcher />
-          <a
-            href={CALENDAR_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/get-started"
             className="rounded-full bg-white px-6 py-2.5 text-sm font-medium text-black transition-all duration-300 hover:bg-white/90"
           >
-            {t("bookCall")}
-          </a>
+            {t("getStarted")}
+          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -66,14 +62,13 @@ export function Header() {
             </Link>
             <div className="flex items-center gap-4">
               <LanguageSwitcher />
-              <a
-                href={CALENDAR_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/get-started"
+                onClick={() => setMenuOpen(false)}
                 className="flex-1 rounded-full bg-white px-6 py-2.5 text-center text-sm font-medium text-black transition-all duration-300 hover:bg-white/90"
               >
-                {t("bookCall")}
-              </a>
+                {t("getStarted")}
+              </Link>
             </div>
           </nav>
         </div>

@@ -87,21 +87,21 @@
   },
   "getStarted": {
     "metaTitle": "Commencer — Infinex",
-    "metaDescription": "Contactez Infinex pour transformer votre entreprise avec l'IA.",
-    "title": "Prêt à transformer votre entreprise ?",
-    "subtitle": "Des audits IA aux déploiements complets, on vous accompagne à chaque étape.",
+    "metaDescription": "Décrivez votre besoin et on vous montre comment l'IA peut augmenter vos revenus ou réduire vos coûts.",
+    "title": "Dites-nous où ça coince.",
+    "subtitle": "30 minutes suffisent pour identifier vos meilleurs leviers IA — croissance ou efficacité.",
     "benefits": [
       {
-        "title": "Stratégie IA sur mesure",
-        "description": "Un plan d'action adapté à votre activité, pas un template générique."
+        "title": "Plus de revenus, moins d'effort",
+        "description": "Leads qualifiés, prospection automatisée, contenus qui convertissent — on active les bons leviers."
       },
       {
-        "title": "Déploiement rapide",
-        "description": "Premiers résultats en 3 semaines, pas en 6 mois."
+        "title": "Des coûts en moins dès les premières semaines",
+        "description": "On automatise ce qui vous ralentit : reporting, admin, saisie, relances. Vos équipes se concentrent sur l'essentiel."
       },
       {
-        "title": "Équipes autonomes",
-        "description": "Formation pratique pour que vos collaborateurs maîtrisent l'IA au quotidien."
+        "title": "Résultats concrets, pas des slides",
+        "description": "Pas d'audit de 6 mois. On déploie, on mesure, on itère. Premiers gains visibles en 3 semaines."
       }
     ],
     "form": {
@@ -147,6 +147,8 @@
       "submit": "Envoyer",
       "sending": "Envoi en cours...",
       "success": "Message envoyé ! On vous recontacte très vite.",
+      "redirecting": "Réservez un créneau pour accélérer les choses — redirection automatique...",
+      "bookSlot": "Réserver un créneau",
       "error": "Une erreur est survenue. Réessayez ou contactez-nous directement."
     },
     "validation": {

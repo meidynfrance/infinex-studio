@@ -87,21 +87,21 @@
   },
   "getStarted": {
     "metaTitle": "Get Started — Infinex",
-    "metaDescription": "Contact Infinex to transform your business with AI.",
-    "title": "Ready to transform your business?",
-    "subtitle": "From AI audits to full-scale deployment, we guide you every step of the way.",
+    "metaDescription": "Tell us your challenge and we'll show you how AI can grow your revenue or cut your costs.",
+    "title": "Tell us where it hurts.",
+    "subtitle": "30 minutes is all it takes to identify your best AI levers — growth or efficiency.",
     "benefits": [
       {
-        "title": "Tailored AI strategy",
-        "description": "An action plan built for your business, not a one-size-fits-all template."
+        "title": "More revenue, less effort",
+        "description": "Qualified leads, automated prospecting, content that converts — we activate the right levers."
       },
       {
-        "title": "Rapid deployment",
-        "description": "First results in 3 weeks, not 6 months."
+        "title": "Lower costs within weeks",
+        "description": "We automate what slows you down: reporting, admin, data entry, follow-ups. Your teams focus on what matters."
       },
       {
-        "title": "Self-sufficient teams",
-        "description": "Hands-on training so your people master AI in their daily work."
+        "title": "Real results, not slide decks",
+        "description": "No 6-month audits. We deploy, measure, and iterate. First gains visible in 3 weeks."
       }
     ],
     "form": {
@@ -147,6 +147,8 @@
       "submit": "Submit",
       "sending": "Sending...",
       "success": "Message sent! We'll get back to you very soon.",
+      "redirecting": "Book a slot to speed things up — redirecting automatically...",
+      "bookSlot": "Book a slot",
       "error": "Something went wrong. Please try again or reach out to us directly."
     },
     "validation": {

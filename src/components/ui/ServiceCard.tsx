@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef, useCallback } from "react";
 import { motion } from "framer-motion";
 import { ServiceIcon } from "./ServiceIcon";
 
@@ -20,39 +21,72 @@ const themeConfig = {
 export function ServiceCard({ icon, benefit, how, theme, index, featured = false }: ServiceCardProps) {
   const { rgb, color } = themeConfig[theme];
   const num = String(index + 1).padStart(2, "0");
+  const glowRef = useRef<HTMLDivElement>(null);
+
+  const handleMouseMove = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      if (!glowRef.current) return;
+      const rect = e.currentTarget.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      glowRef.current.style.background = `radial-gradient(400px circle at ${x}px ${y}px, rgba(${rgb},0.12), transparent 60%)`;
+    },
+    [rgb],
+  );
 
   if (featured) {
     return (
       <motion.div
-        initial={{ opacity: 0, y: 35 }}
+        initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-40px" }}
-        transition={{ duration: 0.7, delay: 0.05, ease: [0.16, 1, 0.3, 1] }}
-        className="group relative col-span-1 md:col-span-2 rounded-3xl p-8 sm:p-10 transition-all duration-500 hover:-translate-y-1 overflow-hidden"
-        style={{
-          backgroundColor: `rgba(${rgb},0.04)`,
-          border: `1px solid rgba(${rgb},0.08)`,
+        viewport={{ once: true, margin: "-60px" }}
+        transition={{
+          duration: 0.7,
+          delay: (index % 2) * 0.12,
+          ease: [0.16, 1, 0.3, 1],
         }}
+        className="group relative rounded-3xl p-8 sm:p-10 transition-all duration-500 hover:-translate-y-1 overflow-hidden"
+        style={{
+          backgroundColor: `rgba(${rgb},0.03)`,
+          border: `1px solid rgba(${rgb},0.06)`,
+        }}
+        onMouseMove={handleMouseMove}
         onMouseEnter={(e) => {
-          e.currentTarget.style.borderColor = `rgba(${rgb},0.18)`;
+          e.currentTarget.style.borderColor = `rgba(${rgb},0.2)`;
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.borderColor = `rgba(${rgb},0.08)`;
+          e.currentTarget.style.borderColor = `rgba(${rgb},0.06)`;
+          if (glowRef.current) glowRef.current.style.background = "transparent";
         }}
       >
+        {/* Mouse-follow glow */}
+        <div ref={glowRef} className="card-glow" />
+
         {/* Large background number */}
         <span
-          className="pointer-events-none absolute -right-4 -top-6 text-[10rem] font-bold leading-none select-none sm:text-[12rem]"
+          className="bg-number pointer-events-none absolute -right-4 -top-6 text-[10rem] font-bold leading-none select-none sm:text-[12rem]"
           style={{ color: `rgba(${rgb},0.04)` }}
         >
           {num}
         </span>
 
+        {/* Subtle inner border highlight */}
+        <div
+          className="pointer-events-none absolute inset-0 rounded-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+          style={{
+            boxShadow: `inset 0 0 60px rgba(${rgb},0.03)`,
+          }}
+        />
+
         <div className="relative z-10 flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-10">
           <div className="flex-shrink-0">
             <div
-              className="flex h-14 w-14 items-center justify-center rounded-2xl"
-              style={{ backgroundColor: `rgba(${rgb},0.08)`, border: `1px solid rgba(${rgb},0.12)` }}
+              className="icon-box flex h-14 w-14 items-center justify-center rounded-2xl"
+              style={{
+                backgroundColor: `rgba(${rgb},0.08)`,
+                border: `1px solid rgba(${rgb},0.12)`,
+                "--glow-color": `rgba(${rgb},0.25)`,
+              } as React.CSSProperties}
             >
               <ServiceIcon name={icon} color={color} size={26} />
             </div>
@@ -91,6 +125,7 @@ export function ServiceCard({ icon, benefit, how, theme, index, featured = false
         backgroundColor: `rgba(${rgb},0.02)`,
         border: `1px solid rgba(${rgb},0.05)`,
       }}
+      onMouseMove={handleMouseMove}
       onMouseEnter={(e) => {
         e.currentTarget.style.backgroundColor = `rgba(${rgb},0.05)`;
         e.currentTarget.style.borderColor = `rgba(${rgb},0.12)`;
@@ -98,11 +133,15 @@ export function ServiceCard({ icon, benefit, how, theme, index, featured = false
       onMouseLeave={(e) => {
         e.currentTarget.style.backgroundColor = `rgba(${rgb},0.02)`;
         e.currentTarget.style.borderColor = `rgba(${rgb},0.05)`;
+        if (glowRef.current) glowRef.current.style.background = "transparent";
       }}
     >
+      {/* Mouse-follow glow */}
+      <div ref={glowRef} className="card-glow" />
+
       {/* Number */}
       <span
-        className="pointer-events-none absolute -right-2 -top-3 text-[5rem] font-bold leading-none select-none"
+        className="bg-number pointer-events-none absolute -right-2 -top-3 text-[5rem] font-bold leading-none select-none"
         style={{ color: `rgba(${rgb},0.04)` }}
       >
         {num}
@@ -111,8 +150,12 @@ export function ServiceCard({ icon, benefit, how, theme, index, featured = false
       <div className="relative z-10">
         <div className="flex items-center gap-3">
           <div
-            className="flex h-10 w-10 items-center justify-center rounded-xl"
-            style={{ backgroundColor: `rgba(${rgb},0.08)`, border: `1px solid rgba(${rgb},0.1)` }}
+            className="icon-box flex h-10 w-10 items-center justify-center rounded-xl"
+            style={{
+              backgroundColor: `rgba(${rgb},0.08)`,
+              border: `1px solid rgba(${rgb},0.1)`,
+              "--glow-color": `rgba(${rgb},0.25)`,
+            } as React.CSSProperties}
           >
             <ServiceIcon name={icon} color={color} size={20} />
           </div>
