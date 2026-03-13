@@ -34,6 +34,7 @@ export function ServiceLanding({ namespace, theme }: ServiceLandingProps) {
     icon: t(`services.${i}.icon`),
     benefit: t(`services.${i}.benefit`),
     how: t(`services.${i}.how`),
+    link: t.has(`services.${i}.link`) ? t(`services.${i}.link`) : undefined,
   }));
 
   return (
@@ -151,6 +152,7 @@ export function ServiceLanding({ namespace, theme }: ServiceLandingProps) {
               theme={theme}
               index={i}
               featured
+              href={service.link}
             />
           ))}
         </div>

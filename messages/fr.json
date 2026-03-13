@@ -48,7 +48,7 @@
       { "icon": "search", "benefit": "Des leads entrants gratuits, chaque mois", "how": "SEO & GEO dopés à l'IA : on optimise votre visibilité sur Google et les moteurs IA (Perplexity, ChatGPT…) pour que vos prospects vous trouvent avant vos concurrents." },
       { "icon": "target", "benefit": "Identifiez vos prospects les plus chauds sur LinkedIn", "how": "Scraping avancé + scoring IA pour cibler uniquement les décideurs qui correspondent à votre ICP — sans passer des heures sur Sales Navigator." },
       { "icon": "email", "benefit": "Remplissez votre agenda avec du cold emailing automatisé", "how": "Séquences personnalisées à grande échelle, enrichissement de données et A/B testing IA pour maximiser les taux d'ouverture et de réponse." },
-      { "icon": "video", "benefit": "Des pubs UGC qui convertissent, sans tournage", "how": "Création de vidéos publicitaires style UGC grâce à l'IA générative — avatars réalistes, scripts optimisés, déclinaisons illimitées." },
+      { "icon": "video", "benefit": "Des pubs UGC qui convertissent, sans tournage", "how": "Création de vidéos publicitaires style UGC grâce à l'IA générative — avatars réalistes, scripts optimisés, déclinaisons illimitées.", "link": "/formations/ugc-ia" },
       { "icon": "social", "benefit": "Un flux continu de carrousels pour vos réseaux sociaux", "how": "Templates dynamiques alimentés par IA : un brief suffit pour générer des dizaines de visuels engageants adaptés à chaque plateforme." },
       { "icon": "analytics", "benefit": "Optimisez Google Ads & Meta Ads sans expertise technique", "how": "Analyse IA de vos campagnes existantes, détection des dépenses inutiles et recommandations d'optimisation — ou gestion complète déléguée." },
       { "icon": "image", "benefit": "Des dizaines de visuels publicitaires en quelques minutes", "how": "Génération de créatives statiques à la chaîne (bannières, stories, display) avec variantes de messages et formats en un seul workflow." },
@@ -185,6 +185,112 @@
       "title": "Prêt à passer à l'action ?",
       "description": "Discutons de votre projet et définissons ensemble votre stratégie IA.",
       "cta": "Réserver un appel"
+    }
+  },
+  "formationUgc": {
+    "metaTitle": "Formation UGC IA — Infinex",
+    "metaDescription": "Apprenez a creer des publicites UGC performantes avec l'IA generative. Formation d'une demi-journee a distance, 500 EUR HT.",
+    "back": "Retour aux services",
+    "eyebrow": "Formation pratique",
+    "title": "Creez des pubs UGC qui convertissent, sans camera.",
+    "titleAccent": "sans camera.",
+    "subtitle": "En une demi-journee, maitrisez les outils IA pour produire des videos publicitaires UGC realistes — avatars, scripts, declinaisons — et lancez vos premieres campagnes des le lendemain.",
+    "heroBadge1": "",
+    "heroBadge2": "",
+    "problem": {
+      "eyebrow": "Le probleme",
+      "title": "L'UGC classique coute cher et prend du temps",
+      "description": "Tournages, acteurs, montage, iterations... Produire des videos UGC de qualite requiert un budget de plusieurs milliers d'euros et des semaines de production. Sans parler de la difficulte a scaler : chaque variante necessite un nouveau tournage."
+    },
+    "solution": {
+      "eyebrow": "La solution",
+      "title": "L'IA generative change la donne",
+      "description": "Avec les bons outils et les bonnes techniques, vous generez des videos UGC realistes en quelques minutes. Avatars convaincants, scripts optimises pour la conversion, declinaisons illimitees. Le tout sans camera, sans acteur, sans studio."
+    },
+    "program": {
+      "eyebrow": "Programme",
+      "title": "Ce que vous apprendrez",
+      "subtitle": "Un programme dense et 100% actionnable, concu pour produire vos premieres pubs UGC IA des la fin de la formation.",
+      "items": [
+        { "title": "Les fondamentaux du UGC performant", "description": "Anatomie d'une pub UGC qui convertit : hooks, structures de script, patterns psychologiques et benchmarks par secteur." },
+        { "title": "Maitriser les outils IA de generation video", "description": "Creez vos avatars IA de A a Z : generation de photos realistes, transformation en video, animation avec son et synchronisation labiale. Vos avatars disent exactement le script que vous voulez." },
+        { "title": "Ecrire des scripts qui vendent", "description": "Frameworks de copywriting adaptes au format UGC. Utilisation de ChatGPT/Claude pour generer et iterer des scripts optimises." },
+        { "title": "Produire et decliner a grande echelle", "description": "Workflow complet : du brief a la video finale. Templates reutilisables, declinaisons par audience, A/B testing creatif." }
+      ]
+    },
+    "audience": {
+      "eyebrow": "Pour qui",
+      "title": "Cette formation est faite pour vous si...",
+      "items": [
+        { "title": "Responsable marketing / Growth", "description": "Vous voulez scaler votre production de creativites publicitaires sans exploser votre budget." },
+        { "title": "Dirigeant de PME", "description": "Vous cherchez a lancer des campagnes video sans dependre d'une agence ou d'un studio." },
+        { "title": "Freelance / Consultant", "description": "Vous souhaitez ajouter la creation UGC IA a votre offre de services." },
+        { "title": "Community Manager", "description": "Vous devez produire du contenu video regulierement avec des ressources limitees." }
+      ]
+    },
+    "carousel": {
+      "eyebrow": "Exemples",
+      "title": "Des resultats bluffants",
+      "subtitle": "Voici des exemples de publicites UGC generees par IA, du type de celles que vous apprendrez a creer pendant la formation.",
+      "comingSoon": "Video a venir"
+    },
+    "details": {
+      "title": "Informations pratiques",
+      "items": [
+        { "label": "Tarif", "value": "500 EUR HT / personne" },
+        { "label": "Duree", "value": "1/2 journee (3h30)" },
+        { "label": "Format", "value": "A distance (visio)" }
+      ],
+      "sessionNote": "Prochaine session des la semaine prochaine. Nous organisons une session chaque semaine — choisissez la date qui vous arrange."
+    },
+    "formSection": {
+      "eyebrow": "Inscription",
+      "title": "Reservez votre place",
+      "description": "Inscrivez-vous ou inscrivez un collaborateur a la prochaine session de formation UGC IA. Places limitees pour garantir un accompagnement personnalise.",
+      "bullets": [
+        "Prochaine session la semaine prochaine",
+        "Contactez-nous pour plus de details",
+        "Acces aux templates et ressources"
+      ]
+    },
+    "form": {
+      "firstName": "Prenom",
+      "firstNamePlaceholder": "Jean",
+      "lastName": "Nom",
+      "lastNamePlaceholder": "Dupont",
+      "email": "Email professionnel",
+      "emailPlaceholder": "jean@entreprise.fr",
+      "phone": "Telephone",
+      "phonePlaceholder": "+33 6 12 34 56 78",
+      "company": "Entreprise",
+      "companyPlaceholder": "Nom de votre entreprise",
+      "participants": "Nombre de participants",
+      "participantsPlaceholder": "Selectionnez",
+      "person": "personne",
+      "persons": "personnes",
+      "sessionDate": "Date de la session",
+      "sessionDatePlaceholder": "Choisissez une date",
+      "sessions": [
+        { "value": "Mardi 17 mars 13h30-17h", "label": "Mardi 17 mars — 13h30 a 17h", "full": "true" },
+        { "value": "Mardi 24 mars 13h30-17h", "label": "Mardi 24 mars — 13h30 a 17h (2 places restantes)", "full": "false" },
+        { "value": "Mardi 31 mars 13h30-17h", "label": "Mardi 31 mars — 13h30 a 17h (5 places restantes)", "full": "false" }
+      ],
+      "sessionFull": "Complet",
+      "submit": "Reserver ma place",
+      "sending": "Envoi en cours...",
+      "success": "Inscription enregistree !",
+      "successDetail": "Nous vous recontactons sous 24h avec les details de la prochaine session.",
+      "error": "Une erreur est survenue. Reessayez ou contactez-nous directement."
+    },
+    "validation": {
+      "firstNameRequired": "Le prenom est requis",
+      "lastNameRequired": "Le nom est requis",
+      "emailRequired": "L'email est requis",
+      "emailInvalid": "Email invalide",
+      "phoneRequired": "Le telephone est requis",
+      "companyRequired": "L'entreprise est requise",
+      "participantsRequired": "Selectionnez le nombre de participants",
+      "sessionDateRequired": "Choisissez une date de session"
     }
   },
   "footer": {

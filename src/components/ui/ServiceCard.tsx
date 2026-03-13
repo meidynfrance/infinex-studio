@@ -2,6 +2,7 @@
 
 import { useRef, useCallback } from "react";
 import { motion } from "framer-motion";
+import { Link } from "@/i18n/navigation";
 import { ServiceIcon } from "./ServiceIcon";
 
 type ServiceCardProps = {
@@ -11,6 +12,7 @@ type ServiceCardProps = {
   theme: "green" | "blue";
   index: number;
   featured?: boolean;
+  href?: string;
 };
 
 const themeConfig = {
@@ -18,7 +20,7 @@ const themeConfig = {
   blue: { rgb: "79,163,224", color: "var(--color-blue)" },
 };
 
-export function ServiceCard({ icon, benefit, how, theme, index, featured = false }: ServiceCardProps) {
+export function ServiceCard({ icon, benefit, how, theme, index, featured = false, href }: ServiceCardProps) {
   const { rgb, color } = themeConfig[theme];
   const num = String(index + 1).padStart(2, "0");
   const glowRef = useRef<HTMLDivElement>(null);
@@ -35,7 +37,7 @@ export function ServiceCard({ icon, benefit, how, theme, index, featured = false
   );
 
   if (featured) {
-    return (
+    const card = (
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -45,7 +47,7 @@ export function ServiceCard({ icon, benefit, how, theme, index, featured = false
           delay: (index % 2) * 0.12,
           ease: [0.16, 1, 0.3, 1],
         }}
-        className="group relative rounded-3xl p-8 sm:p-10 transition-all duration-500 hover:-translate-y-1 overflow-hidden"
+        className={`group relative rounded-3xl p-8 sm:p-10 transition-all duration-500 hover:-translate-y-1 overflow-hidden${href ? " cursor-pointer" : ""}`}
         style={{
           backgroundColor: `rgba(${rgb},0.03)`,
           border: `1px solid rgba(${rgb},0.06)`,
@@ -104,10 +106,26 @@ export function ServiceCard({ icon, benefit, how, theme, index, featured = false
             <p className="mt-3 max-w-lg text-sm leading-[1.8] text-text-secondary/70">
               {how}
             </p>
+            {href && (
+              <span
+                className="mt-4 inline-flex items-center gap-1.5 text-xs font-medium uppercase tracking-[0.15em] opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                style={{ color }}
+              >
+                En savoir plus
+                <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                </svg>
+              </span>
+            )}
           </div>
         </div>
       </motion.div>
     );
+
+    if (href) {
+      return <Link href={href}>{card}</Link>;
+    }
+    return card;
   }
 
   return (

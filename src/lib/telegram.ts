@@ -75,3 +75,58 @@ export async function sendTelegramMessage(params: SendMessageParams) {
 
   return { ok: true };
 }
+
+type UgcFormationParams = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  company: string;
+  participants: string;
+  sessionDate: string;
+  locale: string;
+};
+
+export async function sendUgcFormationTelegram(params: UgcFormationParams) {
+  const token = process.env.TELEGRAM_BOT_TOKEN;
+  const chatId = process.env.TELEGRAM_CHAT_ID;
+
+  if (!token || !chatId) {
+    console.error("Telegram credentials not configured");
+    return { ok: false, error: "Telegram not configured" };
+  }
+
+  const date = new Date().toLocaleString("fr-FR", {
+    timeZone: "Europe/Paris",
+  });
+
+  const text = `🎓 Inscription Formation UGC IA !
+
+👤 ${params.firstName} ${params.lastName}
+📧 ${params.email}
+📱 ${params.phone}
+🏢 ${params.company}
+👥 Participants : ${params.participants}
+📆 Session choisie : ${params.sessionDate}
+
+📅 ${date} | 🌐 ${params.locale}`;
+
+  const response = await fetch(
+    `https://api.telegram.org/bot${token}/sendMessage`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text,
+      }),
+    }
+  );
+
+  if (!response.ok) {
+    console.error("Telegram API error: status", response.status);
+    return { ok: false, error: "Notification service failed" };
+  }
+
+  return { ok: true };
+}

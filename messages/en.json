@@ -48,7 +48,7 @@
       { "icon": "search", "benefit": "Free inbound leads, every month", "how": "AI-powered SEO & GEO: we optimize your visibility on Google and AI engines (Perplexity, ChatGPT…) so prospects find you before your competitors." },
       { "icon": "target", "benefit": "Identify your hottest prospects on LinkedIn", "how": "Advanced scraping + AI scoring to target only the decision-makers matching your ICP — no more hours wasted on Sales Navigator." },
       { "icon": "email", "benefit": "Fill your calendar with automated cold emailing", "how": "Personalized sequences at scale, data enrichment, and AI A/B testing to maximize open and reply rates." },
-      { "icon": "video", "benefit": "UGC ads that convert — no filming needed", "how": "AI-generated UGC-style video ads — realistic avatars, optimized scripts, unlimited variations." },
+      { "icon": "video", "benefit": "UGC ads that convert — no filming needed", "how": "AI-generated UGC-style video ads — realistic avatars, optimized scripts, unlimited variations.", "link": "/formations/ugc-ia" },
       { "icon": "social", "benefit": "A steady stream of carousels for your social channels", "how": "AI-powered dynamic templates: one brief generates dozens of engaging visuals tailored to each platform." },
       { "icon": "analytics", "benefit": "Optimize Google Ads & Meta Ads without the expertise", "how": "AI analysis of your existing campaigns, detection of wasted spend, and optimization recommendations — or fully managed for you." },
       { "icon": "image", "benefit": "Dozens of ad creatives in minutes", "how": "Batch generation of static creatives (banners, stories, display) with message variants and formats in a single workflow." },
@@ -185,6 +185,112 @@
       "title": "Ready to take action?",
       "description": "Let's discuss your project and define your AI strategy together.",
       "cta": "Book a Call"
+    }
+  },
+  "formationUgc": {
+    "metaTitle": "AI UGC Training — Infinex",
+    "metaDescription": "Learn to create high-converting UGC ads with generative AI. Half-day remote training, 500 EUR excl. VAT.",
+    "back": "Back to services",
+    "eyebrow": "Hands-on training",
+    "title": "Create UGC ads that convert, no camera needed.",
+    "titleAccent": "no camera needed.",
+    "subtitle": "In half a day, master AI tools to produce realistic UGC video ads — avatars, scripts, variations — and launch your first campaigns by tomorrow.",
+    "heroBadge1": "",
+    "heroBadge2": "",
+    "problem": {
+      "eyebrow": "The problem",
+      "title": "Traditional UGC is expensive and slow",
+      "description": "Shoots, actors, editing, iterations... Producing quality UGC videos requires a budget of thousands and weeks of production. Not to mention the difficulty of scaling: every variation needs a new shoot."
+    },
+    "solution": {
+      "eyebrow": "The solution",
+      "title": "Generative AI changes everything",
+      "description": "With the right tools and techniques, you can generate realistic UGC videos in minutes. Convincing avatars, conversion-optimized scripts, unlimited variations. All without a camera, actor, or studio."
+    },
+    "program": {
+      "eyebrow": "Curriculum",
+      "title": "What you will learn",
+      "subtitle": "A dense, 100% actionable program designed so you can produce your first AI UGC ads by the end of the training.",
+      "items": [
+        { "title": "High-performing UGC fundamentals", "description": "Anatomy of a UGC ad that converts: hooks, script structures, psychological patterns, and benchmarks by industry." },
+        { "title": "Master AI video generation tools", "description": "Create your AI avatars from scratch: generate realistic photos, turn them into video, animate with sound and lip sync. Your avatars say exactly the script you want." },
+        { "title": "Write scripts that sell", "description": "Copywriting frameworks adapted to UGC format. Using ChatGPT/Claude to generate and iterate optimized scripts." },
+        { "title": "Produce and scale variations", "description": "Complete workflow: from brief to final video. Reusable templates, audience-specific variations, creative A/B testing." }
+      ]
+    },
+    "audience": {
+      "eyebrow": "Who it's for",
+      "title": "This training is for you if...",
+      "items": [
+        { "title": "Marketing / Growth Manager", "description": "You want to scale your ad creative production without blowing your budget." },
+        { "title": "SMB Owner", "description": "You want to launch video campaigns without relying on an agency or studio." },
+        { "title": "Freelancer / Consultant", "description": "You want to add AI UGC creation to your service offering." },
+        { "title": "Community Manager", "description": "You need to produce video content regularly with limited resources." }
+      ]
+    },
+    "carousel": {
+      "eyebrow": "Examples",
+      "title": "Stunning results",
+      "subtitle": "Here are examples of AI-generated UGC ads, like the ones you will learn to create during the training.",
+      "comingSoon": "Video coming soon"
+    },
+    "details": {
+      "title": "Practical details",
+      "items": [
+        { "label": "Price", "value": "500 EUR excl. VAT / person" },
+        { "label": "Duration", "value": "Half day (3h30)" },
+        { "label": "Format", "value": "Remote (video call)" }
+      ],
+      "sessionNote": "Next session available as early as next week. We run a session every week — pick the date that works for you."
+    },
+    "formSection": {
+      "eyebrow": "Registration",
+      "title": "Reserve your spot",
+      "description": "Sign up yourself or a team member for the next AI UGC training session. Limited seats to ensure personalized guidance.",
+      "bullets": [
+        "Next session next week",
+        "Contact us for more details",
+        "Access to templates and resources"
+      ]
+    },
+    "form": {
+      "firstName": "First name",
+      "firstNamePlaceholder": "John",
+      "lastName": "Last name",
+      "lastNamePlaceholder": "Smith",
+      "email": "Work email",
+      "emailPlaceholder": "john@company.com",
+      "phone": "Phone number",
+      "phonePlaceholder": "+1 555 123 4567",
+      "company": "Company",
+      "companyPlaceholder": "Your company name",
+      "participants": "Number of participants",
+      "participantsPlaceholder": "Select",
+      "person": "person",
+      "persons": "people",
+      "sessionDate": "Session date",
+      "sessionDatePlaceholder": "Choose a date",
+      "sessions": [
+        { "value": "Tuesday March 17 1:30-5pm", "label": "Tuesday March 17 — 1:30 to 5pm", "full": "true" },
+        { "value": "Tuesday March 24 1:30-5pm", "label": "Tuesday March 24 — 1:30 to 5pm (2 spots left)", "full": "false" },
+        { "value": "Tuesday March 31 1:30-5pm", "label": "Tuesday March 31 — 1:30 to 5pm (5 spots left)", "full": "false" }
+      ],
+      "sessionFull": "Full",
+      "submit": "Reserve my spot",
+      "sending": "Sending...",
+      "success": "Registration confirmed!",
+      "successDetail": "We will get back to you within 24 hours with the next session details.",
+      "error": "Something went wrong. Please try again or reach out to us directly."
+    },
+    "validation": {
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email address",
+      "phoneRequired": "Phone number is required",
+      "companyRequired": "Company is required",
+      "participantsRequired": "Please select the number of participants",
+      "sessionDateRequired": "Please choose a session date"
     }
   },
   "footer": {

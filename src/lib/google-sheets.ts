@@ -87,3 +87,71 @@ export async function appendLeadToSheet(data: LeadData) {
     return { ok: false, error: "Sheets write failed" };
   }
 }
+
+type UgcLeadData = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  company: string;
+  participants: string;
+  sessionDate: string;
+  locale: string;
+  utm?: {
+    utm_source?: string;
+    utm_medium?: string;
+    utm_campaign?: string;
+    utm_term?: string;
+    utm_content?: string;
+  };
+};
+
+export async function appendUgcLeadToSheet(data: UgcLeadData) {
+  if (!SPREADSHEET_ID) {
+    console.error("GOOGLE_SPREADSHEET_ID not configured");
+    return { ok: false, error: "Spreadsheet ID not configured" };
+  }
+
+  try {
+    const auth = getAuth();
+    const sheets = google.sheets({ version: "v4", auth });
+
+    const date = new Date().toLocaleString("fr-FR", {
+      timeZone: "Europe/Paris",
+    });
+
+    const source = data.utm?.utm_source || "";
+
+    const row = [
+      date,
+      data.firstName,
+      data.lastName,
+      data.email,
+      data.phone,
+      data.company,
+      data.participants,
+      data.locale,
+      source,
+      "A Contacter",
+      data.sessionDate,
+    ];
+
+    await sheets.spreadsheets.values.append({
+      spreadsheetId: SPREADSHEET_ID,
+      range: `UGC IA!A:K`,
+      valueInputOption: "RAW",
+      insertDataOption: "INSERT_ROWS",
+      requestBody: {
+        values: [row],
+      },
+    });
+
+    return { ok: true };
+  } catch (error) {
+    console.error(
+      "Google Sheets error:",
+      error instanceof Error ? error.message : "Unknown error"
+    );
+    return { ok: false, error: "Sheets write failed" };
+  }
+}
