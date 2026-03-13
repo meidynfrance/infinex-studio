@@ -87,6 +87,34 @@ export function UgcFormationPage() {
 
       </section>
 
+      {/* ── VIDEO CAROUSEL ── */}
+      <section className="relative z-10 mx-auto max-w-5xl px-4 py-20 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
+          <span className="text-xs font-medium uppercase tracking-[0.2em]" style={{ color }}>{t("carousel.eyebrow")}</span>
+          <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">{t("carousel.title")}</h2>
+          <p className="mt-4 max-w-2xl mx-auto text-text-secondary">{t("carousel.subtitle")}</p>
+        </motion.div>
+
+        <VideoCarousel
+          videos={[
+            { src: "/videos/ugc/1581766169768548.mp4" },
+            { src: "/videos/ugc/preview_video_App_Demo__Brown_Girl_1.mp4" },
+            { src: "/videos/ugc/preview_video_YKPSPLZO7iUKw4t_5DBaf_LMQeZPrm.mp4" },
+            { src: "/videos/ugc/preview_video_showcase_007d5ec8-c355-4904-9170-7d84ed675a8d_50144192.mp4" },
+            { src: "/videos/ugc/2.mp4" },
+            { src: "/videos/ugc/3.mp4" },
+            { src: "/videos/ugc/5.mp4" },
+            { src: "/videos/ugc/case_study_2.mp4" },
+          ]}
+        />
+      </section>
+
       <div className="gradient-line mx-auto max-w-7xl" />
 
       {/* ── PROBLEM / SOLUTION ── */}
@@ -180,34 +208,6 @@ export function UgcFormationPage() {
             </motion.div>
           ))}
         </div>
-      </section>
-
-      {/* ── VIDEO CAROUSEL ── */}
-      <section className="relative z-10 mx-auto max-w-5xl px-4 py-20 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
-        >
-          <span className="text-xs font-medium uppercase tracking-[0.2em]" style={{ color }}>{t("carousel.eyebrow")}</span>
-          <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">{t("carousel.title")}</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-text-secondary">{t("carousel.subtitle")}</p>
-        </motion.div>
-
-        <VideoCarousel
-          videos={[
-            { src: "/videos/ugc/1581766169768548.mp4" },
-            { src: "/videos/ugc/preview_video_App_Demo__Brown_Girl_1.mp4" },
-            { src: "/videos/ugc/preview_video_YKPSPLZO7iUKw4t_5DBaf_LMQeZPrm.mp4" },
-            { src: "/videos/ugc/preview_video_showcase_007d5ec8-c355-4904-9170-7d84ed675a8d_50144192.mp4" },
-            { src: "/videos/ugc/2.mp4" },
-            { src: "/videos/ugc/3.mp4" },
-            { src: "/videos/ugc/5.mp4" },
-            { src: "/videos/ugc/case_study_2.mp4" },
-          ]}
-        />
       </section>
 
       {/* ── DETAILS PRATIQUES ── */}
