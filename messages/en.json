@@ -195,6 +195,7 @@
     "title": "Create UGC ads that convert, no camera needed.",
     "titleAccent": "no camera needed.",
     "subtitle": "In half a day, master AI tools to produce realistic UGC video ads — avatars, scripts, variations — and launch your first campaigns by tomorrow.",
+    "heroCta": "Reserve my spot",
     "heroBadge1": "",
     "heroBadge2": "",
     "problem": {
@@ -273,7 +274,9 @@
       "sessions": [
         { "value": "Tuesday March 17 1:30-5pm", "label": "Tuesday March 17 — 1:30 to 5pm", "full": "true" },
         { "value": "Tuesday March 24 1:30-5pm", "label": "Tuesday March 24 — 1:30 to 5pm (2 spots left)", "full": "false" },
-        { "value": "Tuesday March 31 1:30-5pm", "label": "Tuesday March 31 — 1:30 to 5pm (5 spots left)", "full": "false" }
+        { "value": "Tuesday March 31 1:30-5pm", "label": "Tuesday March 31 — 1:30 to 5pm (5 spots left)", "full": "false" },
+        { "value": "Friday April 17 1:30-5pm", "label": "Friday April 17 — 1:30 to 5pm", "full": "false" },
+        { "value": "Thursday April 23 1:30-5pm", "label": "Thursday April 23 — 1:30 to 5pm", "full": "false" }
       ],
       "sessionFull": "Full",
       "submit": "Reserve my spot",

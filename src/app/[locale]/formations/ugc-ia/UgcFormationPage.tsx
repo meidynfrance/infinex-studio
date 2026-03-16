@@ -85,6 +85,24 @@ export function UgcFormationPage() {
           {t("subtitle")}
         </motion.p>
 
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="mt-10"
+        >
+          <a
+            href="#inscription"
+            className="inline-flex items-center gap-2 rounded-full px-8 py-3.5 text-sm font-semibold text-black transition-all duration-300 hover:scale-105"
+            style={{ backgroundColor: color }}
+          >
+            {t("heroCta")}
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </a>
+        </motion.div>
+
       </section>
 
       {/* ── VIDEO CAROUSEL ── */}

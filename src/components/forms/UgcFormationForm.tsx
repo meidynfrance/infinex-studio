@@ -159,7 +159,7 @@ export function UgcFormationForm() {
           {t("form.sessionDate")}
         </label>
         <div className="space-y-2">
-          {([0, 1, 2] as const).map((i) => {
+          {([0, 1, 2, 3, 4] as const).map((i) => {
             const isFull = t(`form.sessions.${i}.full`) === "true";
             return (
               <label

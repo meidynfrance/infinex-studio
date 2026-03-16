@@ -195,6 +195,7 @@
     "title": "Creez des pubs UGC qui convertissent, sans camera.",
     "titleAccent": "sans camera.",
     "subtitle": "En une demi-journee, maitrisez les outils IA pour produire des videos publicitaires UGC realistes — avatars, scripts, declinaisons — et lancez vos premieres campagnes des le lendemain.",
+    "heroCta": "Reserver ma place",
     "heroBadge1": "",
     "heroBadge2": "",
     "problem": {
@@ -273,7 +274,9 @@
       "sessions": [
         { "value": "Mardi 17 mars 13h30-17h", "label": "Mardi 17 mars — 13h30 a 17h", "full": "true" },
         { "value": "Mardi 24 mars 13h30-17h", "label": "Mardi 24 mars — 13h30 a 17h (2 places restantes)", "full": "false" },
-        { "value": "Mardi 31 mars 13h30-17h", "label": "Mardi 31 mars — 13h30 a 17h (5 places restantes)", "full": "false" }
+        { "value": "Mardi 31 mars 13h30-17h", "label": "Mardi 31 mars — 13h30 a 17h (5 places restantes)", "full": "false" },
+        { "value": "Vendredi 17 avril 13h30-17h", "label": "Vendredi 17 avril — 13h30 a 17h", "full": "false" },
+        { "value": "Jeudi 23 avril 13h30-17h", "label": "Jeudi 23 avril — 13h30 a 17h", "full": "false" }
       ],
       "sessionFull": "Complet",
       "submit": "Reserver ma place",
