@@ -95,7 +95,6 @@ type UgcLeadData = {
   phone: string;
   company: string;
   participants: string;
-  sessionDate: string;
   locale: string;
   utm?: {
     utm_source?: string;
@@ -133,12 +132,109 @@ export async function appendUgcLeadToSheet(data: UgcLeadData) {
       data.locale,
       source,
       "A Contacter",
-      data.sessionDate,
     ];
 
     await sheets.spreadsheets.values.append({
       spreadsheetId: SPREADSHEET_ID,
-      range: `UGC IA!A:K`,
+      range: `UGC IA!A:J`,
+      valueInputOption: "RAW",
+      insertDataOption: "INSERT_ROWS",
+      requestBody: {
+        values: [row],
+      },
+    });
+
+    return { ok: true };
+  } catch (error) {
+    console.error(
+      "Google Sheets error:",
+      error instanceof Error ? error.message : "Unknown error"
+    );
+    return { ok: false, error: "Sheets write failed" };
+  }
+}
+
+export async function appendExcelLeadToSheet(data: UgcLeadData) {
+  if (!SPREADSHEET_ID) {
+    console.error("GOOGLE_SPREADSHEET_ID not configured");
+    return { ok: false, error: "Spreadsheet ID not configured" };
+  }
+
+  try {
+    const auth = getAuth();
+    const sheets = google.sheets({ version: "v4", auth });
+
+    const date = new Date().toLocaleString("fr-FR", {
+      timeZone: "Europe/Paris",
+    });
+
+    const source = data.utm?.utm_source || "";
+
+    const row = [
+      date,
+      data.firstName,
+      data.lastName,
+      data.email,
+      data.phone,
+      data.company,
+      data.participants,
+      data.locale,
+      source,
+      "A Contacter",
+    ];
+
+    await sheets.spreadsheets.values.append({
+      spreadsheetId: SPREADSHEET_ID,
+      range: `Excel!A:J`,
+      valueInputOption: "RAW",
+      insertDataOption: "INSERT_ROWS",
+      requestBody: {
+        values: [row],
+      },
+    });
+
+    return { ok: true };
+  } catch (error) {
+    console.error(
+      "Google Sheets error:",
+      error instanceof Error ? error.message : "Unknown error"
+    );
+    return { ok: false, error: "Sheets write failed" };
+  }
+}
+
+export async function appendProspectionLeadToSheet(data: UgcLeadData) {
+  if (!SPREADSHEET_ID) {
+    console.error("GOOGLE_SPREADSHEET_ID not configured");
+    return { ok: false, error: "Spreadsheet ID not configured" };
+  }
+
+  try {
+    const auth = getAuth();
+    const sheets = google.sheets({ version: "v4", auth });
+
+    const date = new Date().toLocaleString("fr-FR", {
+      timeZone: "Europe/Paris",
+    });
+
+    const source = data.utm?.utm_source || "";
+
+    const row = [
+      date,
+      data.firstName,
+      data.lastName,
+      data.email,
+      data.phone,
+      data.company,
+      data.participants,
+      data.locale,
+      source,
+      "A Contacter",
+    ];
+
+    await sheets.spreadsheets.values.append({
+      spreadsheetId: SPREADSHEET_ID,
+      range: `Prospection!A:J`,
       valueInputOption: "RAW",
       insertDataOption: "INSERT_ROWS",
       requestBody: {

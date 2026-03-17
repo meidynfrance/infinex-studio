@@ -5,14 +5,13 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { motion } from "framer-motion";
 import { ServiceIcon } from "@/components/ui/ServiceIcon";
-import { UgcFormationForm } from "@/components/forms/UgcFormationForm";
-import { VideoCarousel } from "@/components/formations/VideoCarousel";
+import { ProspectionFormationForm } from "@/components/forms/ProspectionFormationForm";
 
 const rgb = "94,201,126";
 const color = "var(--color-green)";
 
-export function UgcFormationPage() {
-  const t = useTranslations("formationUgc");
+export function ProspectionFormationPage() {
+  const t = useTranslations("formationProspection");
 
   const programItems = [0, 1, 2, 3] as const;
   const audienceItems = [0, 1, 2, 3] as const;
@@ -61,7 +60,7 @@ export function UgcFormationPage() {
           className="inline-flex items-center gap-2 rounded-full border px-5 py-2 text-[0.65rem] font-medium uppercase tracking-[0.2em]"
           style={{ color, borderColor: `rgba(${rgb},0.2)`, backgroundColor: `rgba(${rgb},0.04)` }}
         >
-          <ServiceIcon name="video" color={color} size={14} />
+          <ServiceIcon name="target" color={color} size={14} />
           {t("eyebrow")}
         </motion.div>
 
@@ -102,35 +101,6 @@ export function UgcFormationPage() {
             </svg>
           </a>
         </motion.div>
-
-      </section>
-
-      {/* ── VIDEO CAROUSEL ── */}
-      <section className="relative z-10 mx-auto max-w-5xl px-4 py-20 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
-        >
-          <span className="text-xs font-medium uppercase tracking-[0.2em]" style={{ color }}>{t("carousel.eyebrow")}</span>
-          <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">{t("carousel.title")}</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-text-secondary">{t("carousel.subtitle")}</p>
-        </motion.div>
-
-        <VideoCarousel
-          videos={[
-            { src: "/videos/ugc/1581766169768548.mp4" },
-            { src: "/videos/ugc/preview_video_App_Demo__Brown_Girl_1.mp4" },
-            { src: "/videos/ugc/preview_video_YKPSPLZO7iUKw4t_5DBaf_LMQeZPrm.mp4" },
-            { src: "/videos/ugc/preview_video_showcase_007d5ec8-c355-4904-9170-7d84ed675a8d_50144192.mp4" },
-            { src: "/videos/ugc/2.mp4" },
-            { src: "/videos/ugc/3.mp4" },
-            { src: "/videos/ugc/5.mp4" },
-            { src: "/videos/ugc/case_study_2.mp4" },
-          ]}
-        />
       </section>
 
       <div className="gradient-line mx-auto max-w-7xl" />
@@ -272,7 +242,7 @@ export function UgcFormationPage() {
               />
               <div
                 className="absolute inset-0"
-                style={{ background: `linear-gradient(to top, rgba(10,10,10,0.7) 0%, transparent 50%)` }}
+                style={{ background: "linear-gradient(to top, rgba(10,10,10,0.7) 0%, transparent 50%)" }}
               />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <p className="text-xl font-bold text-white">{t("trainer.name")}</p>
@@ -329,7 +299,7 @@ export function UgcFormationPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
           >
-            <Suspense><UgcFormationForm /></Suspense>
+            <Suspense><ProspectionFormationForm /></Suspense>
           </motion.div>
         </div>
       </section>

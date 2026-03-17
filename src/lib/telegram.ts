@@ -76,18 +76,29 @@ export async function sendTelegramMessage(params: SendMessageParams) {
   return { ok: true };
 }
 
-type UgcFormationParams = {
+type FormationParams = {
   firstName: string;
   lastName: string;
   email: string;
   phone: string;
   company: string;
   participants: string;
-  sessionDate: string;
   locale: string;
 };
 
-export async function sendUgcFormationTelegram(params: UgcFormationParams) {
+export async function sendUgcFormationTelegram(params: FormationParams) {
+  return sendFormationTelegram("🎓 Inscription Atelier Contenu Visuel IA !", params);
+}
+
+export async function sendExcelFormationTelegram(params: FormationParams) {
+  return sendFormationTelegram("📊 Inscription Atelier Excel + IA !", params);
+}
+
+export async function sendProspectionFormationTelegram(params: FormationParams) {
+  return sendFormationTelegram("📡 Inscription Atelier Prospection IA !", params);
+}
+
+async function sendFormationTelegram(title: string, params: FormationParams) {
   const token = process.env.TELEGRAM_BOT_TOKEN;
   const chatId = process.env.TELEGRAM_CHAT_ID;
 
@@ -100,14 +111,13 @@ export async function sendUgcFormationTelegram(params: UgcFormationParams) {
     timeZone: "Europe/Paris",
   });
 
-  const text = `🎓 Inscription Formation UGC IA !
+  const text = `${title}
 
 👤 ${params.firstName} ${params.lastName}
 📧 ${params.email}
 📱 ${params.phone}
 🏢 ${params.company}
 👥 Participants : ${params.participants}
-📆 Session choisie : ${params.sessionDate}
 
 📅 ${date} | 🌐 ${params.locale}`;
 

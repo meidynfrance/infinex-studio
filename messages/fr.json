@@ -7,6 +7,7 @@
   "nav": {
     "home": "Accueil",
     "blog": "Blog",
+    "about": "À propos",
     "getStarted": "Commencer",
     "bookCall": "Réserver un appel",
     "legal": "Mentions légales",
@@ -46,7 +47,7 @@
     "ctaButton": "Réserver un appel gratuit",
     "services": [
       { "icon": "search", "benefit": "Des leads entrants gratuits, chaque mois", "how": "SEO & GEO dopés à l'IA : on optimise votre visibilité sur Google et les moteurs IA (Perplexity, ChatGPT…) pour que vos prospects vous trouvent avant vos concurrents." },
-      { "icon": "target", "benefit": "Identifiez vos prospects les plus chauds sur LinkedIn", "how": "Scraping avancé + scoring IA pour cibler uniquement les décideurs qui correspondent à votre ICP — sans passer des heures sur Sales Navigator." },
+      { "icon": "target", "benefit": "Prospection automatisée basée sur les signaux faibles", "how": "L'IA identifie les prospects qui interagissent déjà avec votre thématique sur LinkedIn — posts, commentaires, likes sur des sujets liés à vos services. Au lieu de prospecter à froid, vous contactez des personnes qui ont déjà montré un intérêt, au bon moment, avec le bon message.", "link": "/formations/prospection-ia" },
       { "icon": "email", "benefit": "Remplissez votre agenda avec du cold emailing automatisé", "how": "Séquences personnalisées à grande échelle, enrichissement de données et A/B testing IA pour maximiser les taux d'ouverture et de réponse." },
       { "icon": "video", "benefit": "Des pubs UGC qui convertissent, sans tournage", "how": "Création de vidéos publicitaires style UGC grâce à l'IA générative — avatars réalistes, scripts optimisés, déclinaisons illimitées.", "link": "/formations/ugc-ia" },
       { "icon": "social", "benefit": "Un flux continu de carrousels pour vos réseaux sociaux", "how": "Templates dynamiques alimentés par IA : un brief suffit pour générer des dizaines de visuels engageants adaptés à chaque plateforme." },
@@ -76,7 +77,7 @@
       { "icon": "dashboard", "benefit": "Un dashboard de pilotage toujours à jour, sans effort", "how": "Connexion de vos sources de données (CRM, ERP, Sheets…) dans un tableau de bord automatisé avec alertes intelligentes en temps réel." },
       { "icon": "presentation", "benefit": "Des PowerPoints professionnels générés automatiquement", "how": "Vos données et briefs transformés en présentations structurées et à votre charte graphique — sans ouvrir PowerPoint une seule fois." },
       { "icon": "document", "benefit": "Vos documents mis en page en quelques secondes", "how": "Automatisation de la mise en forme (Word, PDF, rapports) à partir de vos contenus bruts — cohérence visuelle garantie sans effort manuel." },
-      { "icon": "education", "benefit": "Vos équipes maîtrisent Excel & les outils IA en quelques semaines", "how": "Formations pratiques avec Claude comme assistant pédagogique : exercices personnalisés, réponses instantanées et montée en compétences accélérée." },
+      { "icon": "education", "benefit": "Vos équipes maîtrisent Excel & les outils IA en quelques semaines", "how": "Formations pratiques avec Claude comme assistant pédagogique : exercices personnalisés, réponses instantanées et montée en compétences accélérée.", "link": "/formations/excel-ia" },
       { "icon": "chat", "benefit": "Un support client automatisé qui répond à 80% des questions", "how": "Chatbot IA entraîné sur votre base de connaissance — gère les demandes courantes, escalade les cas complexes, disponible 24h/24." },
       { "icon": "inbox", "benefit": "Traitez 3x plus d'emails sans recruter", "how": "Classification automatique, suggestions de réponses et réponses automatisées pour les emails récurrents — votre boîte mail ne déborde plus." },
       { "icon": "extract", "benefit": "Extrayez les données de vos documents sans effort", "how": "OCR + IA pour lire factures, contrats, formulaires et peupler automatiquement vos outils — fin de la saisie manuelle." },
@@ -187,113 +188,339 @@
       "cta": "Réserver un appel"
     }
   },
+  "about": {
+    "metaTitle": "À propos — Infinex",
+    "metaDescription": "Découvrez Infinex et Meidy Baffou, fondateur. Notre mission : implémenter l'IA là où elle crée le plus de valeur pour les PME.",
+    "eyebrow": "À propos",
+    "title": "L'IA qui construit, pas celle qui détruit.",
+    "subtitle": "Infinex déploie l'IA là où elle crée le plus de valeur pour les PME : plus de revenus, moins de friction. Résultats concrets en quelques semaines.",
+    "founder": {
+      "eyebrow": "Fondateur",
+      "name": "Meidy Baffou",
+      "role": "Fondateur d'Infinex — Formateur & Consultant IA",
+      "description": "J'interviens auprès de TPE et PME pour implémenter l'IA là où elle crée le plus de valeur : création de contenus, automatisation de process, mise en place d'outils concrets. Mon objectif est de transformer chaque collaborateur en super-employé assisté par l'IA — plus rapide, plus impactant, plus autonome.",
+      "description2": ""
+    },
+    "vision": {
+      "title": "Notre vision de l'IA",
+      "text": "L'IA ne doit pas remplacer vos salariés, elle doit les augmenter. Une équipe de 10 personnes bien outillée peut avoir l'impact d'une équipe de 50. On croit en l'IA humaine, celle qui construit, pas celle qui détruit.",
+      "text2": "Si votre objectif est de réduire vos effectifs, nous ne sommes pas les bons interlocuteurs. Notre approche, c'est la performance par l'augmentation, pas par la suppression. Chaque outil, chaque formation, chaque déploiement qu'on fait a un seul but : rendre vos équipes plus performantes."
+    },
+    "expertise": {
+      "title": "Ce que nous faisons",
+      "items": [
+        { "title": "Création de contenus IA", "description": "Vidéos UGC, carousels, ads statiques, visuels produit... Nous vous formons et outillons pour produire tout type de contenu visuel grâce à l'IA générative.", "icon": "content" },
+        { "title": "Automatisation de process", "description": "Identifiez les tâches répétitives qui ralentissent vos équipes et automatisez-les avec des workflows IA sur-mesure. Moins de friction, plus de valeur.", "icon": "automation" },
+        { "title": "Mise en place d'outils IA", "description": "Chatbots, assistants internes, outils de reporting, dashboards intelligents... Nous déployons les solutions IA adaptées à votre métier.", "icon": "tools" },
+        { "title": "Formation des équipes", "description": "Ateliers pratiques pour rendre vos collaborateurs autonomes sur les outils IA. L'objectif : des super-employés assistés par l'IA, pas des employés remplacés.", "icon": "training" }
+      ]
+    },
+    "cta": {
+      "title": "Prêt à passer à l'action ?",
+      "subtitle": "Parlons de votre projet et identifions ensemble où l'IA peut créer le plus de valeur pour votre entreprise.",
+      "button": "Parlons de votre projet"
+    }
+  },
   "formationUgc": {
-    "metaTitle": "Formation UGC IA — Infinex",
-    "metaDescription": "Apprenez a creer des publicites UGC performantes avec l'IA generative. Formation d'une demi-journee a distance, 500 EUR HT.",
+    "metaTitle": "Atelier Contenu Visuel IA — Infinex",
+    "metaDescription": "Apprenez à produire carousels, vidéos, ads UGC et ads statiques grâce à l'IA générative. Atelier d'une journée, 1000 EUR HT.",
     "back": "Retour aux services",
-    "eyebrow": "Formation pratique",
-    "title": "Creez des pubs UGC qui convertissent, sans camera.",
-    "titleAccent": "sans camera.",
-    "subtitle": "En une demi-journee, maitrisez les outils IA pour produire des videos publicitaires UGC realistes — avatars, scripts, declinaisons — et lancez vos premieres campagnes des le lendemain.",
-    "heroCta": "Reserver ma place",
+    "eyebrow": "Atelier pratique",
+    "title": "Apprenez à produire tout type de contenu visuel avec l'IA, en une journée.",
+    "titleAccent": "en une journée.",
+    "subtitle": "Carousels, vidéos, ads UGC, ads statiques... En une journée d'atelier 100% pratique, vous apprenez à maîtriser chaque format et produisez vos premiers contenus en live. L'objectif : repartir autonome.",
+    "heroCta": "Voir les informations pratiques",
     "heroBadge1": "",
     "heroBadge2": "",
     "problem": {
-      "eyebrow": "Le probleme",
-      "title": "L'UGC classique coute cher et prend du temps",
-      "description": "Tournages, acteurs, montage, iterations... Produire des videos UGC de qualite requiert un budget de plusieurs milliers d'euros et des semaines de production. Sans parler de la difficulte a scaler : chaque variante necessite un nouveau tournage."
+      "eyebrow": "Le problème",
+      "title": "Produire du contenu visuel coûte cher et prend du temps",
+      "description": "Graphiste, photographe, monteur, itérations... Produire des visuels et vidéos de qualité requiert un budget conséquent et des semaines de production. Chaque nouveau format ou variante relance le cycle."
     },
     "solution": {
       "eyebrow": "La solution",
-      "title": "L'IA generative change la donne",
-      "description": "Avec les bons outils et les bonnes techniques, vous generez des videos UGC realistes en quelques minutes. Avatars convaincants, scripts optimises pour la conversion, declinaisons illimitees. Le tout sans camera, sans acteur, sans studio."
+      "title": "L'IA générative change la donne",
+      "description": "Avec les bons outils et les bonnes techniques, vous produisez carousels, vidéos UGC, ads statiques et animées en quelques minutes. Déclinaisons illimitées, cohérence visuelle, zéro dépendance externe."
     },
     "program": {
       "eyebrow": "Programme",
-      "title": "Ce que vous apprendrez",
-      "subtitle": "Un programme dense et 100% actionnable, concu pour produire vos premieres pubs UGC IA des la fin de la formation.",
+      "title": "Ce que vous produirez pendant l'atelier",
+      "subtitle": "Un programme dense et 100% pratique. Vous produisez en live chaque type de contenu et repartez avec vos propres créations.",
       "items": [
-        { "title": "Les fondamentaux du UGC performant", "description": "Anatomie d'une pub UGC qui convertit : hooks, structures de script, patterns psychologiques et benchmarks par secteur." },
-        { "title": "Maitriser les outils IA de generation video", "description": "Creez vos avatars IA de A a Z : generation de photos realistes, transformation en video, animation avec son et synchronisation labiale. Vos avatars disent exactement le script que vous voulez." },
-        { "title": "Ecrire des scripts qui vendent", "description": "Frameworks de copywriting adaptes au format UGC. Utilisation de ChatGPT/Claude pour generer et iterer des scripts optimises." },
-        { "title": "Produire et decliner a grande echelle", "description": "Workflow complet : du brief a la video finale. Templates reutilisables, declinaisons par audience, A/B testing creatif." }
+        { "title": "Ads UGC vidéo avec avatars IA", "description": "Créez des publicités vidéo UGC réalistes de A à Z : avatars, scripts, synchronisation labiale. Vos avatars disent exactement ce que vous voulez." },
+        { "title": "Carousels et visuels statiques", "description": "Générez des carousels LinkedIn, des visuels produit et des ads statiques percutantes. Maîtrisez les prompts et les outils de génération d'images." },
+        { "title": "Scripts et copywriting IA", "description": "Frameworks de copywriting adaptés à chaque format. Utilisez ChatGPT/Claude pour générer et itérer des scripts qui convertissent." },
+        { "title": "Workflow de production à grande échelle", "description": "Du brief au contenu final : templates réutilisables, déclinaisons par audience, A/B testing créatif. Soyez autonome dès la fin de la journée." }
       ]
     },
     "audience": {
       "eyebrow": "Pour qui",
-      "title": "Cette formation est faite pour vous si...",
+      "title": "Cet atelier est fait pour vous si...",
       "items": [
-        { "title": "Responsable marketing / Growth", "description": "Vous voulez scaler votre production de creativites publicitaires sans exploser votre budget." },
-        { "title": "Dirigeant de PME", "description": "Vous cherchez a lancer des campagnes video sans dependre d'une agence ou d'un studio." },
-        { "title": "Freelance / Consultant", "description": "Vous souhaitez ajouter la creation UGC IA a votre offre de services." },
-        { "title": "Community Manager", "description": "Vous devez produire du contenu video regulierement avec des ressources limitees." }
+        { "title": "Responsable marketing / Growth", "description": "Vous voulez scaler votre production de contenus publicitaires sans exploser votre budget." },
+        { "title": "Dirigeant de PME", "description": "Vous cherchez à produire vos contenus visuels sans dépendre d'une agence ou d'un studio." },
+        { "title": "Freelance / Consultant", "description": "Vous souhaitez ajouter la création de contenu visuel IA à votre offre de services." },
+        { "title": "Community Manager", "description": "Vous devez produire du contenu visuel régulièrement avec des ressources limitées." }
       ]
     },
     "carousel": {
       "eyebrow": "Exemples",
-      "title": "Des resultats bluffants",
-      "subtitle": "Voici des exemples de publicites UGC generees par IA, du type de celles que vous apprendrez a creer pendant la formation.",
-      "comingSoon": "Video a venir"
+      "title": "Des résultats bluffants",
+      "subtitle": "Voici des exemples de contenus générés par IA, du type de ceux que vous produirez pendant l'atelier.",
+      "comingSoon": "Vidéo à venir"
     },
     "details": {
       "title": "Informations pratiques",
       "items": [
-        { "label": "Tarif", "value": "500 EUR HT / personne" },
-        { "label": "Duree", "value": "1/2 journee (3h30)" },
-        { "label": "Format", "value": "A distance (visio)" }
+        { "label": "Tarif", "value": "1 000 EUR HT / personne" },
+        { "label": "Durée", "value": "1 journée complète" },
+        { "label": "Format", "value": "À distance (visio)" }
       ],
-      "sessionNote": "Prochaine session des la semaine prochaine. Nous organisons une session chaque semaine — choisissez la date qui vous arrange."
+      "sessionNote": "Atelier ultra-pratique : vous produisez en live tous les types de contenus (vidéos UGC, carousels, ads statiques). L'objectif est que vous soyez 100% autonome à la fin de la journée."
+    },
+    "trainer": {
+      "eyebrow": "Votre formateur",
+      "name": "Meidy Baffou",
+      "role": "Formateur IA & Consultant",
+      "title": "L'IA au service de vos équipes",
+      "description": "J'interviens auprès de TPE et PME pour implémenter l'IA là où elle crée le plus de valeur : création de contenus, automatisation de process, mise en place d'outils concrets. Mon objectif est de transformer chaque collaborateur en super-employé assisté par l'IA — plus rapide, plus impactant, plus autonome.",
+      "vision": "Notre conviction : l'IA ne doit pas remplacer vos salariés, elle doit les augmenter. Une équipe de 10 personnes bien outillée peut avoir l'impact d'une équipe de 50. On croit en l'IA humaine, celle qui construit, pas celle qui détruit. Si votre objectif est de réduire vos effectifs, nous ne sommes pas les bons interlocuteurs. Notre approche, c'est la performance par l'augmentation, pas par la suppression."
     },
     "formSection": {
-      "eyebrow": "Inscription",
-      "title": "Reservez votre place",
-      "description": "Inscrivez-vous ou inscrivez un collaborateur a la prochaine session de formation UGC IA. Places limitees pour garantir un accompagnement personnalise.",
+      "eyebrow": "Contact",
+      "title": "Participez au prochain atelier",
+      "description": "Laissez-nous vos coordonnées et nous vous recontactons pour organiser votre participation au prochain atelier.",
       "bullets": [
-        "Prochaine session la semaine prochaine",
-        "Contactez-nous pour plus de details",
-        "Acces aux templates et ressources"
+        "Nous vous recontactons sous 24h",
+        "Atelier en petit groupe pour un suivi personnalisé",
+        "Repartez avec vos propres contenus produits en live"
       ]
     },
     "form": {
-      "firstName": "Prenom",
+      "firstName": "Prénom",
       "firstNamePlaceholder": "Jean",
       "lastName": "Nom",
       "lastNamePlaceholder": "Dupont",
       "email": "Email professionnel",
       "emailPlaceholder": "jean@entreprise.fr",
-      "phone": "Telephone",
+      "phone": "Téléphone",
       "phonePlaceholder": "+33 6 12 34 56 78",
       "company": "Entreprise",
       "companyPlaceholder": "Nom de votre entreprise",
       "participants": "Nombre de participants",
-      "participantsPlaceholder": "Selectionnez",
+      "participantsPlaceholder": "Sélectionnez",
       "person": "personne",
       "persons": "personnes",
-      "sessionDate": "Date de la session",
-      "sessionDatePlaceholder": "Choisissez une date",
-      "sessions": [
-        { "value": "Mardi 17 mars 13h30-17h", "label": "Mardi 17 mars — 13h30 a 17h", "full": "true" },
-        { "value": "Mardi 24 mars 13h30-17h", "label": "Mardi 24 mars — 13h30 a 17h (2 places restantes)", "full": "false" },
-        { "value": "Mardi 31 mars 13h30-17h", "label": "Mardi 31 mars — 13h30 a 17h (5 places restantes)", "full": "false" },
-        { "value": "Vendredi 17 avril 13h30-17h", "label": "Vendredi 17 avril — 13h30 a 17h", "full": "false" },
-        { "value": "Jeudi 23 avril 13h30-17h", "label": "Jeudi 23 avril — 13h30 a 17h", "full": "false" }
-      ],
-      "sessionFull": "Complet",
-      "submit": "Reserver ma place",
+      "submit": "Je souhaite être recontacté",
       "sending": "Envoi en cours...",
-      "success": "Inscription enregistree !",
-      "successDetail": "Nous vous recontactons sous 24h avec les details de la prochaine session.",
-      "error": "Une erreur est survenue. Reessayez ou contactez-nous directement."
+      "success": "Demande enregistrée !",
+      "successDetail": "Nous vous recontactons sous 24h pour organiser votre participation.",
+      "error": "Une erreur est survenue. Réessayez ou contactez-nous directement."
     },
     "validation": {
-      "firstNameRequired": "Le prenom est requis",
+      "firstNameRequired": "Le prénom est requis",
       "lastNameRequired": "Le nom est requis",
       "emailRequired": "L'email est requis",
       "emailInvalid": "Email invalide",
-      "phoneRequired": "Le telephone est requis",
+      "phoneRequired": "Le téléphone est requis",
       "companyRequired": "L'entreprise est requise",
-      "participantsRequired": "Selectionnez le nombre de participants",
-      "sessionDateRequired": "Choisissez une date de session"
+      "participantsRequired": "Sélectionnez le nombre de participants"
+    }
+  },
+  "formationExcel": {
+    "metaTitle": "Atelier Excel + IA — Infinex",
+    "metaDescription": "Devenez le meilleur utilisateur d'Excel de votre entreprise grâce à l'IA. Atelier d'une demi-journée, 500 EUR HT.",
+    "back": "Retour aux services",
+    "eyebrow": "Atelier pratique",
+    "title": "Devenez le meilleur utilisateur d'Excel de votre entreprise, grâce à l'IA.",
+    "titleAccent": "grâce à l'IA.",
+    "subtitle": "En une demi-journée, apprenez à utiliser Claude, ChatGPT et les outils IA pour transformer Excel en superpuissance : formules complexes en langage naturel, analyses instantanées, dashboards automatiques.",
+    "heroCta": "Voir les informations pratiques",
+    "problem": {
+      "eyebrow": "Le problème",
+      "title": "Excel reste sous-exploité dans la plupart des entreprises",
+      "description": "Formules complexes, tableaux croisés dynamiques, macros VBA... La majorité des utilisateurs n'exploitent que 10% des capacités d'Excel. Résultat : des heures perdues sur des tâches manuelles, des erreurs de calcul et des analyses qui prennent des jours au lieu de minutes."
+    },
+    "solution": {
+      "eyebrow": "La solution",
+      "title": "L'IA transforme Excel en superpuissance",
+      "description": "Avec Claude for Excel et les bons outils IA, vous décrivez ce que vous voulez en français et obtenez la formule, le graphique ou l'analyse en quelques secondes. Plus besoin de mémoriser des syntaxes complexes — l'IA devient votre assistant Excel permanent."
+    },
+    "program": {
+      "eyebrow": "Programme",
+      "title": "Ce que vous apprendrez pendant l'atelier",
+      "subtitle": "Un programme dense et 100% pratique. Vous travaillez sur vos propres fichiers Excel et repartez avec des compétences immédiatement applicables.",
+      "items": [
+        { "title": "Claude for Excel & assistants IA", "description": "Installez et maîtrisez Claude for Excel, ChatGPT et les extensions IA. Apprenez à formuler vos demandes pour obtenir des résultats précis et exploitables." },
+        { "title": "Formules et analyses en langage naturel", "description": "Générez des formules complexes (RECHERCHEX, INDEX/EQUIV, tableaux croisés) simplement en décrivant votre besoin en français. Fini les heures à chercher la bonne syntaxe." },
+        { "title": "Dashboards et visualisations automatiques", "description": "Transformez vos données brutes en tableaux de bord visuels et graphiques percutants en quelques clics. L'IA structure, met en forme et propose les meilleures visualisations." },
+        { "title": "Automatisation et nettoyage de données", "description": "Nettoyez, transformez et consolidez vos fichiers automatiquement. Macros VBA générées par IA, Power Query assisté, détection d'anomalies — gagnez des heures chaque semaine." }
+      ]
+    },
+    "audience": {
+      "eyebrow": "Pour qui",
+      "title": "Cet atelier est fait pour vous si...",
+      "items": [
+        { "title": "Contrôleur de gestion / Finance", "description": "Vous passez des heures sur des reportings Excel et voulez automatiser vos analyses récurrentes." },
+        { "title": "Manager / Chef de projet", "description": "Vous utilisez Excel quotidiennement mais n'exploitez qu'une fraction de son potentiel." },
+        { "title": "Assistant(e) / Office Manager", "description": "Vous gérez des fichiers complexes et cherchez à gagner du temps sur la mise en forme et le traitement de données." },
+        { "title": "Consultant / Freelance", "description": "Vous voulez impressionner vos clients avec des analyses et dashboards Excel de niveau expert, produits en un temps record." }
+      ]
+    },
+    "details": {
+      "title": "Informations pratiques",
+      "items": [
+        { "label": "Tarif", "value": "500 EUR HT / personne" },
+        { "label": "Durée", "value": "1/2 journée (3h30)" },
+        { "label": "Format", "value": "À distance (visio)" }
+      ],
+      "sessionNote": "Atelier ultra-pratique : vous travaillez sur vos propres fichiers Excel avec l'assistance IA en temps réel. L'objectif est que vous soyez 100% autonome à la fin de la demi-journée."
+    },
+    "trainer": {
+      "eyebrow": "Votre formateur",
+      "name": "Meidy Baffou",
+      "role": "Formateur IA & Consultant",
+      "title": "L'IA au service de vos équipes",
+      "description": "J'interviens auprès de TPE et PME pour implémenter l'IA là où elle crée le plus de valeur : création de contenus, automatisation de process, mise en place d'outils concrets. Mon objectif est de transformer chaque collaborateur en super-employé assisté par l'IA — plus rapide, plus impactant, plus autonome.",
+      "vision": "Notre conviction : l'IA ne doit pas remplacer vos salariés, elle doit les augmenter. Une équipe de 10 personnes bien outillée peut avoir l'impact d'une équipe de 50. On croit en l'IA humaine, celle qui construit, pas celle qui détruit. Si votre objectif est de réduire vos effectifs, nous ne sommes pas les bons interlocuteurs. Notre approche, c'est la performance par l'augmentation, pas par la suppression."
+    },
+    "formSection": {
+      "eyebrow": "Contact",
+      "title": "Participez au prochain atelier",
+      "description": "Laissez-nous vos coordonnées et nous vous recontactons pour organiser votre participation au prochain atelier Excel + IA.",
+      "bullets": [
+        "Nous vous recontactons sous 24h",
+        "Atelier en petit groupe pour un suivi personnalisé",
+        "Travaillez sur vos propres fichiers Excel"
+      ]
+    },
+    "form": {
+      "firstName": "Prénom",
+      "firstNamePlaceholder": "Jean",
+      "lastName": "Nom",
+      "lastNamePlaceholder": "Dupont",
+      "email": "Email professionnel",
+      "emailPlaceholder": "jean@entreprise.fr",
+      "phone": "Téléphone",
+      "phonePlaceholder": "+33 6 12 34 56 78",
+      "company": "Entreprise",
+      "companyPlaceholder": "Nom de votre entreprise",
+      "participants": "Nombre de participants",
+      "participantsPlaceholder": "Sélectionnez",
+      "person": "personne",
+      "persons": "personnes",
+      "submit": "Je souhaite être recontacté",
+      "sending": "Envoi en cours...",
+      "success": "Demande enregistrée !",
+      "successDetail": "Nous vous recontactons sous 24h pour organiser votre participation.",
+      "error": "Une erreur est survenue. Réessayez ou contactez-nous directement."
+    },
+    "validation": {
+      "firstNameRequired": "Le prénom est requis",
+      "lastNameRequired": "Le nom est requis",
+      "emailRequired": "L'email est requis",
+      "emailInvalid": "Email invalide",
+      "phoneRequired": "Le téléphone est requis",
+      "companyRequired": "L'entreprise est requise",
+      "participantsRequired": "Sélectionnez le nombre de participants"
+    }
+  },
+  "formationProspection": {
+    "metaTitle": "Atelier Prospection IA — Infinex",
+    "metaDescription": "Mettez en place votre prospection automatisée basée sur les signaux faibles LinkedIn en une demi-journée. 500 EUR HT.",
+    "back": "Retour aux services",
+    "eyebrow": "Atelier pratique",
+    "title": "Lancez votre prospection automatisée en un après-midi.",
+    "titleAccent": "en un après-midi.",
+    "subtitle": "Avec Gojiberry AI, Claude et LinkedIn, mettez en place un système qui détecte les prospects qui s'intéressent déjà à votre thématique et les contacte automatiquement. Vous repartez avec votre première campagne active.",
+    "heroCta": "Voir les informations pratiques",
+    "problem": {
+      "eyebrow": "Le problème",
+      "title": "La prospection à froid ne fonctionne plus",
+      "description": "Messages génériques, taux de réponse en chute libre, prospects agacés... La prospection traditionnelle sur LinkedIn est devenue un bruit de fond que tout le monde ignore. Vous perdez du temps à contacter des gens qui n'ont aucun intérêt pour ce que vous proposez."
+    },
+    "solution": {
+      "eyebrow": "La solution",
+      "title": "Ciblez uniquement les prospects qui montrent un intérêt",
+      "description": "L'IA analyse les signaux faibles sur LinkedIn — posts, commentaires, likes sur des sujets liés à vos services — pour identifier les personnes qui s'intéressent déjà à votre thématique. Vous les contactez au bon moment, avec un message personnalisé et pertinent. Le taux de réponse explose."
+    },
+    "program": {
+      "eyebrow": "Programme",
+      "title": "Ce que vous mettrez en place pendant l'atelier",
+      "subtitle": "Un programme 100% pratique. Vous repartez avec un système de prospection opérationnel et votre première campagne lancée.",
+      "items": [
+        { "title": "Setup de Gojiberry AI", "description": "Installation et configuration de l'outil de détection de signaux faibles. Définition de vos critères de ciblage : thématiques, mots-clés, types d'interactions LinkedIn à surveiller." },
+        { "title": "Ciblage par signaux LinkedIn", "description": "Apprenez à identifier les prospects qui publient, commentent ou likent des contenus liés à votre offre. Construisez vos listes de prospects qualifiés en temps réel." },
+        { "title": "Rédaction de messages avec Claude", "description": "Utilisez l'IA pour rédiger des messages de prospection personnalisés et contextualisés. Chaque message fait référence à l'activité LinkedIn du prospect — fini les templates génériques." },
+        { "title": "Lancement de votre première campagne", "description": "Mettez tout en musique : séquences automatisées, suivi des réponses, relances intelligentes. Vous quittez l'atelier avec votre première campagne active qui génère des leads." }
+      ]
+    },
+    "audience": {
+      "eyebrow": "Pour qui",
+      "title": "Cet atelier est fait pour vous si...",
+      "items": [
+        { "title": "Dirigeant de PME / TPE", "description": "Vous voulez générer des leads qualifiés sans recruter de commercial ni passer des heures sur LinkedIn." },
+        { "title": "Commercial / Business Developer", "description": "Vous cherchez à remplir votre pipeline avec des prospects réellement intéressés, pas des contacts froids." },
+        { "title": "Growth Manager / Marketing", "description": "Vous voulez automatiser l'acquisition outbound avec un système intelligent et scalable." },
+        { "title": "Consultant / Freelance", "description": "Vous souhaitez décrocher des missions en ciblant les décideurs qui parlent déjà de vos sujets d'expertise." }
+      ]
+    },
+    "details": {
+      "title": "Informations pratiques",
+      "items": [
+        { "label": "Tarif", "value": "500 EUR HT / personne" },
+        { "label": "Durée", "value": "1/2 journée (3h30)" },
+        { "label": "Format", "value": "À distance (visio)" }
+      ],
+      "sessionNote": "Atelier ultra-concret : vous configurez vos outils, créez vos messages et lancez votre première campagne en live. L'objectif est que vous soyez 100% opérationnel à la fin de l'après-midi."
+    },
+    "trainer": {
+      "eyebrow": "Votre formateur",
+      "name": "Meidy Baffou",
+      "role": "Formateur IA & Consultant",
+      "title": "L'IA au service de vos équipes",
+      "description": "J'interviens auprès de TPE et PME pour implémenter l'IA là où elle crée le plus de valeur : création de contenus, automatisation de process, mise en place d'outils concrets. Mon objectif est de transformer chaque collaborateur en super-employé assisté par l'IA — plus rapide, plus impactant, plus autonome.",
+      "vision": "Notre conviction : l'IA ne doit pas remplacer vos salariés, elle doit les augmenter. Une équipe de 10 personnes bien outillée peut avoir l'impact d'une équipe de 50. On croit en l'IA humaine, celle qui construit, pas celle qui détruit. Si votre objectif est de réduire vos effectifs, nous ne sommes pas les bons interlocuteurs. Notre approche, c'est la performance par l'augmentation, pas par la suppression."
+    },
+    "formSection": {
+      "eyebrow": "Contact",
+      "title": "Participez au prochain atelier",
+      "description": "Laissez-nous vos coordonnées et nous vous recontactons pour organiser votre participation au prochain atelier Prospection IA.",
+      "bullets": [
+        "Nous vous recontactons sous 24h",
+        "Atelier en petit groupe pour un suivi personnalisé",
+        "Repartez avec votre première campagne active"
+      ]
+    },
+    "form": {
+      "firstName": "Prénom",
+      "firstNamePlaceholder": "Jean",
+      "lastName": "Nom",
+      "lastNamePlaceholder": "Dupont",
+      "email": "Email professionnel",
+      "emailPlaceholder": "jean@entreprise.fr",
+      "phone": "Téléphone",
+      "phonePlaceholder": "+33 6 12 34 56 78",
+      "company": "Entreprise",
+      "companyPlaceholder": "Nom de votre entreprise",
+      "participants": "Nombre de participants",
+      "participantsPlaceholder": "Sélectionnez",
+      "person": "personne",
+      "persons": "personnes",
+      "submit": "Je souhaite être recontacté",
+      "sending": "Envoi en cours...",
+      "success": "Demande enregistrée !",
+      "successDetail": "Nous vous recontactons sous 24h pour organiser votre participation.",
+      "error": "Une erreur est survenue. Réessayez ou contactez-nous directement."
+    },
+    "validation": {
+      "firstNameRequired": "Le prénom est requis",
+      "lastNameRequired": "Le nom est requis",
+      "emailRequired": "L'email est requis",
+      "emailInvalid": "Email invalide",
+      "phoneRequired": "Le téléphone est requis",
+      "companyRequired": "L'entreprise est requise",
+      "participantsRequired": "Sélectionnez le nombre de participants"
     }
   },
   "footer": {

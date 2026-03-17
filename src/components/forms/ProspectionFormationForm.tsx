@@ -7,8 +7,8 @@ import { Button } from "@/components/ui/Button";
 import { useUtm } from "@/hooks/useUtm";
 import type { UgcFormationData } from "@/lib/validations";
 
-export function UgcFormationForm() {
-  const t = useTranslations("formationUgc");
+export function ProspectionFormationForm() {
+  const t = useTranslations("formationProspection");
   const locale = useLocale();
   const getUtm = useUtm();
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
@@ -23,7 +23,7 @@ export function UgcFormationForm() {
   async function onSubmit(data: UgcFormationData) {
     setStatus("sending");
     try {
-      const response = await fetch("/api/formation-ugc", {
+      const response = await fetch("/api/formation-prospection", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...data, locale, utm: getUtm() }),
@@ -57,11 +57,11 @@ export function UgcFormationForm() {
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label htmlFor="ugc-firstName" className={labelStyles}>
+          <label htmlFor="prosp-firstName" className={labelStyles}>
             {t("form.firstName")}
           </label>
           <input
-            id="ugc-firstName"
+            id="prosp-firstName"
             type="text"
             placeholder={t("form.firstNamePlaceholder")}
             className={inputStyles}
@@ -70,11 +70,11 @@ export function UgcFormationForm() {
           {errors.firstName && <p className={errorStyles}>{errors.firstName.message}</p>}
         </div>
         <div>
-          <label htmlFor="ugc-lastName" className={labelStyles}>
+          <label htmlFor="prosp-lastName" className={labelStyles}>
             {t("form.lastName")}
           </label>
           <input
-            id="ugc-lastName"
+            id="prosp-lastName"
             type="text"
             placeholder={t("form.lastNamePlaceholder")}
             className={inputStyles}
@@ -85,11 +85,11 @@ export function UgcFormationForm() {
       </div>
 
       <div>
-        <label htmlFor="ugc-email" className={labelStyles}>
+        <label htmlFor="prosp-email" className={labelStyles}>
           {t("form.email")}
         </label>
         <input
-          id="ugc-email"
+          id="prosp-email"
           type="email"
           placeholder={t("form.emailPlaceholder")}
           className={inputStyles}
@@ -105,11 +105,11 @@ export function UgcFormationForm() {
       </div>
 
       <div>
-        <label htmlFor="ugc-phone" className={labelStyles}>
+        <label htmlFor="prosp-phone" className={labelStyles}>
           {t("form.phone")}
         </label>
         <input
-          id="ugc-phone"
+          id="prosp-phone"
           type="tel"
           placeholder={t("form.phonePlaceholder")}
           className={inputStyles}
@@ -119,11 +119,11 @@ export function UgcFormationForm() {
       </div>
 
       <div>
-        <label htmlFor="ugc-company" className={labelStyles}>
+        <label htmlFor="prosp-company" className={labelStyles}>
           {t("form.company")}
         </label>
         <input
-          id="ugc-company"
+          id="prosp-company"
           type="text"
           placeholder={t("form.companyPlaceholder")}
           className={inputStyles}
@@ -133,11 +133,11 @@ export function UgcFormationForm() {
       </div>
 
       <div>
-        <label htmlFor="ugc-participants" className={labelStyles}>
+        <label htmlFor="prosp-participants" className={labelStyles}>
           {t("form.participants")}
         </label>
         <select
-          id="ugc-participants"
+          id="prosp-participants"
           className={`${inputStyles} cursor-pointer`}
           defaultValue=""
           {...register("participants", { required: t("validation.participantsRequired") })}

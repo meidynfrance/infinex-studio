@@ -7,8 +7,8 @@ import { Button } from "@/components/ui/Button";
 import { useUtm } from "@/hooks/useUtm";
 import type { UgcFormationData } from "@/lib/validations";
 
-export function UgcFormationForm() {
-  const t = useTranslations("formationUgc");
+export function ExcelFormationForm() {
+  const t = useTranslations("formationExcel");
   const locale = useLocale();
   const getUtm = useUtm();
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
@@ -23,7 +23,7 @@ export function UgcFormationForm() {
   async function onSubmit(data: UgcFormationData) {
     setStatus("sending");
     try {
-      const response = await fetch("/api/formation-ugc", {
+      const response = await fetch("/api/formation-excel", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...data, locale, utm: getUtm() }),
@@ -40,16 +40,16 @@ export function UgcFormationForm() {
 
   if (status === "success") {
     return (
-      <div className="rounded-2xl border border-green-500/30 bg-green-500/5 p-8 text-center">
+      <div className="rounded-2xl border border-blue-500/30 bg-blue-500/5 p-8 text-center">
         <div className="text-4xl mb-4">&#10003;</div>
-        <p className="text-lg text-green-400">{t("form.success")}</p>
+        <p className="text-lg text-blue-400">{t("form.success")}</p>
         <p className="mt-3 text-sm text-text-secondary">{t("form.successDetail")}</p>
       </div>
     );
   }
 
   const inputStyles =
-    "w-full rounded-lg border border-border bg-surface px-4 py-3 text-text-primary placeholder:text-text-secondary/50 transition-colors focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500";
+    "w-full rounded-lg border border-border bg-surface px-4 py-3 text-text-primary placeholder:text-text-secondary/50 transition-colors focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500";
   const errorStyles = "mt-1 text-sm text-red-400";
   const labelStyles = "block text-sm font-medium mb-2";
 
@@ -57,11 +57,11 @@ export function UgcFormationForm() {
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label htmlFor="ugc-firstName" className={labelStyles}>
+          <label htmlFor="excel-firstName" className={labelStyles}>
             {t("form.firstName")}
           </label>
           <input
-            id="ugc-firstName"
+            id="excel-firstName"
             type="text"
             placeholder={t("form.firstNamePlaceholder")}
             className={inputStyles}
@@ -70,11 +70,11 @@ export function UgcFormationForm() {
           {errors.firstName && <p className={errorStyles}>{errors.firstName.message}</p>}
         </div>
         <div>
-          <label htmlFor="ugc-lastName" className={labelStyles}>
+          <label htmlFor="excel-lastName" className={labelStyles}>
             {t("form.lastName")}
           </label>
           <input
-            id="ugc-lastName"
+            id="excel-lastName"
             type="text"
             placeholder={t("form.lastNamePlaceholder")}
             className={inputStyles}
@@ -85,11 +85,11 @@ export function UgcFormationForm() {
       </div>
 
       <div>
-        <label htmlFor="ugc-email" className={labelStyles}>
+        <label htmlFor="excel-email" className={labelStyles}>
           {t("form.email")}
         </label>
         <input
-          id="ugc-email"
+          id="excel-email"
           type="email"
           placeholder={t("form.emailPlaceholder")}
           className={inputStyles}
@@ -105,11 +105,11 @@ export function UgcFormationForm() {
       </div>
 
       <div>
-        <label htmlFor="ugc-phone" className={labelStyles}>
+        <label htmlFor="excel-phone" className={labelStyles}>
           {t("form.phone")}
         </label>
         <input
-          id="ugc-phone"
+          id="excel-phone"
           type="tel"
           placeholder={t("form.phonePlaceholder")}
           className={inputStyles}
@@ -119,11 +119,11 @@ export function UgcFormationForm() {
       </div>
 
       <div>
-        <label htmlFor="ugc-company" className={labelStyles}>
+        <label htmlFor="excel-company" className={labelStyles}>
           {t("form.company")}
         </label>
         <input
-          id="ugc-company"
+          id="excel-company"
           type="text"
           placeholder={t("form.companyPlaceholder")}
           className={inputStyles}
@@ -133,11 +133,11 @@ export function UgcFormationForm() {
       </div>
 
       <div>
-        <label htmlFor="ugc-participants" className={labelStyles}>
+        <label htmlFor="excel-participants" className={labelStyles}>
           {t("form.participants")}
         </label>
         <select
-          id="ugc-participants"
+          id="excel-participants"
           className={`${inputStyles} cursor-pointer`}
           defaultValue=""
           {...register("participants", { required: t("validation.participantsRequired") })}
@@ -154,7 +154,7 @@ export function UgcFormationForm() {
         {errors.participants && <p className={errorStyles}>{errors.participants.message}</p>}
       </div>
 
-      <Button type="submit" variant="green" size="lg" className="w-full btn-shimmer" disabled={status === "sending"}>
+      <Button type="submit" variant="blue" size="lg" className="w-full btn-shimmer" disabled={status === "sending"}>
         {status === "sending" ? t("form.sending") : t("form.submit")}
       </Button>
 

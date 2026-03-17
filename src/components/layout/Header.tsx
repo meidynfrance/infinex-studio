@@ -19,6 +19,12 @@ export function Header() {
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
           <Link
+            href="/about"
+            className="text-sm text-text-secondary transition-colors duration-200 hover:text-white"
+          >
+            {t("about")}
+          </Link>
+          <Link
             href="/blog"
             className="text-sm text-text-secondary transition-colors duration-200 hover:text-white"
           >
@@ -53,6 +59,13 @@ export function Header() {
       {menuOpen && (
         <div className="md:hidden bg-background/95 backdrop-blur-xl border-t border-white/5">
           <nav className="flex flex-col px-4 py-6 space-y-5">
+            <Link
+              href="/about"
+              onClick={() => setMenuOpen(false)}
+              className="text-sm text-text-secondary transition-colors hover:text-white"
+            >
+              {t("about")}
+            </Link>
             <Link
               href="/blog"
               onClick={() => setMenuOpen(false)}

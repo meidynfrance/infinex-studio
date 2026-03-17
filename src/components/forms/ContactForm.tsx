@@ -12,7 +12,7 @@ import type { ContactFormData } from "@/lib/validations";
 export function ContactForm() {
   const t = useTranslations("getStarted");
   const locale = useLocale();
-  const utm = useUtm();
+  const getUtm = useUtm();
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
   const {
@@ -28,7 +28,7 @@ export function ContactForm() {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, locale, utm }),
+        body: JSON.stringify({ ...data, locale, utm: getUtm() }),
       });
 
       if (!response.ok) throw new Error("Failed");

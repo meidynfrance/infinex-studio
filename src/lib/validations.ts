@@ -20,7 +20,6 @@ export const ugcFormationSchema = z.object({
   phone: z.string().min(1).max(20),
   company: z.string().min(1).max(100),
   participants: z.string().min(1).max(10),
-  sessionDate: z.string().min(1).max(50),
 });
 
 export type UgcFormationData = z.infer<typeof ugcFormationSchema>;
