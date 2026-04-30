@@ -6,7 +6,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { useUtm } from "@/hooks/useUtm";
 
-const CALENDAR_URL = "https://calendar.app.google/aqawDZzHn7Ncxsy69";
+const CALENDAR_URL = "https://calendar.app.google/xqqAqmKPfrWfJrqk8";
 import type { ContactFormData } from "@/lib/validations";
 
 export function ContactForm() {

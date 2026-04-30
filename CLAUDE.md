@@ -77,7 +77,7 @@ Infinex déploie l'IA là où elle crée le plus de valeur pour les PME : plus d
 ### CTA Flow
 - **Tous les CTA** du site renvoient vers `/get-started` (formulaire)
 - Après soumission réussie, le prospect peut réserver un créneau via Google Calendar
-- Lien Calendar : `https://calendar.app.google/aqawDZzHn7Ncxsy69`
+- Lien Calendar : `https://calendar.app.google/xqqAqmKPfrWfJrqk8`
 
 ---
 
